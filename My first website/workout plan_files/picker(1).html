@@ -1,0 +1,1803 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0426)https://docs.google.com/picker?protocol=gadgets&origin=https%3A%2F%2Fsites.google.com&hl=en-GB&authuser=0&hostId=atariDrive&st=000770F20395949C0E3ED30AC227A5F37C30E64E0A517C261B%3A%3A1600140540959&relayUrl=https%3A%2F%2Fsites.google.com%2Ffavicon.ico&nav=((%22video-search%22%2Cnull%2C%7B%22site%22%3A%22youtube.com%22%7D)%2C(%22youtube%22%2C%22Uploaded%22))&rpcService=deed0jrd7333&rpctoken=76zv5i9ofxpw#rpctoken=76zv5i9ofxpw -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" nonce="">
+        (function(){/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+var a=a||{};a.global=this||self;a.H=function(b,c,d,e){b=b.split(".");e=e||a.global;b[0]in e||"undefined"==typeof e.execScript||e.execScript("var "+b[0]);for(var f;b.length&&(f=b.shift());)if(b.length||void 0===c)e=e[f]&&e[f]!==Object.prototype[f]?e[f]:e[f]={};else if(!d&&a.u(c)&&a.u(e[f]))for(var g in c)c.hasOwnProperty(g)&&(e[f][g]=c[g]);else e[f]=c};a.define=function(b,c){return b=c};a.qa=2012;a.h=!0;a.sa="en";a.va=!0;a.P=!a.h;a.oa=!1;
+a.Xa=function(b){if(a.K())throw Error("goog.provide cannot be used within a module.");a.F(b)};a.F=function(b,c,d){a.H(b,c,d)};a.Ka=function(b){if(b&&b!=a.global)return a.I(b.document);null===a.j&&(a.j=a.I(a.global.document));return a.j};a.R=/^[\w+/_-]+[=]{0,2}$/;a.j=null;a.I=function(b){return(b=b.querySelector&&b.querySelector("script[nonce]"))&&(b=b.nonce||b.getAttribute("nonce"))&&a.R.test(b)?b:""};a.V=/^[a-zA-Z_$][a-zA-Z0-9._$]*$/;
+a.module=function(b){if("string"!==typeof b||!b||-1==b.search(a.V))throw Error("Invalid module identifier");if(!a.J())throw Error("Module "+b+" has been loaded incorrectly. Note, modules cannot be loaded as normal scripts. They require some kind of pre-processing step. You're likely trying to load a module via a script tag or as a part of a concatenated bundle without rewriting the module. For more info see: https://github.com/google/closure-library/wiki/goog.module:-an-ES6-module-like-alternative-to-goog.provide.");
+if(a.a.g)throw Error("goog.module may only be called once per module.");a.a.g=b};a.module.get=function(){return null};a.module.Ga=function(){return null};a.f={B:"es6",i:"goog"};a.a=null;a.K=function(){return a.J()||a.da()};a.J=function(){return!!a.a&&a.a.type==a.f.i};a.da=function(){var b=!!a.a&&a.a.type==a.f.B;return b?!0:(b=a.global.$jscomp)?"function"!=typeof b.m?!1:!!b.m():!1};a.module.l=function(){a.a.l=!0};
+a.Ba=function(b){if(a.a)a.a.g=b;else{var c=a.global.$jscomp;if(!c||"function"!=typeof c.m)throw Error('Module with namespace "'+b+'" has been loaded incorrectly.');c=c.ha(c.m());a.L[b]={exports:c,type:a.f.B,ga:b}}};a.ab=function(b){if(a.P)throw b=b||"",Error("Importing test-only code into non-debug environment"+(b?": "+b:"."));};a.Ea=function(){};a.Ja=function(b,c){b=b.split(".");c=c||a.global;for(var d=0;d<b.length;d++)if(c=c[b[d]],null==c)return null;return c};a.ya=function(){};a.cb=!1;a.pa=!0;
+a.M=function(b){a.global.console&&a.global.console.error(b)};a.ha=function(){};a.Za=function(){return{}};a.W="";a.Va=function(){};a.xa=function(){throw Error("unimplemented abstract method");};a.za=function(){};a.Pa=[];a.ra=!0;a.T=a.h;a.L={};a.na=!1;a.ta="detect";a.ma=!1;a.ua="";a.U="transpile.js";a.o=null;a.ka=function(){if(null==a.o){try{var b=!eval('"use strict";let x = 1; function f() { return typeof x; };f() == "number";')}catch(c){b=!1}a.o=b}return a.o};
+a.la=function(b){return"(function(){"+b+"\n;})();\n"};
+a.Sa=function(b){var c=a.a;try{a.a={g:"",l:!1,type:a.f.i};var d={},e=d;if(a.ca(b))e=b.call(void 0,e);else if("string"===typeof b)a.ka()&&(b=a.la(b)),e=a.fa.call(void 0,e,b);else throw Error("Invalid module definition");var f=a.a.g;if("string"===typeof f&&f){a.a.l?(b=d!==e,a.F(f,e,b)):a.T&&Object.seal&&"object"==typeof e&&null!=e&&Object.seal(e);var g={exports:e,type:a.f.i,ga:a.a.g};a.L[f]=g}else throw Error('Invalid module name "'+f+'"');}finally{a.a=c}};a.fa=function(b,c){eval(c);return b};
+a.Ua=function(b){b=b.split("/");for(var c=0;c<b.length;)"."==b[c]?b.splice(c,1):c&&".."==b[c]&&b[c-1]&&".."!=b[c-1]?b.splice(--c,2):c++;return b.join("/")};a.ea=function(b){if(a.global.O)return a.global.O(b);try{var c=new a.global.XMLHttpRequest;c.open("get",b,!1);c.send();return 0==c.status||200==c.status?c.responseText:null}catch(d){return null}};
+a.bb=function(b,c,d){var e=a.global.$jscomp;e||(a.global.$jscomp=e={});var f=e.v;if(!f){var g=a.W+a.U,h=a.ea(g);if(h){(function(){(0,eval)(h+"\n//# sourceURL="+g)}).call(a.global);if(a.global.$gwtExport&&a.global.$gwtExport.$jscomp&&!a.global.$gwtExport.$jscomp.transpile)throw Error('The transpiler did not properly export the "transpile" method. $gwtExport: '+JSON.stringify(a.global.$gwtExport));a.global.$jscomp.v=a.global.$gwtExport.$jscomp.transpile;e=a.global.$jscomp;f=e.v}}if(!f){var k=" requires transpilation but no transpiler was found.";
+k+=' Please add "//javascript/closure:transpiler" as a data dependency to ensure it is included.';f=e.v=function(l,m){a.M(m+k);return l}}return f(b,c,d)};a.A=function(b){var c=typeof b;return"object"!=c?c:b?Array.isArray(b)?"array":c:"null"};a.Qa=function(b){var c=a.A(b);return"array"==c||"object"==c&&"number"==typeof b.length};a.Ra=function(b){return a.u(b)&&"function"==typeof b.getFullYear};a.ca=function(b){return"function"==a.A(b)};
+a.u=function(b){var c=typeof b;return"object"==c&&null!=b||"function"==c};a.La=function(b){return Object.prototype.hasOwnProperty.call(b,a.c)&&b[a.c]||(b[a.c]=++a.ja)};a.Na=function(b){return!!b[a.c]};a.Ya=function(b){null!==b&&"removeAttribute"in b&&b.removeAttribute(a.c);try{delete b[a.c]}catch(c){}};a.c="closure_uid_"+(1E9*Math.random()>>>0);a.ja=0;
+a.Z=function(b){var c=a.A(b);if("object"==c||"array"==c){if("function"===typeof b.clone)return b.clone();c="array"==c?[]:{};for(var d in b)c[d]=a.Z(b[d]);return c}return b};a.Y=function(b,c,d){return b.call.apply(b.bind,arguments)};a.X=function(b,c,d){if(!b)throw Error();if(2<arguments.length){var e=Array.prototype.slice.call(arguments,2);return function(){var f=Array.prototype.slice.call(arguments);Array.prototype.unshift.apply(f,e);return b.apply(c,f)}}return function(){return b.apply(c,arguments)}};
+a.bind=function(b,c,d){a.bind=Function.prototype.bind&&-1!=Function.prototype.bind.toString().indexOf("native code")?a.Y:a.X;return a.bind.apply(null,arguments)};a.Wa=function(b,c){var d=Array.prototype.slice.call(arguments,1);return function(){var e=d.slice();e.push.apply(e,arguments);return b.apply(this,e)}};a.Ta=function(b,c){for(var d in c)b[d]=c[d]};a.now=Date.now;a.Ma=function(b){(0,eval)(b)};
+a.Fa=function(b,c){if("."==String(b).charAt(0))throw Error('className passed in goog.getCssName must not start with ".". You passed: '+b);var d=function(f){return a.G[f]||f},e=function(f){f=f.split("-");for(var g=[],h=0;h<f.length;h++)g.push(d(f[h]));return g.join("-")};e=a.G?"BY_WHOLE"==a.aa?d:e:function(f){return f};b=c?b+"-"+e(c):e(b);return a.global.N?a.global.N(b):b};a.$a=function(b,c){a.G=b;a.aa=c};
+a.Ha=function(b,c,d){d&&d.Oa&&(b=b.replace(/</g,"&lt;"));c&&(b=b.replace(/\{\$([^}]+)}/g,function(e,f){return null!=c&&f in c?c[f]:e}));return b};a.Ia=function(b){return b};a.Da=function(b,c,d){a.H(b,c,!0,d)};a.Ca=function(b,c,d){b[c]=d};a.ba=function(b,c){function d(){}d.prototype=c.prototype;b.prototype=new d;b.prototype.constructor=b};a.scope=function(b){if(a.K())throw Error("goog.scope is not supported within a module.");b.call(a.global)};
+a.b=function(b,c){var d=c.constructor,e=c.ia;d&&d!=Object.prototype.constructor||(d=function(){throw Error("cannot instantiate an interface (no constructor defined).");});d=a.b.$(d,b);b&&a.ba(d,b);delete c.constructor;delete c.ia;a.b.D(d.prototype,c);null!=e&&(e instanceof Function?e(d):a.b.D(d,e));return d};a.b.S=a.h;a.b.$=function(b){if(!a.b.S)return b;var c=function(){var d=b.apply(this,arguments)||this;d[a.c]=d[a.c];return d};return c};a.b.C="constructor hasOwnProperty isPrototypeOf propertyIsEnumerable toLocaleString toString valueOf".split(" ");
+a.b.D=function(b,c){for(var d in c)Object.prototype.hasOwnProperty.call(c,d)&&(b[d]=c[d]);for(var e=0;e<a.b.C.length;e++)d=a.b.C[e],Object.prototype.hasOwnProperty.call(c,d)&&(b[d]=c[d])};a.wa="goog";a.s=function(b){return b};a.Aa=function(b){var c=null,d=a.global.trustedTypes;if(!d||!d.createPolicy)return c;try{c=d.createPolicy(b,{createHTML:a.s,createScript:a.s,createScriptURL:a.s})}catch(e){a.M(e.message)}return c};(function(){function b(l){this.t={};this.tick=function(m,p,n){var q=void 0!=n?n:(new Date).getTime();this.t[m]=[q,p];if(void 0==n)try{window.console.timeStamp("CSI/"+m)}catch(r){}};this.getStartTickTime=function(){return this.t.start[0]};this.tick("start",null,l)}var c;if(window.performance)var d=(c=window.performance.timing)&&c.responseStart;var e=0<d?new b(d):new b;window.jstiming={Timer:b,load:e};if(c){var f=c.navigationStart;0<f&&d>=f&&(window.jstiming.srt=d-f)}if(c){var g=window.jstiming.load;
+0<f&&d>=f&&(g.tick("_wtsrt",void 0,f),g.tick("wtsrt_","_wtsrt",d),g.tick("tbsd_","wtsrt_"))}try{var h=window.top!=window.self,k=window.location.href;c=null;window.chrome&&window.chrome.csi&&(c=Math.floor(window.chrome.csi().pageT),g&&0<f&&(g.tick("_tbnd",void 0,window.chrome.csi().startE),g.tick("tbnd_","_tbnd",f)));null==c&&window.gtbExternal&&(c=h?window.gtbExternal.frameT(k):window.gtbExternal.pageT());null==c&&window.external&&(h?c=window.external.frameT(k):(c=window.external.pageT,g&&0<f&&(g.tick("_tbnd",
+void 0,window.external.startE),g.tick("tbnd_","_tbnd",f))));c&&(window.jstiming.pt=c)}catch(l){}})();}).call(this);
+
+      </script>
+
+<title>Select a file</title>
+<noscript><p><br><br>Your browser must support javascript.</p></noscript>
+<script type="text/javascript" nonce="">
+        var rawConfig = {hl:'en_GB',ecc:false,cac:false,origin:'https://sites.google.com',js:'PROD',uploadConfigs:'{}',title:'Select a file',tdeemi:true,sid:'dded41b4-2bfe-4409-8458-7d9382bd7afc',du:true,tdefmo:true,ppms:true,protocol:'gadgets',esdr:true,endv:true,erd:false,rpcToken:'76zv5i9ofxpw',ftd:false,uriParams:{app:'2',clientUser:'16075428466717139578',subapp:'5',authuser:'0'},ecsi:true,xtoken:'AL7Jy1zCYVZxdeH0RntF_40VSXDzf-UsJQ:1600140763260',authuser:0,email:'deepanshagarg0@gmail.com',dpm:'Goodbye attachments. Hello Google Drive.',nav:'[[\x22video-search\x22,null,{\x22site\x22:\x22youtube.com\x22}],[\x22youtube\x22,\x22Uploaded\x22]]',burl:'https://docs.google.com/picker/v2/',rupioUrl:'',rpcService:'deed0jrd7333',wcs:'picker/resources/1778802049-web_camera.swf',dppm:'With Google Drive, you never have to send another email attachment again. Just share the link to any file that you\x27re storing in Google Drive. That way everyone has access to the same file and the same version automatically.',hostId:'atariDrive',relayUrl:'https://sites.google.com/favicon.ico',gpu:false,pimm:false,userId:'112101696114128997720',ianu:false,token:'fOTes3QBAAA.m_MeLnNlrNAzI0wAWn4v-w.fQV-ktN-E1CxHsyGFTrI4Q',gdn:'Mail',vg:'female',upp:'https://lh4.googleusercontent.com/-L8bQHAglnHs/AAAAAAAAAAI/AAAAAAAAAAA/1Aq_xHDVZHg/photo.jpg',efmif:true,prefetchEnabled:true};
+        
+      </script>
+<link type="text/css" rel="stylesheet" href="./3678220588-picker_v2.css">
+<style type="text/css" nonce="">
+          /* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xFIzIFKw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xMIzIFKw.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xEIzIFKw.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xLIzIFKw.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xHIzIFKw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xGIzIFKw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xIIzI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TzBic3CsTKlA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TzBic-CsTKlA.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TzBic2CsTKlA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TzBic5CsTKlA.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TzBic1CsTKlA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TzBic0CsTKlA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TzBic6CsQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+        </style><style type="text/css">@-webkit-keyframes undefined {0% {background-position: 0 0;} 100% {background-position: -20px 0;}} .ve-bo-Xb .Xb-Yb-O, .ve-bo-Di .Xb-Yb-O, .ve-Ff-Ye-gf-Xb .Xb-Yb-O, .ve-Di-ie .Xb-Yb-O, .Ve-Ye-qb .Xb-Yb-O {-webkit-animation-name: undefined; -moz-animation-name: undefined;}</style></head>
+<body><div class="picker-loadingstatusbox picker-loadingstatusbox-body"></div>
+<div id="doclist"><div class="ve-Zd-Kc ve-zi-Ve Td-Ud-td" guidedhelpid="ghid-pmc"><div class="ve-Zd-Xg" style="opacity: 0.5; display: none;"><div class="ve-Zd-Xg ve-Si"></div></div><div id="docs-aria-speakable" class="ve-uj" aria-live="assertive" role="region" aria-atomic="true"></div><div class="ve-Ci-Hf ve-Cf-Hf"><div class="ve-Ci-hc ve-Cf-ie" style="height: 20px;"><div id="picker:ht" class="ve-Cf-tc" role="heading" aria-level="1">Select a file</div><div class="ve-Cf-db"><div role="button" class="a-b-c d-u d-u-R" tabindex="0" data-tooltip="Close" aria-label="Close" style="user-select: none;"><div class="ve-ek-db-Bi"></div></div></div></div><div class="ve-Ci-eb ve-Cf-eb" style="top: 54px;"><div class="ve-Ci-Hf ve-Ai-Zb-Hf"><div class="ve-Ci-hc ve-Ai-Zb-ie" style="height: 50px;"><div class="ve-Ai-Zb-Bi-Yb-ih" id=":3"><div class="a-Bi-Yb a-Bi-Yb-Zb a-Bi-Yb-hc" role="tablist" tabindex="0" style="user-select: none;"><div class="a-Bi a-Bi-w" role="tab" aria-selected="true" id=":5" style="user-select: none;"><div class="ve-Ai-Zb-Nj" style="user-select: none;">Video search</div></div><div class="a-Bi" role="tab" aria-selected="false" id=":6" style="user-select: none;"><div class="ve-Ai-Zb-Nj" style="user-select: none;">Uploaded</div></div><div class="a-b-c a-kb-u" role="tab" aria-hidden="true" aria-expanded="false" aria-haspopup="true" id=":7" style="user-select: none; display: none;"><div class="a-b-c a-kb-u-pb-qb" style="user-select: none;"><div class="a-b-c a-kb-u-rb-qb" style="user-select: none;"><div class="a-b-c a-kb-u-mb" style="user-select: none;"><div style="user-select: none;">More<div class="ve-qj-n-Pj-Qj-Sf" style="user-select: none;"></div></div></div><div class="a-b-c a-kb-u-nb" style="user-select: none;">&nbsp;</div></div></div></div></div></div></div><div class="ve-Ci-eb ve-Ai-Zb-eb" style="top: 51px;"><div><div class="ve-Ci-Hf ve-Di-Hf" style="top: -10000px; left: -10000px; right: 9500px; display: none;"><div class="ve-Ci-eb ve-Di-eb" style="bottom: 70px;"><div class="ve-eb ve-vj ve-wj" style="top: -10000px; left: -10000px; right: 9500px;"><div class="ve-ob"><div class="ve-Bj ve-Bj-fk"><div class="ve-Bj-Qc-fk"><span class="ve-qj-pl a-b-c ve-Bj-Qc-pe"></span><input type="text" class="ve-Bj-Qc-qb d-Rb" aria-label="Search terms" style="width: 325px;" dir="ltr"><div role="button" class="a-b-c d-u d-u-Q" tabindex="0" data-tooltip="Search" aria-label="Search" style="user-select: none;"><img src="./search-black.png" class="d-u-x" style="width: 21px; height: 21px;"></div></div></div></div><div class="ve-eb-Kc"><div class="ve-vj-eb" role="listbox" style="user-select: none;"><span style="user-select: none;"><tr style="user-select: none;"><td style="user-select: none;"><div class="ve-vj-xi" role="status" aria-live="assertive" style="user-select: none;">Type your search in the box above to find videos.</div></td></tr></span></div></div></div><div role="status" aria-live="polite"><div class="ve-cj" aria-label="Loading data" style="display: none;"><div class="d-e"><div></div><div class="d-e-f"></div></div></div></div></div><div class="ve-Ci-ic ve-Di-ie" style="height: 69px;"><div class="ve-Di-Ji-pe"><div><div role="button" class="a-b-c d-u d-u-F d-u-D" id="picker:ap:0" guidedhelpid="ghid-psc" aria-disabled="true" style="user-select: none;">Select</div><div role="button" class="a-b-c d-u d-u-Q" tabindex="0" id="picker:ap:1" style="user-select: none;">Cancel</div></div></div><div class="ve-Di-Xi-Nb" role="status" aria-live="polite" style="display: none;"></div></div></div><div class="ve-Ci-Hf ve-Di-Hf"><div class="ve-Ci-eb ve-Di-eb" style="bottom: 70px;"><div class="ve-eb ve-vj ve-Il-Jl" style=""><div class="ve-ob"><div class="ve-Bj ve-Bj-fk"><div class="ve-Bj-Qc-fk"><span class="ve-qj-pl a-b-c ve-Bj-Qc-pe"></span><input type="text" class="ve-Bj-Qc-qb d-Rb" aria-label="Search terms" dir="ltr" style="width: 325px;"><div role="button" class="a-b-c d-u d-u-Q" tabindex="0" data-tooltip="Search" aria-label="Search" style="user-select: none;"><img src="./search-black.png" class="d-u-x" style="width: 21px; height: 21px;"></div></div></div></div><div class="ve-eb-Kc"><table class="ve-vj-eb ve-Dj-ag" role="listbox" style="user-select: none;"><tbody style="user-select: none;"><div class="ve-kh-gf" aria-labelledby=":s" role="option" aria-checked="false" tabindex="0" id=":r" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video" tabindex="0"><img src="./default(35).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":s">6 Min to Sexy Arms!</div><div class="ve-kh-gf-eb ">This is the hardest arm workout you will ever do using absolutely no weights! My shoulders felt so hard after it! It was pretty cool.
+
+♥ CHECK OUT MY DVD: http://www.poppilatesdvd.com
+♥ INSPIRATIONAL SHIRTS: http://www.blogilatesdesigns.com
+♥ SUBSCRIBE: http://bit.ly/blogilatesyt
+♥ BLOG: http://www.blogilates.com 
+♥ FB: http://www.facebook.com/blogilates 
+♥ TWEET: http://www.twitter.com/blogilates
+♥ TUMBLR: http://www.blogilates.tumblr.com
+♥ PINTEREST: http://pinterest.com/blogilates
+♥ INSTAGRAM: http://www.instagram.com/blogilates
+
+******
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 3,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">9 min - 10 Nov 2014</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":u" role="option" aria-checked="false" tabindex="-1" id=":t" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default.jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":u">Quick Burn Arms! Incredible Arm Toning Workout - no equipment, no pushups!</div><div class="ve-kh-gf-eb ">I'm going to shape your arms sooooooo GOOD with this arm routine that uses NO WEIGHTS, NO DUMBBELLS, and NO PUSHUPS! Uhh yeah. It's possible. If you loved 6 min to Sexy Arms, you will LOVE this new updated at-home POP Pilates arm exercise routine. Have fun!
+
+The moves are:
+
+1. Goal Post Puncher
+2. Shoulder Pulses
+3. Back Behinds
+4. Triangle Pushes
+5. Inverted Arm Circles
+6. Prayer Pulse
+
+♥ Get all my workout calendars and read my blog: http://www.blogilates.com
+
+♥ Get the Blogilates App FREE in the App Store or Google Play Store!
+
+♥ MY WATERBOTTLES &amp; CUTE ACTIVEWEAR: http://www.blogilatesdesigns.com
+
+♥ INSTAGRAM: @Blogilates 
+
+♥ SNAPCHAT: @Blogilates 
+
+♥ FACEBOOK: http://www.facebook.com/blogilates 
+
+♥ TWITTER: http://www.twitter.com/blogilates
+
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 3,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">8 min - 17 Apr 2016</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":w" role="option" aria-checked="false" tabindex="-1" id=":v" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(50).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":w">Sexy Toned Arms Workout | 5 Moves to Your Fittest Arms</div><div class="ve-kh-gf-eb ">This is the ultimate upper body workout that will hit your biceps, triceps, shoulders and back. You don't need any equipment and guess what?! There are ZERO pushups. But don't be fooled because you will still get a crazy good workout! You can sit or stand the entire time. But really focus on control and contacting the muscles you are working. Your upper body will be pumping when you're done! Let me know how burny it was in the comments below! And even challenge a friend to try this routine too. You will surprise them with what a great upper body workout you can get with no weights!
+
+Here are the moves:
+1. Arm Circles Forward
+2. Arm Circles Backwards
+3. Peek-A-Boos
+4. Back Behinds
+5. Reach Ups
+
+♥ Get all my workout calendars and read my blog: http://www.blogilates.com
+
+♥ MY ACTIVEWEAR: http://www.popflexactive.com
+
+♥ Get the Blogilates App FREE in the App Store or Google Play Store!
+
+♥ INSTAGRAM: http://www.instagram.com/Blogilates 
+
+♥ SNAPCHAT: https://snapchat.com/add/blogilates
+
+♥ FACEBOOK: http://www.facebook.com/blogilates 
+
+♥ TWITTER: http://www.twitter.com/blogilates
+
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. She is the creator of Blogilates, the #1 female fitness channel on Youtube. In a revolutionary partnership, Cassey's unique format, POP Pilates© which launched on Youtube in 2009, has become a live class that can be taken at every 24 Hr Fitness gym in the US. She's the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">9 min - 19 Mar 2017</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":y" role="option" aria-checked="false" tabindex="-1" id=":x" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(24).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":y">7 Minutes to Fabulous Arms! At Home No Equipment Workout</div><div class="ve-kh-gf-eb ">You guys have been asking for a 7 minute arm workout, so here it is!! It's got my first EVER weightless bicep exercise! You ready to feel the burn in your biceps, triceps &amp; shoulders for the next seven minutes?! Best upper body workout ever.
+
+Each of the seven moves will be done for one minute with NO rest in between:
+
+1. United biceps
+2. Fist circles forward
+3. Fist circles backward
+4. Chest press aways
+5. Angel arms
+6. Prayer pulse
+7. Palm press triceps
+
+#armworkout #pilates #poppilates #blogilates #noequipmentworkout
+
+Workout starts at 1:26!
+
+Here is where I get all of my music! Epidemic Sound: https://goo.gl/Nj4ZMg
+
+My outfit &amp; yoga mat are from: http://www.popflexactive.com
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 3,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">11 min - 9 Dec 2018</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":10" role="option" aria-checked="false" tabindex="-1" id=":z" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(51).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":10">5 Minute Toned Arms</div><div class="ve-kh-gf-eb ">1 minute x 5 arm sculpting moves. Your best 5 min arm slimming workout. Can you keep up with the timer? YES YOU CAN! The fastest most effective arm toning workout ever!
+
+♥ I HAVE A NEW DVD: http://www.poppilatesdvd.com
+♥ INSPIRATIONAL SHIRTS: http://www.shopblogilates.com
+♥ SUBSCRIBE: http://bit.ly/blogilatesyt
+♥ BLOG: http://www.blogilates.com 
+♥ FB: http://www.facebook.com/blogilates 
+♥ TWEET: http://www.twitter.com/blogilates
+♥ TUMBLR: http://www.blogilates.tumblr.com
+♥ PINTEREST: http://pinterest.com/blogilates
+♥ INSTAGRAM: http://www.instagram.com/blogilates
+
+******
+Cassey Ho is a certified Pilates and fitness instructor, named Greatist's Top 25 Health &amp; Fitness Influencers in the World alongside Michelle Obama. She is the winner of the "Social Fitness" Shorty Award and FITNESS Magazine named her their "Best Healthy Living Blogger". She's been featured on Dr. Oz, EXTRA TV, The Steve Harvey Show, COSMPOLITAN Magazine, SHAPE Magazine, Ladies Home Journal, SELF Magazine, NY Times, LA Times, and many more.
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">7 min - 23 Mar 2015</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":12" role="option" aria-checked="false" tabindex="-1" id=":11" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(52).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":12">Toned &amp; Defined Arms Workout! No weights needed!</div><div class="ve-kh-gf-eb ">It's time for another weightless arms workout! Oh boy - get ready for the burn guys - I've got 2 songs worth of arm toning exercises that will tone your biceps, shoulders, back, lats, and traps! This is one of my most fun and most effective POP Pilates arm workouts. 
+
+♥ Get all my workout calendars and read my blog: http://www.blogilates.com
+
+♥ MY ACTIVEWEAR: http://www.popflexactive.com
+
+♥ Get the Blogilates App FREE in the App Store or Google Play Store!
+
+♥ INSTAGRAM: @Blogilates 
+
+♥ SNAPCHAT: @Blogilates 
+
+♥ FACEBOOK: http://www.facebook.com/blogilates 
+
+♥ TWITTER: http://www.twitter.com/blogilates
+
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. She is the creator of Blogilates, the #1 female fitness channel on Youtube. In a revolutionary partnership, Cassey's unique format, POP Pilates© which launched on Youtube in 2009, has become a live class that can be taken at every 24 Hr Fitness gym in the US. She's the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">8 min - 12 Sep 2016</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":14" role="option" aria-checked="false" tabindex="-1" id=":13" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(53).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":14">12 Minutes to Toned Arms Workout</div><div class="ve-kh-gf-eb ">Welcome to the "12 Minutes to Toned" series!! I'll be releasing a brand new workout for you every week for the next 6 weeks focused on a different area of your body! Today, we are focusing on your upper body and arms, specifically your shoulders, triceps, biceps, chest, back, and traps! I hope this workout helps you find the joy in your movement. I know you will be feeling a sore but so strong once you finish!
+
+Your moves for this workout include: prayer pulses, tricep dips, robot arms, half cobra pushups, walnut crushers, up up down downs and milk jugs. Oh and don't forget to leave a comment if you like the new set!! I'm in love! 
+
+Here is where I get all of my music! Epidemic Sound: http://share.epidemicsound.com/sgFTn
+
+My yoga mat is from my shop: http://www.popflexactive.com
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 3,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">16 min - 20 Jan 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":16" role="option" aria-checked="false" tabindex="-1" id=":15" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(54).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":16">Sexy Arms and Sleek Shoulders Workout</div><div class="ve-kh-gf-eb ">POPSUGAR Fitness offers fresh fitness tutorials, workouts, and exercises that will help you on your road to healthy living, weight loss, and stress relief.  Check out Class FitSugar, our do-it-along-with-us real-time workout show hosted by Anna Renderer who will inspire you to sweat alongside fitness experts and Hollywood’s hottest celebrity trainers. Class FitSugar regularly covers the most buzzed-about workout classes and trends, including the Victoria's Secret workout, Tabata, P90X, Bar Method, and more.
+
+Subscribe to POPSUGAR Fitness!
+http://www.youtube.com/subscription_center?add_user=popsugartvfit
+
+Like us on Facebook!
+https://www.facebook.com/PopSugarFitness/
+
+Check us out on Instagram!
+https://www.instagram.com/popsugarfitness/
+
+Eat Clean with POPSUGAR
+Get a full 2-week clean-eating plan with our brand-new app! 70 recipes for breakfast, lunch, dinner, snacks, and treats, simple shopping lists, and more!  Get the app here: https://itunes.apple.com/us/app/clean-eating-plan-and-recipes/id1262482098?mt=8</div><div><span class="ve-kh-gf-yp">6 min - 6 Dec 2013</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":18" role="option" aria-checked="false" tabindex="-1" id=":17" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(55).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":18">Toned Arms &amp; Sexy Shoulders Workout ☀ Summer Song Challenge #5 ☀</div><div class="ve-kh-gf-eb ">Super excited to share with you another weightless arm workout! You don't need any dumbbells, no equipment - just your body! And you will FEEL your shoulders and your back working so hard just to keep the arms lifted. I challenge you to do this entire song with me without stopping. Ready, let's go!
+
+Here is where I get all of my music! Epidemic Sound: https://goo.gl/Nj4ZMg
+Listen to the Blogilates Summer Sweat Mix on Spotify: https://goo.gl/eFfAyD
+
+My outfit &amp; yoga mat are from: http://www.popflexactive.com
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. She is the creator of Blogilates, the #1 female fitness channel on Youtube. In a revolutionary partnership, Cassey's unique format, POP Pilates© which launched on Youtube in 2009, has become a live class that can be taken at every 24 Hr Fitness gym in the US. She's the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">5 min - 23 Jul 2017</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":1a" role="option" aria-checked="false" tabindex="-1" id=":19" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(56).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":1a">10 Minute Arm Toner | Total Body Transformation Workout</div><div class="ve-kh-gf-eb ">You guys, today's Total Body Transformation arm workout is gonna be your BIGGEST CHALLENGE YET!!! That's because we're doing this with weights. YUP. If you don't have weights, you can also do this workout without them, but I want you to push yourself a little harder today and find 2 equally weighted water bottles, books, or anything you can grab!!!
+
+You have 8 arm moves today, starting with a shoulder burn, then  moving to triceps, with a little bit of biceps at the end. We'll do each for 1 minute with a 15 second break in between. They are:
+
+1. Front Raise
+2. Side Raise
+3. Elevated Bicep Curl
+4. Tricep Kickbacks
+5. Overhead triceps
+6. Upright Row
+7. Bicep Curl to Shoulder Press
+8. Shoulder Press Pulses
+
+Workout starts at 2:42!
+
+Here is where I get all of my music! Epidemic Sound: http://share.epidemicsound.com/sgFTn
+
+Yoga mat is from: http://www.popflexactive.com
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 3,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">14 min - 15 Mar 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":1c" role="option" aria-checked="false" tabindex="-1" id=":1b" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(57).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":1c">Victoria Secret Angel Arm Slimming Workout</div><div class="ve-kh-gf-eb ">Grab your dumbbells and let me show you how to get slim, sleek, and sexy arms like a Victoria's Secret Angel!
+
+♥ INSPIRATIONAL SHIRTS: http://www.shopblogilates.com
+♥ BLOG: http://www.blogilates.com 
+♥ FB: http://www.facebook.com/blogilates 
+♥ TWEET: http://www.twitter.com/blogilates
+♥ TUMBLR: http://www.blogilates.tumblr.com
+♥ PINTEREST: http://pinterest.com/blogilates
+♥ INSTAGRAM: http://web.stagram.com/n/blogilates/
+
+*****
+Cassey Ho is a certified Pilates and fitness instructor, winner of YouTube Next Trainer, and was also recently named FITNESS Magazine's Best Healthy Living Blogger.</div><div><span class="ve-kh-gf-yp">17 min - 15 Nov 2012</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":1e" role="option" aria-checked="false" tabindex="-1" id=":1d" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(58).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":1e">Sleek Tank Top Arms</div><div class="ve-kh-gf-eb ">Don't neglect your arms! If you want to have a sleek, sexy body, then you need strong arms to carry all those grocery bags and to lift others up when they need help! Try this super fun arms and upper body workout to firm up your shoulders, triceps, and pecs!
+
+Make sure you check out my new videos on Glam here: http://bit.ly/glamsubscribe
+
+♥ CHECK OUT MY DVD: http://www.poppilatesdvd.com
+♥ INSPIRATIONAL SHIRTS: http://www.shopblogilates.com
+♥ SUBSCRIBE: http://bit.ly/blogilatesyt
+♥ BLOG: http://www.blogilates.com 
+♥ FB: http://www.facebook.com/blogilates 
+♥ TWEET: http://www.twitter.com/blogilates
+♥ TUMBLR: http://www.blogilates.tumblr.com
+♥ PINTEREST: http://pinterest.com/blogilates
+♥ INSTAGRAM: http://www.instagram.com/blogilates
+
+******
+Cassey Ho is a certified Pilates and fitness instructor, named Greatist's Top 100 Health &amp; Fitness Influencers in the World alongside Michelle Obama. She is the winner of the "Social Fitness" Shorty Award and FITNESS Magazine named her their "Best Healthy Living Blogger". She's been featured on Dr. Oz, EXTRA TV, The Steve Harvey Show, COSMPOLITAN Magazine, SHAPE Magazine, Ladies Home Journal, SELF Magazine, NY Times, LA Times, and many more.
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">9 min - 12 Jan 2015</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":1g" role="option" aria-checked="false" tabindex="-1" id=":1f" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(32).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":1g">Arm Fat Blaster | POP Pilates for Beginners</div><div class="ve-kh-gf-eb ">This 15 minute, full length arm workout will tone and sculpt your shoulders, triceps, biceps, back, and total upper body WITHOUT using a single dumbbell. POP Pilates and Blogilates workouts are well known for helping you get fit without using any equipment while having fun. You can use your own bodyweight and still get amazing results! 
+
+♥ Get all my workout calendars and read my blog: http://www.blogilates.com
+
+♥ MY ACTIVEWEAR: http://www.popflexactive.com
+
+♥ Get the Blogilates App FREE in the App Store or Google Play Store!
+
+♥ INSTAGRAM: @Blogilates 
+
+♥ SNAPCHAT: @Blogilates 
+
+♥ FACEBOOK: http://www.facebook.com/blogilates 
+
+♥ TWITTER: http://www.twitter.com/blogilates
+
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. She is the creator of Blogilates, the #1 female fitness channel on Youtube. In a revolutionary partnership, Cassey's unique format, POP Pilates© which launched on Youtube in 2009, has become a live class that can be taken at every 24 Hr Fitness gym in the US. She's the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">15 min - 24 Oct 2016</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":1i" role="option" aria-checked="false" tabindex="-1" id=":1h" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(59).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":1i">Complete Arms Workout (At Home No Equipment Exercise Routine for your Arms)</div><div class="ve-kh-gf-eb ">This is the best at-home, equipment free arm and upper body workout that will tone and strengthen your shoulders, back, chest, biceps and triceps all while improving your posture. (Which by the way, is SO important)! And guess what? You don't have to do a single push-up! I included moves that we've done before like Walnut Crushers and Prayer Pulses, but I wanted to keep things fresh for you and added brand new POP Pilates moves to keep your muscles guessing!
+
+The moves are:
+1. Pull Backs
+2. Shoulder Presses
+3. Kneeling Triceps
+4. Walnut Crushers
+5. Prayer Pulses
+
+Oh man, the Back Pulls and Kneeling Triceps look easy, but your arms will be on fire! There is little rest between exercises, lots of reps and pulses, so the burn is REAL. You will get stronger and get an amazing arm pump after finishing this workout. I know you can do it! Stay strong! Ready? Let's do it!
+
+♥ Get all my workout calendars and read my blog: http://www.blogilates.com
+
+♥ MY ACTIVEWEAR: http://www.popflexactive.com
+
+♥ Get the Blogilates App FREE in the App Store or Google Play Store!
+
+♥ INSTAGRAM: http://www.instagram.com/Blogilates 
+
+♥ SNAPCHAT: https://snapchat.com/add/blogilates
+
+♥ FACEBOOK: http://www.facebook.com/blogilates 
+
+♥ TWITTER: http://www.twitter.com/blogilates
+
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. She is the creator of Blogilates, the #1 female fitness channel on Youtube. In a revolutionary partnership, Cassey's unique format, POP Pilates© which launched on Youtube in 2009, has become a live class that can be taken at every 24 Hr Fitness gym in the US. She's the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">12 min - 5 Feb 2017</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":1k" role="option" aria-checked="false" tabindex="-1" id=":1j" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(60).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":1k">5 Tricep Isolation Exercises to Blast Back Arm Fat</div><div class="ve-kh-gf-eb ">Get my brand new yoga mat: http://bit.ly/pfyogamats
+
+SOOOO many of you guys commented on my Underbutt video saying you wanted to see a killer tricep isolation workout.  Well, here it is... with emphasis on the killer part!  Hope you guys like it!!
+
+These five equipment-free, at home exercises will really target and strengthen your triceps, which will increase muscle tone on the back of the arm.  
+
+We'll be doing each move for 1:30 with, you guessed it, no breaks!
+
+1. Seated Triceps
+2. Elevated Tricep Pulses
+3. Tricep Press Backs
+4. Mermaid Triceps (Right)
+5. Mermaid Triceps (Left)
+
+Workout starts at 1:35!
+
+Here is where I get all of my music! Epidemic Sound: https://goo.gl/Nj4ZMg
+
+My outfit &amp; yoga mat are from: http://www.popflexactive.com
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 3,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">11 min - 5 Aug 2018</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":1m" role="option" aria-checked="false" tabindex="-1" id=":1l" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(61).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":1m">Toned Arms + Flat Abs | Apartment Friendly Workout</div><div class="ve-kh-gf-eb ">Welcome to my new Apartment Friendly Workout Series! There will be no jumping and no grumpy downstairs neighbors. So feel free to do these videos at any time of day, ANYWHERE! I promise you that there will be sore muscles, calorie burning, and a sweatier, stronger, and happier YOU! 
+
+This first workout is focusing on toning your arms as well as firming up your abdominal muscles. 
+
+See the NEW POPFLEX including the Danger Tank I'm wearing: http://www.popflexactive.com
+
+Here is where I get all of my music! Perfect for a YouTuber!: https://goo.gl/Nj4ZMg
+
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. She is the creator of Blogilates, the #1 female fitness channel on Youtube. In a revolutionary partnership, Cassey's unique format, POP Pilates© which launched on Youtube in 2009, has become a live class that can be taken at every 24 Hr Fitness gym in the US. She's the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">14 min - 28 May 2017</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":1o" role="option" aria-checked="false" tabindex="-1" id=":1n" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(62).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":1o">Get Rid Of Armpit Fat in 1 WEEK (Lean &amp; Sexy Arm WORKOUT)</div><div class="ve-kh-gf-eb ">My first music video - would mean the world if you watched 
+https://www.youtube.com/watch?v=WPIG8uDWzcg</div><div><span class="ve-kh-gf-yp">7 min - 1 Apr 2018</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":1q" role="option" aria-checked="false" tabindex="-1" id=":1p" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(63).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":1q">The Push Plank Challenge for Sexy Arms &amp; Hard Core</div><div class="ve-kh-gf-eb ">Get my yoga mat: http://bit.ly/yogamat1 
+An arm toning workout that will perk up your chest and define your upper body...WHILE challenging your core! Sexy arms and abs here we come in this quick song challenge to "Famous" by Kelleigh Bannen.
+
+Song: http://smarturl.it/dkf14m?IQid=blogilates
+
+♥ CHECK OUT MY DVD: http://www.poppilatesdvd.com
+♥ INSPIRATIONAL SHIRTS: http://www.shopblogilates.com
+♥ SUBSCRIBE: http://bit.ly/blogilatesyt
+♥ BLOG: http://www.blogilates.com 
+♥ FB: http://www.facebook.com/blogilates 
+♥ TWEET: http://www.twitter.com/blogilates
+♥ TUMBLR: http://www.blogilates.tumblr.com
+♥ PINTEREST: http://pinterest.com/blogilates
+♥ INSTAGRAM: http://www.instagram.com/blogilates
+
+******
+Cassey Ho is a certified Pilates and fitness instructor, named Greatist's Top 100 Health &amp; Fitness Influencers in the World alongside Michelle Obama. She is the winner of the "Social Fitness" Shorty Award and FITNESS Magazine named her their "Best Healthy Living Blogger". She's been featured on Dr. Oz, EXTRA TV, The Steve Harvey Show, COSMPOLITAN Magazine, SHAPE Magazine, Ladies Home Journal, SELF Magazine, NY Times, LA Times, and many more.
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">7 min - 9 Jun 2014</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":1s" role="option" aria-checked="false" tabindex="-1" id=":1r" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(64).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":1s">6 Min to Sexy Thighs</div><div class="ve-kh-gf-eb ">If you are short on time and want to tone your thighs quickly, this is the best, most effective workout you can do. No equipment. You can do it anywhere...and it'll burn. That is what POP Pilates is all about.
+
+♥ CHECK OUT MY DVD: http://www.poppilatesdvd.com
+♥ INSPIRATIONAL SHIRTS: http://www.blogilatesdesigns.com
+♥ SUBSCRIBE: http://bit.ly/blogilatesyt
+♥ BLOG: http://www.blogilates.com 
+♥ FB: http://www.facebook.com/blogilates 
+♥ TWEET: http://www.twitter.com/blogilates
+♥ TUMBLR: http://www.blogilates.tumblr.com
+♥ PINTEREST: http://pinterest.com/blogilates
+♥ INSTAGRAM: http://www.instagram.com/blogilates
+
+******
+Cassey Ho is a certified Pilates and fitness instructor, named Greatist's Top 100 Health &amp; Fitness Influencers in the World alongside Michelle Obama. She is the winner of the "Social Fitness" Shorty Award and FITNESS Magazine named her their "Best Healthy Living Blogger". She's been featured on Dr. Oz, EXTRA TV, The Steve Harvey Show, COSMPOLITAN Magazine, SHAPE Magazine, Ladies Home Journal, SELF Magazine, NY Times, LA Times, and many more.
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">9 min - 24 Nov 2014</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":1u" role="option" aria-checked="false" tabindex="-1" id=":1t" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(65).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":1u">20 Minute Lean Arms Cardio Pilates Workout | 7 Day Arm Challenge (do this video every day)</div><div class="ve-kh-gf-eb ">Join me for the #7DayArmChallenge!!! 
+
+Two challenges on the May calendar done, two to go!!! I know you can do it. Last week we tackled lower body, so this week is alllll about the upper body! The 7 Day Arm Challenge will tighten &amp; tone your arms, shoulders and back. You guys are gonna love it!!!
+
+7 DAY ARM CHALLENGE:
+
+Purpose: To sculpt and tone your arms in 7 days!
+Begins: Monday May 18, 2020
+Ends: Sunday May 24, 2020
+Length: 7 days
+Daily commitment: 20-30 min
+
+How it works:
+Day 1-7: Take a before picture of your arms &amp; complete the workouts listed for the day. You can even film yourself doing these and have a cool progress video that you can upload to Instagram, TikTok, or YouTube at the end of the week!
+Day 1-7: Make sure to drink at least 64 oz of water a day for all 7 days.
+Day 1-7: Make sure to reduce your intake of refined/processed carbs (bread, crackers, cereal, pastries etc.) and replace with whole vegetables and fruits for 7 days.
+End of Day 7: Take an after picture or video of your arms and upload the results to Instagram, TikTok, or YouTube! Make sure to include the #7DayArmChallenge hashtag and tag @blogilates so other users can find the challenge!
+
+LEAN ARMS CARDIO PILATES
+
+1. Lunging pull downs
+2. Oil riggers
+3. Plank jack shoulder taps
+4. Tricep pulses
+5. Mountain climbers
+6. Single arm push (R)
+7. Single arm push (L)
+
+We'll do each move for 45 seconds, with a 15 second break between. Let's do this!!!
+
+Day 1
+Lean Arms Cardio Pilates (20 min): https://youtu.be/Ai8KfyJ69Bc
+
+Day 2
+Lean Arms Cardio Pilates (20 min): https://youtu.be/Ai8KfyJ69Bc
+
+Day 3
+Lean Arms Cardio Pilates (20 min): https://youtu.be/Ai8KfyJ69Bc
+
+Day 4
+Lean Arms Cardio Pilates (20 min): https://youtu.be/Ai8KfyJ69Bc
+Beautiful Arm Sculpt (10 min)
+
+Day 5
+Lean Arms Cardio Pilates (20 min): https://youtu.be/Ai8KfyJ69Bc
+Beautiful Arm Sculpt (10 min)
+
+Day 6
+Lean Arms Cardio Pilates (20 min): https://youtu.be/Ai8KfyJ69Bc
+Beautiful Arm Sculpt (10 min)
+
+Day 7
+Lean Arms Cardio Pilates (20 min): https://youtu.be/Ai8KfyJ69Bc
+Beautiful Arm Sculpt (10 min)
+
+#armworkout #pilates #poppilates #blogilates #challenge
+
+Here is where I get all of my music! Epidemic Sound: http://share.epidemicsound.com/sgFTn
+
+My outfit &amp; yoga mat are from: http://www.popflexactive.com
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 3,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">24 min - 17 May 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":1w" role="option" aria-checked="false" tabindex="-1" id=":1v" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(46).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":1w">INSANE Weightless Arms Workout | At Home No Equipment Upper Body Exercises</div><div class="ve-kh-gf-eb ">Ever wanna get a solid arm workout in but you don't have any weights or dumbbells? Yea me too - so that's why I LOVE these weightless arm workouts that require zero equipment...so you can easily do them at home, in your apartment, in your living room, in your hotel room, or in your bedroom!
+
+We will be targeting your shoulders, chest, biceps, and upper back with the following POP Pilates exercises:
+
+- Pinky Propellers
+- Walnut Crushers
+- Elbow Pushbacks
+- Golf Balls
+- Triangle Pushes
+- Back Behinds
+- Prayer Pulses
+
+Here is where I get all of my music! Epidemic Sound: https://goo.gl/Nj4ZMg
+
+My outfit &amp; yoga mat are from: http://www.popflexactive.com
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 3,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">8 min - 26 Feb 2018</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":1y" role="option" aria-checked="false" tabindex="-1" id=":1x" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(66).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":1y">6 Min to Sexy Abs</div><div class="ve-kh-gf-eb ">Work those sexy abs! Quick and effective workout focused on the abdominals!
+
+WINNER ANNOUNCED! Congrats to Laura Chelsea for being the winner of the giveaway!!
+
+♥ CHECK OUT MY DVD: http://www.poppilatesdvd.com
+♥ INSPIRATIONAL SHIRTS: http://www.shopblogilates.com
+♥ SUBSCRIBE: http://bit.ly/blogilatesyt
+♥ BLOG: http://www.blogilates.com 
+♥ FB: http://www.facebook.com/blogilates 
+♥ TWEET: http://www.twitter.com/blogilates
+♥ TUMBLR: http://www.blogilates.tumblr.com
+♥ PINTEREST: http://pinterest.com/blogilates
+♥ INSTAGRAM: http://www.instagram.com/blogilates
+
+******
+Cassey Ho is a certified Pilates and fitness instructor, named Greatist's Top 100 Health &amp; Fitness Influencers in the World alongside Michelle Obama. She is the winner of the "Social Fitness" Shorty Award and FITNESS Magazine named her their "Best Healthy Living Blogger". She's been featured on Dr. Oz, EXTRA TV, The Steve Harvey Show, COSMPOLITAN Magazine, SHAPE Magazine, Ladies Home Journal, SELF Magazine, NY Times, LA Times, and many more.
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">13 min - 1 Dec 2014</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":20" role="option" aria-checked="false" tabindex="-1" id=":1z" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(67).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":20">Feel My Arms Still Workout Challenge | Feel It Still by Portugal. The Man</div><div class="ve-kh-gf-eb ">My sister's fave song of the moment is "Feel it Still" by Portugal The Man so I wanted to do a workout challenge duet with her for our arms! We collaborated on some new and never before seen weightless arm exercises that are sure to burn your shoulders, your BICEPS (which is so hard to work without weights), and your chest. Seriously guys, these arm toning exercises are NO JOKE. Probably one of the harder weightless arm series I've done! See if you can last!
+
+If for whatever reason you're a workout maniac and want to make this harder, try holding light weights in your hands! But honestly you won't need to if you're engaging your muscles and holding the proper form. Be sure to sit tall and put all your energy into your upper body. Do you best not to stop! The more your train your mind to be strong, the tougher your body and your endurance will be!
+
+Follow my sister Jackelyn on Instagram: https://www.instagram.com/jackelynho/
+
+My outfit &amp; yoga mat are from: http://www.popflexactive.com
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 3,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">7 min - 21 Jan 2018</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":22" role="option" aria-checked="false" tabindex="-1" id=":21" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(68).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":22">Weightless Arm Workout | POP Pilates</div><div class="ve-kh-gf-eb ">I am IN LOVE with this arm workout that requires no equipment, no pushups, and no weights! WHAT! YUP. I am going to teach you how to tone up your arms, shoulders, back, biceps, and chest! You can literally do this in bed. The exercises we're doing today are:
+
+1. Elbows
+2. Overheads
+3. Prayer Circles
+4. Prayer Squares
+5. Prayer Pulses
+
+Blog post with details: http://www.blogilates.com/blog/2016/07/10/popflex-pop-up-shop/
+
+See POPFLEX: http://www.popflexactive.com
+
+♥ Get all my workout calendars and read my blog: http://www.blogilates.com
+
+♥ MY ACTIVEWEAR: http://www.popflexactive.com
+
+♥ Get the Blogilates App FREE in the App Store or Google Play Store!
+
+♥ INSTAGRAM: @Blogilates 
+
+♥ SNAPCHAT: @Blogilates 
+
+♥ FACEBOOK: http://www.facebook.com/blogilates 
+
+♥ TWITTER: http://www.twitter.com/blogilates
+
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. She is the creator of Blogilates, the #1 female fitness channel on Youtube. In a revolutionary partnership, Cassey's unique format, POP Pilates© which launched on Youtube in 2009, has become a live class that can be taken at every 24 Hr Fitness gym in the US. She's the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">10 min - 11 Jul 2016</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":24" role="option" aria-checked="false" tabindex="-1" id=":23" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(69).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":24">5 Minute Long Lean Legs</div><div class="ve-kh-gf-eb ">This 5 min leg toning workout will get your inner thighs, outer thighs, calves, and quads super sculpted! 5 moves, 1 minute each. You can do this!
+
+My book comes out so soon! Get it now! http://www.hotbodybook.com 
+
+♥ I HAVE A NEW DVD: http://www.poppilatesdvd.com
+♥ INSPIRATIONAL SHIRTS: http://www.shopblogilates.com
+♥ SUBSCRIBE: http://bit.ly/blogilatesyt
+♥ BLOG: http://www.blogilates.com 
+♥ FB: http://www.facebook.com/blogilates 
+♥ TWEET: http://www.twitter.com/blogilates
+♥ TUMBLR: http://www.blogilates.tumblr.com
+♥ PINTEREST: http://pinterest.com/blogilates
+♥ INSTAGRAM: http://www.instagram.com/blogilates
+
+******
+Cassey Ho is a certified Pilates and fitness instructor, named Greatist's Top 25 Health &amp; Fitness Influencers in the World alongside Michelle Obama. She is the winner of the "Social Fitness" Shorty Award and FITNESS Magazine named her their "Best Healthy Living Blogger". She's been featured on Dr. Oz, EXTRA TV, The Steve Harvey Show, COSMPOLITAN Magazine, SHAPE Magazine, Ladies Home Journal, SELF Magazine, NY Times, LA Times, and many more.
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">7 min - 30 Mar 2015</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":26" role="option" aria-checked="false" tabindex="-1" id=":25" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(70).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":26">How to Get Great Arms Down the Aisle | BRIDAL BOOTCAMP</div><div class="ve-kh-gf-eb ">I LOVE working my arms! And one of the best times to show off your hard earned muscles is when you're walking down the aisle holding your fabulous bouquet!
+
+In today's arm workout, I will show you how to get strong, toned, and sleek arms using no weights! You don't need a gym membership and you don't need any fancy equipment. You can do these at home, in your bedroom, in your hotel - literally anywhere! We'll attack your entire upper body - your back, your chest, your shoulders, your biceps, your triceps
+
+If you wanna skip the intro and head straight to the workout, it begins at 1:46.
+
+Every workout in the Blogilates Bridal Bootcamp is 10 minutes long with NO BREAKS. There are 10 moves that are done for 1 minute each, back to back. I'm training you this way to save you time while teaching your muscles to get stronger with intense moves in a very short amount of time. 
+
+The 10 arm exercises for your Bridal Bootcamp are:
+
+1. Peek a Boo Chest
+2. Back Behinds
+3. Angel Arms
+4. Criss Cross Arms
+5. Reverse Palm Pushers
+6. Half Cobra Pushup
+7. Prayer Pulses
+8. Wide Elbow to Palms
+9. Inch Worm to Elbow
+10. Up Up Down Downs
+
+If you are starting to do some of your own wedding planning, I recommend you check out http://www.TheKnot.com. You can create your own wedding website for free as well as search for great vendors in your area. 
+
+BIG THANKS TO my friends at Lovesome Blossoms and DJZ Productions for the INCREDIBLE floral display and draping! 
+
+LOVESOME BLOSSOMS: https://www.instagram.com/lovesomeblossoms/
+
+DJZ PRODUCTIONS: https://www.instagram.com/djz_productions/
+
+Here is where I get all of my music! Epidemic Sound: https://goo.gl/Nj4ZMg
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 3,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">14 min - 15 Apr 2018</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":28" role="option" aria-checked="false" tabindex="-1" id=":27" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(71).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":28">Lower Abs &amp; Booty Blast | POP Pilates</div><div class="ve-kh-gf-eb ">From teaching for over 10 years, I know that the 2 areas women want to work most are their lower abs and their butt! So today's video is an incredible fusing of the muscle groups to tighten and lift your lower body. You'll love how each move melds with the music perfectly.
+
+♥ I HAVE A NEW DVD: http://www.poppilatesdvd.com
+♥ INSPIRATIONAL SHIRTS: http://www.shopblogilates.com
+♥ SUBSCRIBE: http://bit.ly/blogilatesyt
+♥ BLOG: http://www.blogilates.com 
+♥ FB: http://www.facebook.com/blogilates 
+♥ TWEET: http://www.twitter.com/blogilates
+♥ TUMBLR: http://www.blogilates.tumblr.com
+♥ PINTEREST: http://pinterest.com/blogilates
+♥ INSTAGRAM: http://www.instagram.com/blogilates
+
+******
+Cassey Ho is a certified Pilates and fitness instructor, named Greatist's Top 25 Health &amp; Fitness Influencers in the World alongside Michelle Obama. She is the winner of the "Social Fitness" Shorty Award and FITNESS Magazine named her their "Best Healthy Living Blogger". She's been featured on Dr. Oz, EXTRA TV, The Steve Harvey Show, COSMPOLITAN Magazine, SHAPE Magazine, Ladies Home Journal, SELF Magazine, NY Times, LA Times, and many more.
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">15 min - 17 Aug 2015</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":2a" role="option" aria-checked="false" tabindex="-1" id=":29" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(72).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":2a">Backless Bride Back Toning Workout | BRIDAL BOOTCAMP</div><div class="ve-kh-gf-eb ">I love love LOVE backless dresses. So gonna let you in on a little secret...my wedding dress is actually going to backless! But that is all I will tell you! But because of this, I made sure to make us the BEST backless dress workout that was ever created!
+
+The great thing about working your back is that it will improve your posture, make you look taller, and also look more confident! It's a win for you big time. Lucky for you, there is no equipment, you don't need a gym, and you can do this workout anywhere! But especially at home :) Have fun!
+
+Every workout in the Blogilates Bridal Bootcamp is 10 minutes long with NO BREAKS. There are 10 moves that are done for 1 minute each, back to back. I'm training you this way to save you time while teaching your muscles to get stronger with intense moves in a very short amount of time. 
+
+The 10 cardio exercises for your Bridal Bootcamp are:
+
+1. Walnut Crushers
+2. Goal Post Puncher
+3. Reverse Plank Lifts
+4. Bird Dog Pulses R
+5. Bird Dog Pulses L
+6. Parachuters
+7. Half Cobra Grasshopper
+8. Snow Angel Belly
+9. Flying Bird Dog R
+10. Flying Bird Dog L
+
+If you are starting to do some of your own wedding planning, I recommend you check out http://www.TheKnot.com. You can create your own wedding website for free as well as search for great vendors in your area. 
+
+BIG THANKS TO my friends at Lovesome Blossoms and DJZ Productions for the INCREDIBLE floral display and draping! 
+
+LOVESOME BLOSSOMS: https://www.instagram.com/lovesomeblossoms/
+
+DJZ PRODUCTIONS: https://www.instagram.com/djz_productions/
+
+Here is where I get all of my music! Epidemic Sound: https://goo.gl/Nj4ZMg
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 3,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">14 min - 8 Apr 2018</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":2c" role="option" aria-checked="false" tabindex="-1" id=":2b" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(26).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":2c">3-Minute Killer Back Toning Workout | POP Pilates Song Challenge!</div><div class="ve-kh-gf-eb ">You guys, it finally stopped raining in Los Angeles and it got me thinking... it's time to get ready for summer!! I was so happy you guys were loving the summer song challenges last year so I am bringing them back with new moves and new music! Are you ready for a 3 minute quick but KILLER no-equipment back workout??
+
+You’ll work your:
+
+Trapezius (Traps)
+Rhomboids
+Latissimus dorsi (Lats)
+
+All in just a few minutes! Let’s go!
+
+These are your POP Pilates back exercises:
+
+1. Lawn Mower Pulls
+2. Bird Dog Pulses
+3. Superhuman Back Squeezes
+
+You can do this at home routine on your yoga mat or carpet! Whatever you do... don't stop!!! It's only 3 minutes!!
+
+Here is where I get all of my music! Epidemic Sound: http://share.epidemicsound.com/sgFTn
+
+My outfit &amp; yoga mat are from: http://www.popflexactive.com
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 3,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">5 min - 14 Apr 2019</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":2e" role="option" aria-checked="false" tabindex="-1" id=":2d" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(73).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":2e">3 minute Toned Arms Workout | POP Pilates TURBO</div><div class="ve-kh-gf-eb ">This workout is only 3 minutes but it is INTENSE! 6 moves, 30 seconds per move! Make sure you don't stop! Also, what do you think of my new living room!? Give this video a like if you want me to keep working out here!
+
+♥ I HAVE A NEW DVD: http://www.poppilatesdvd.com
+♥ INSPIRATIONAL SHIRTS: http://www.shopblogilates.com
+♥ SUBSCRIBE: http://bit.ly/blogilatesyt
+♥ BLOG: http://www.blogilates.com 
+♥ FB: http://www.facebook.com/blogilates 
+♥ TWEET: http://www.twitter.com/blogilates
+♥ TUMBLR: http://www.blogilates.tumblr.com
+♥ PINTEREST: http://pinterest.com/blogilates
+♥ INSTAGRAM: http://www.instagram.com/blogilates
+
+******
+Cassey Ho is a certified Pilates and fitness instructor, named Greatist's Top 25 Health &amp; Fitness Influencers in the World alongside Michelle Obama. She is the winner of the "Social Fitness" Shorty Award and FITNESS Magazine named her their "Best Healthy Living Blogger". She's been featured on Dr. Oz, EXTRA TV, The Steve Harvey Show, COSMPOLITAN Magazine, SHAPE Magazine, Ladies Home Journal, SELF Magazine, NY Times, LA Times, and many more.
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">5 min - 24 Aug 2015</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":2g" role="option" aria-checked="false" tabindex="-1" id=":2f" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(74).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":2g">ARMS FOCUS // 6-Week Body Toning Bootcamp #5</div><div class="ve-kh-gf-eb ">Want toned triceps, sculpted shoulders, and amazing arms for tank top season? This workout pairs fat burning cardio with weightless arm exercises for the most effective upper body routine! No dumbbells or equipment needed!
+
+All music from Epidemic Sound (free 30 day trial): https://goo.gl/Nj4ZMg
+
+You will do each exercise 45 sec through with 15 sec of rest in between. For a full 28 minute workout, you must repeat this sequence 4x through...PIIT style!
+
+Your 7 moves are:
+
+1. Mountain Climbers
+2. Gecko
+3. Tricep Kick n Dip Right
+4. Hip Twist Plank Jack
+5. Tricep Kick n Dip Left
+6. Shoulder Push-Up
+7. Triple Tricep Push-Up
+
+The 6-Week challenge is to do the workout of the week (28 min) at least once that week. Do that for 6 consecutive weeks and you will be so much more than bikini body ready...you're gonna be life body ready! 
+
+My outfit &amp; yoga mat are from: http://www.popflexactive.com
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. She is the creator of Blogilates, the #1 female fitness channel on Youtube. In a revolutionary partnership, Cassey's unique format, POP Pilates© which launched on Youtube in 2009, has become a live class that can be taken at every 24 Hr Fitness gym in the US. She's the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">10 min - 14 May 2017</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":2i" role="option" aria-checked="false" tabindex="-1" id=":2h" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(75).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":2i">10 Minute Beautiful Arm Sculpt Pilates Workout | 7 Day Arm Challenge (Days 4-7)</div><div class="ve-kh-gf-eb ">Join me for the #7DayArmChallenge!!! https://www.blogilates.com/7-day-arm-challenge-2020/
+
+Four days into the 7 Day Arm Challenge... anyone feeling stronger already?! I know a lot of people struggle with upper body exercises and I am SO proud of you all for making it this far. Yeah, this is still the part where it gets even harder... meet your Beautiful Arm Sculpt!!!
+
+7 DAY ARM CHALLENGE:
+
+Purpose: To sculpt and tone your arms in 7 days!
+Begins: Monday May 18, 2020
+Ends: Sunday May 24, 2020
+Length: 7 days
+Daily commitment: 20-30 min
+
+How it works:
+Day 1-7: Take a before picture of your arms &amp; complete the workouts listed for the day. You can even film yourself doing these and have a cool progress video that you can upload to Instagram, TikTok, or YouTube at the end of the week!
+Day 1-7: Make sure to drink at least 64 oz of water a day for all 7 days.
+Day 1-7: Make sure to reduce your intake of refined/processed carbs (bread, crackers, cereal, pastries etc.) and replace with whole vegetables and fruits for 7 days.
+End of Day 7: Take an after picture or video of your arms and upload the results to Instagram, TikTok, or YouTube! Make sure to include the #7DayArmChallenge hashtag and tag @blogilates so other users can find the challenge!
+
+BEAUTIFUL ARM SCULPT PILATES
+
+1. Half cobra push up
+2. Tricep kick &amp; dip
+3. Up up down down
+4. Piked push up
+5. Bent over shoulder press
+
+We'll do each move for 45 seconds, with a 15 second break between. Let's do this!!!
+
+Day 1
+Lean Arms Cardio Pilates (20 min): https://youtu.be/Ai8KfyJ69Bc
+
+Day 2
+Lean Arms Cardio Pilates (20 min): https://youtu.be/Ai8KfyJ69Bc
+
+Day 3
+Lean Arms Cardio Pilates (20 min): https://youtu.be/Ai8KfyJ69Bc
+
+Day 4
+Lean Arms Cardio Pilates (20 min): https://youtu.be/Ai8KfyJ69Bc
+Beautiful Arm Sculpt (10 min): https://youtu.be/lEvL80oCJQY
+
+Day 5
+Lean Arms Cardio Pilates (20 min): https://youtu.be/Ai8KfyJ69Bc
+Beautiful Arm Sculpt (10 min): https://youtu.be/lEvL80oCJQY
+
+Day 6
+Lean Arms Cardio Pilates (20 min): https://youtu.be/Ai8KfyJ69Bc
+Beautiful Arm Sculpt (10 min): https://youtu.be/lEvL80oCJQY
+
+Day 7
+Lean Arms Cardio Pilates (20 min): https://youtu.be/Ai8KfyJ69Bc
+Beautiful Arm Sculpt (10 min): https://youtu.be/lEvL80oCJQY
+
+#armworkout #pilates #poppilates #blogilates #challenge
+
+Here is where I get all of my music! Epidemic Sound: http://share.epidemicsound.com/sgFTn
+
+My outfit &amp; yoga mat are from: http://www.popflexactive.com
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 3,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">14 min - 20 May 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":2k" role="option" aria-checked="false" tabindex="-1" id=":2j" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(13).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":2k">5 Minute Flat Abs!</div><div class="ve-kh-gf-eb ">5 min. 5 moves. 1 min each. Let's get your flat abs! This is a super short but intense abdominal workout. Comment below with your favorite move!
+
+Get my first ever book: http://www.hotbodybook.com Really appreciate your support!!
+
+♥ I HAVE A NEW DVD: http://www.poppilatesdvd.com
+♥ INSPIRATIONAL SHIRTS: http://www.blogilatesdesigns.com
+♥ SUBSCRIBE: http://bit.ly/blogilatesyt
+♥ BLOG: http://www.blogilates.com 
+♥ FB: http://www.facebook.com/blogilates 
+♥ TWEET: http://www.twitter.com/blogilates
+♥ TUMBLR: http://www.blogilates.tumblr.com
+♥ PINTEREST: http://pinterest.com/blogilates
+♥ INSTAGRAM: http://www.instagram.com/blogilates
+
+******
+Cassey Ho is a certified Pilates and fitness instructor, named Greatist's Top 25 Health &amp; Fitness Influencers in the World alongside Michelle Obama. She is the winner of the "Social Fitness" Shorty Award and FITNESS Magazine named her their "Best Healthy Living Blogger". She's been featured on Dr. Oz, EXTRA TV, The Steve Harvey Show, COSMPOLITAN Magazine, SHAPE Magazine, Ladies Home Journal, SELF Magazine, NY Times, LA Times, and many more.
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">7 min - 9 Mar 2015</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":2m" role="option" aria-checked="false" tabindex="-1" id=":2l" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(76).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":2m">5 Weightless Shoulder Isolation Exercises for Super Toned Arms</div><div class="ve-kh-gf-eb ">You know what I realized?!  My shoulders are showing in almost EVERY workout video I've ever done!  Crazy!!! Every time you wear a dress, tank top, bathing suit at the beach, anything sleeveless... BOOM shoulders!  So the entire summer basically.
+
+These apartment-friendly, equipment-free shoulder isolation exercises will tone up your major shoulder muscles, like the deltoid and trapezius!
+
+Each move is 1:30... can you do it with no breaks?!  Of course you can!!
+
+1. Tipping Mermaid (Right)
+2. Tipping Mermaid (Left)
+3. Robot Arms
+4. Elbow Pulses
+5. Curly Arms
+
+Workout starts at 1:44!
+
+Here is where I get all of my music! Epidemic Sound: https://goo.gl/Nj4ZMg
+
+My outfit &amp; yoga mat are from: http://www.popflexactive.com
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 3,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">10 min - 29 Jul 2018</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":2o" role="option" aria-checked="false" tabindex="-1" id=":2n" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(77).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":2o">6 Min to a Sexy Booty!</div><div class="ve-kh-gf-eb ">You wouldn't believe it but my butt was LEGIT VIBRATING after this routine. It kept vibrating for 10 min afterwards. Yeah. Talk about EFFECTIVE!
+
+♥ CHECK OUT MY DVD: http://www.poppilatesdvd.com
+♥ INSPIRATIONAL SHIRTS: http://www.blogilatesdesigns.com
+♥ SUBSCRIBE: http://bit.ly/blogilatesyt
+♥ BLOG: http://www.blogilates.com 
+♥ FB: http://www.facebook.com/blogilates 
+♥ TWEET: http://www.twitter.com/blogilates
+♥ TUMBLR: http://www.blogilates.tumblr.com
+♥ PINTEREST: http://pinterest.com/blogilates
+♥ INSTAGRAM: http://www.instagram.com/blogilates
+
+******
+Cassey Ho is a certified Pilates and fitness instructor, named Greatist's Top 100 Health &amp; Fitness Influencers in the World alongside Michelle Obama. She is the winner of the "Social Fitness" Shorty Award and FITNESS Magazine named her their "Best Healthy Living Blogger". She's been featured on Dr. Oz, EXTRA TV, The Steve Harvey Show, COSMPOLITAN Magazine, SHAPE Magazine, Ladies Home Journal, SELF Magazine, NY Times, LA Times, and many more.
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">10 min - 3 Nov 2014</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":2q" role="option" aria-checked="false" tabindex="-1" id=":2p" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(78).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":2q">20 Minute Weightless Arm Isolate Workout | At-home, no equipment arm toning exercises!</div><div class="ve-kh-gf-eb ">So glad you guys were really feeling the burn from my last no-equipment workout!! This week we're targeting one of my fave parts of the body... the arms!! Don't you just feel SO strong after and intense arm work out?! 
+
+This full-length workout has 20 moves targeting the triceps, biceps, shoulders, chest &amp; back! Ready to go SUPER hard for 20 minutes?! I want you guys to remember to push through and do as many reps as you can, especially when you start to get tired! I'lll be cheering you on (and in pain with you) the whole way!
+
+1. Arm Circles (FWD)
+2. Arm Circles (BWD)
+3. Angel Arm (R)
+4. Angel Arm (L)
+5. Angel Arm Double
+6. Prayer Pulses
+7. Side Push (R)
+8. Side Push (L)
+9. Half Cobra Pushup
+10. Staggered Half Cobra (R)
+11. Staggered Hald Cobra (L)
+12. Tricep Dips
+13. Back Behinds
+14. Walnut Crushers
+15. Robot Arms
+16. United Biceps
+17. Curly Arms
+18. Milk Jugs
+19. Triangle Arms
+20. Up Up Down Down
+
+Get my socks: https://bit.ly/2Uxxy9C
+Get my yoga mat: https://bit.ly/2TzaxpF
+
+Here is where I get all of my music! Epidemic Sound: http://share.epidemicsound.com/sgFTn
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 3,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">23 min - 11 Mar 2019</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":2s" role="option" aria-checked="false" tabindex="-1" id=":2r" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(79).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":2s">5 Best THIGH SLIMMING Exercises</div><div class="ve-kh-gf-eb ">To sculpt your thighs, do these 5 POP Pilates exercises! Also print this month's workout calendar here: http://bit.ly/wocalendars (FREE) to make sure you lose fat, gain muscle, and feel amazing! Let me help you reach your goals.
+
+♥ CHECK OUT MY DVD: http://www.poppilatesdvd.com
+♥ INSPIRATIONAL SHIRTS: http://www.shopblogilates.com
+♥ SUBSCRIBE: http://bit.ly/blogilatesyt
+♥ BLOG: http://www.blogilates.com 
+♥ FB: http://www.facebook.com/blogilates 
+♥ TWEET: http://www.twitter.com/blogilates
+♥ TUMBLR: http://www.blogilates.tumblr.com
+♥ PINTEREST: http://pinterest.com/blogilates
+♥ INSTAGRAM: http://www.instagram.com/blogilates
+
+
+*****
+Cassey Ho is a certified Pilates and fitness instructor, winner of YouTube Next Trainer, and was also recently named FITNESS Magazine's Best Healthy Living Blogger.</div><div><span class="ve-kh-gf-yp">12 min - 14 Apr 2014</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":2u" role="option" aria-checked="false" tabindex="-1" id=":2t" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(80).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":2u">Toned Arms at Home Workout! Apartment Friendly ☺️</div><div class="ve-kh-gf-eb ">I asked you guys what workouts you wanna do at home and a lot of you asked for weights. And because not everyone has dumbbells, I decided to get creative.
+
+Why not wine bottles (or water bottles or soup cans etc)?! I tested this on TikTok and you guys LOVED it, so here it is: my first full length wine bottle arm workout!
+
+Your biceps, triceps &amp; shoulders are gonna be SHAKING once you're done with this! You've got 10 moves, one minute on, 10 seconds off (don't worry, there's a timer).
+
+1. Bicep Curls
+2. Tricep Pulse
+3. Prayer Pulse
+4. Shoulder Press
+5. Double Tray Opens
+6. Front Raises
+7. Reverse Flys
+8. Press &amp; Close
+9. L Raises
+10. Upright Row
+
+Workout starts at 1:41!
+
+Follow me on TiKTok: https://www.tiktok.com/@blogilates
+
+Here is where I get all of my music! Epidemic Sound: http://share.epidemicsound.com/sgFTn
+
+My outfit &amp; yoga mat are from: http://www.popflexactive.com
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 3,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">15 min - 12 Apr 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":2w" role="option" aria-checked="false" tabindex="-1" id=":2v" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(6).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":2w">Quick Burn TRICEP WORKOUT! Best Tank Top Triceps &amp; Toned Arms Routine with NO Equipment!</div><div class="ve-kh-gf-eb ">This workout targets your triceps like crazy! I will take you through 4 POP Pilates exercises that will strengthen your arms and make them look sleek and sexy without using any equipment. You don't need dumbbells or the gym! Just your bodyweight. If you're looking to shave off your "bat wings", then give this routine a try. It's tough, but you're TOUGHER!
+
+Here are the exercises:
+
+1. Half Cobra Pushup
+2. Baby Tiger
+3. Child's Push
+4. Tricep Pushup
+
+♥ Get all my workout calendars and read my blog: http://www.blogilates.com
+
+♥ MY ACTIVEWEAR: http://www.popflexactive.com
+
+♥ Get the Blogilates App FREE in the App Store or Google Play Store!
+
+♥ INSTAGRAM: @Blogilates 
+
+♥ SNAPCHAT: @Blogilates 
+
+♥ FACEBOOK: http://www.facebook.com/blogilates 
+
+♥ TWITTER: http://www.twitter.com/blogilates
+
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. She is the creator of Blogilates, the #1 female fitness channel on Youtube. In a revolutionary partnership, Cassey's unique format, POP Pilates© which launched on Youtube in 2009, has become a live class that can be taken at every 24 Hr Fitness gym in the US. She's the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">9 min - 13 Jun 2016</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":2y" role="option" aria-checked="false" tabindex="-1" id=":2x" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(81).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":2y">How To Lose Arm Fat</div><div class="ve-kh-gf-eb ">Sign up for our newsletter: http://goo.gl/UwnMd
+
+Subscribe: http://goo.gl/qR0gi
+
+On today's episode of XHIT, fitness trainer Rebecca-Louise shows you how to get toned arms in one workout. It's a quick but intense workout that hits your shoulders, biceps and triceps. Follow along to learn how to build muscle and shed fat in your arms. Leave us a comment and let us know what you thought!
+
+Stay tuned to our channel for more episodes: http://goo.gl/c6p4j
+
+Check out our other fun workouts: 
+1. How to Get Lean Legs: Calf Toner: http://goo.gl/vyyWQ
+2. Fitness and Food: Best Butt Workout and Broccoli Recipe: http://goo.gl/3y1rV
+3. Crossfit Workout: 5 Minutes of Hell: http://goo.gl/xcDK6
+4. Fat Burning Towel Workout: http://goo.gl/0iD8Z
+5. How to Burn 50 Calories in Less Than 3 Minutes: http://goo.gl/X7X5v
+
+Check us out online: http://goo.gl/qVuTM
+Facebook: http://goo.gl/HzUSX
+Twitter: http://goo.gl/6esYW
+Tumblr: http://goo.gl/Tmzhb
+Pinterest: http://goo.gl/6tUk9
+Instagram: http://goo.gl/mEIzd</div><div><span class="ve-kh-gf-yp">13 min - 11 Jun 2013</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":30" role="option" aria-checked="false" tabindex="-1" id=":2z" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(5).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":30">Quick Burn Legs! How to get lovely, lean legs with no equipment!</div><div class="ve-kh-gf-eb ">If you want to get strong, sexy, legs without using any equipment and in under 6 minutes, this leg workout will do it for you! Build your lean leg muscles with me as we sculpt your thighs, quads, and calves with my unique POP Pilates exercises.
+
+The moves are:
+
+1. Single Leg Squat &amp; Lift
+2. Squat Circles
+3. Alt. Heel Lifts
+
+Get the Mermaid Collection: http://www.popflexactive.com
+
+♥ Get all my workout calendars and read my blog: http://www.blogilates.com
+
+♥ Get the Blogilates App FREE in the App Store or Google Play Store!
+
+♥ MY WATERBOTTLES &amp; CUTE ACTIVEWEAR: http://www.blogilatesdesigns.com
+
+♥ INSTAGRAM: @Blogilates 
+
+♥ SNAPCHAT: @Blogilates 
+
+♥ FACEBOOK: http://www.facebook.com/blogilates 
+
+♥ TWITTER: http://www.twitter.com/blogilates
+
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. She is the creator of Blogilates, the #1 female fitness channel on Youtube. In a revolutionary partnership, Cassey's unique format, POP Pilates© which launched on Youtube in 2009, has become a live class that can be taken at every 24 Hr Fitness gym in the US. She's the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line.
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">8 min - 25 Apr 2016</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":32" role="option" aria-checked="false" tabindex="-1" id=":31" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(82).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":32">Goodbye Muffintop Workout (At Home No Equipment Exercise Routine for your Obliques)</div><div class="ve-kh-gf-eb ">It's time to work on slimming down that waistline for a strong and sexy core! We are going to hit your obliques from EVERY angle so be prepared to work hard! There's little rest between exercises because I really want you to burn out your obliques and push yourself. Now just because we are focusing on your waistline here, doesn't mean we aren't using other muscles. You're also going to feel your abs, shoulders, arms and booty with this workout! No equipment needed. Ready to get on the mat and say goodbye to that muffintop?
+
+28 Day Reset Challenge: http://www.blogilates.com/blog/2016/12/28/your-28-day-reset-challenge/
+
+My entire outfit is from my new POPFLEX DARK BLOOM collection! http://www.popflexactive.com
+
+The moves are:
+1. Kneeling Toe Touch
+2. Kneeling Side Touch
+3. Hip Dips (Knees)
+4. Hip Dips (Full)
+5. Side Plank Hold
+6. Kayaking
+7. Russian Twists
+8. Cha Cha Abs
+
+♥ Get all my workout calendars and read my blog: http://www.blogilates.com
+
+♥ MY ACTIVEWEAR: http://www.popflexactive.com
+
+♥ Get the Blogilates App FREE in the App Store or Google Play Store!
+
+♥ INSTAGRAM: http://www.instagram.com/Blogilates 
+
+♥ SNAPCHAT: https://snapchat.com/add/blogilates
+
+♥ FACEBOOK: http://www.facebook.com/blogilates 
+
+♥ TWITTER: http://www.twitter.com/blogilates
+
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. She is the creator of Blogilates, the #1 female fitness channel on Youtube. In a revolutionary partnership, Cassey's unique format, POP Pilates© which launched on Youtube in 2009, has become a live class that can be taken at every 24 Hr Fitness gym in the US. She's the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">14 min - 12 Feb 2017</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":34" role="option" aria-checked="false" tabindex="-1" id=":33" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(83).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":34">8 min bikini body workout! Swimsuit Slimdown Series</div><div class="ve-kh-gf-eb ">Hey guys! This 8 minute bikini sculpting workout will flatten your abs, perk up your chest, tone up your shoulders and upper body, slim your thighs, and lift your booty! It's 4 moves at 2 min each. Get ready for a real total body burn! It's POP Pilates time!
+
+Follow the June workout calendar: http://bit.ly/junewocal2015
+
+♥ I HAVE A NEW DVD: http://www.poppilatesdvd.com
+♥ INSPIRATIONAL SHIRTS: http://www.shopblogilates.com
+♥ SUBSCRIBE: http://bit.ly/blogilatesyt
+♥ BLOG: http://www.blogilates.com 
+♥ FB: http://www.facebook.com/blogilates 
+♥ TWEET: http://www.twitter.com/blogilates
+♥ TUMBLR: http://www.blogilates.tumblr.com
+♥ PINTEREST: http://pinterest.com/blogilates
+♥ INSTAGRAM: http://www.instagram.com/blogilates
+
+******
+Cassey Ho is a certified Pilates and fitness instructor, named Greatist's Top 25 Health &amp; Fitness Influencers in the World alongside Michelle Obama. She is the winner of the "Social Fitness" Shorty Award and FITNESS Magazine named her their "Best Healthy Living Blogger". She's been featured on Dr. Oz, EXTRA TV, The Steve Harvey Show, COSMPOLITAN Magazine, SHAPE Magazine, Ladies Home Journal, SELF Magazine, NY Times, LA Times, and many more.
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">11 min - 1 Jun 2015</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":36" role="option" aria-checked="false" tabindex="-1" id=":35" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(84).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":36">Muffintop Shredder Workout</div><div class="ve-kh-gf-eb ">4 min to kill off your muffin top and slim down your sides? Yes please! Today we're doing the "candlestick dipper". It's my fave obliques move, so prepare for some intense burning and major effectiveness. This seriously works. I feel it every time!
+
+Song: "Picture Perfect" by Charity Vance
+http://www.youtube.com/charityvancemusic
+
+♥ CHECK OUT MY DVD: http://www.poppilatesdvd.com
+♥ INSPIRATIONAL SHIRTS: http://www.shopblogilates.com
+♥ SUBSCRIBE: http://bit.ly/blogilatesyt
+♥ BLOG: http://www.blogilates.com 
+♥ FB: http://www.facebook.com/blogilates 
+♥ TWEET: http://www.twitter.com/blogilates
+♥ TUMBLR: http://www.blogilates.tumblr.com
+♥ PINTEREST: http://pinterest.com/blogilates
+♥ INSTAGRAM: http://www.instagram.com/blogilates
+
+******
+Cassey Ho is a certified Pilates and fitness instructor, named Greatist's Top 100 Health &amp; Fitness Influencers in the World alongside Michelle Obama. She is the winner of the "Social Fitness" Shorty Award and FITNESS Magazine named her their "Best Healthy Living Blogger". She's been featured on Dr. Oz, EXTRA TV, The Steve Harvey Show, COSMPOLITAN Magazine, SHAPE Magazine, Ladies Home Journal, SELF Magazine, NY Times, LA Times, and many more.
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">6 min - 1 Sep 2014</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":38" role="option" aria-checked="false" tabindex="-1" id=":37" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(85).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":38">At Home Total Body Slimming Workout - Using Only a Couch!</div><div class="ve-kh-gf-eb ">Now that we're doing all our workouts at home, it's time to get resourceful. There are SO MANY regular household items you can turn into exercise equipment, and today we're using my fave spot... the couch!! We're gonna work the whole body - arms, abs, legs, you name it!!
+
+You've got 10 moves, one minute on, 10 seconds off:
+
+1. Squats
+2. Squat Knee Tuck
+3. Tricep Dips
+4. Split Lunge (R)
+5. Split Lunge (L)
+6. Couch Climbs
+7. Leg Outs
+8. Couch Taps
+9. Russian Twists
+10. Couch Arm Balance
+
+Workout starts at 1:13!
+
+April workout calendar: https://www.blogilates.com/april-2020-workout-calendar-2/
+
+Here is where I get all of my music! Epidemic Sound: http://share.epidemicsound.com/sgFTn
+
+My outfit &amp; yoga mat are from: http://www.popflexactive.com
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 3,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence. #homeworkout #fullbodyworkout #totalbodyworkout</div><div><span class="ve-kh-gf-yp">15 min - 19 Apr 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":3a" role="option" aria-checked="false" tabindex="-1" id=":39" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(86).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":3a">Bra Bulge &amp; Back Fat | Toned Arms Workout</div><div class="ve-kh-gf-eb ">This workout is all you need to say thank you, NEXT to back fat and bra bulge! Build lean muscle and sexy strong toned arms with this at home workout. Join the Spring Slim Down Challenge! https://bit.ly/2CLW1RK
+
+♥ LSF Workout App is HERE! Start your Free 7 Day Trial https://lovesweatfitness.com/lsf-the-app/ ♥
+
+♥ Follow Natalie https://www.instagram.com/nataliedickens
+♥ Follow Lindsey https://www.instagram.com/lindseyharrod
+
+Outfits: Victoria Sport - https://www1.victoriassecret.com/victoria-sport
+
+♥ Start your LSF 8 Week Hot Body Workout Guide &amp; 4 Week Meal Plan to get the best results! Download here: http://bit.ly/LSFLifestyleMakeoverYT
+
+♥ Follow me on Instagram https://instagram.com/lovesweatfitness
+
+♥ Get in on all the fun, lets get sweaty together♥ 
+Instagram: http://www.instagram.com/lovesweatfitness
+Snapchat: https://www.snapchat.com/add/lovesweatandfit
+Twitter: http://www.twitter.com/lovesweatandfit
+Facebook: http://www.facebook.com/lovesweatandfitness
+Pinterest: http://www.pinterest.com/lovesweatfit
+Web: https://lovesweatfitness.com
+
+Disclaimer: Love Sweat Fitness recommends that you consult with your physician before beginning any exercise program. It is important that you be in good physical condition/health and be able to participate in the exercise.
+
+By participating in any workout or workout program such as this, there is always a possibility of injury. If you do take part in this workout or any LSF workout program, you agree that you do so at your own risk. You also agree that you are voluntarily participating in these activities and will assume all risk of injury to yourself. You also agree to release and discharge Love Sweat Fitness and Love Sweat Fitness, Inc. from any and all claims or causes of action, known or unknown, arising out of Love Sweat Fitness and Love Sweat Fitness, Inc. negligence.</div><div><span class="ve-kh-gf-yp">10 min - 8 Apr 2019</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":3c" role="option" aria-checked="false" tabindex="-1" id=":3b" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(87).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":3c">Take 10 to Tighten and Tone Your Waist With This Abs and Back Workout</div><div class="ve-kh-gf-eb ">POPSUGAR Fitness offers fresh fitness tutorials, workouts, and exercises that will help you on your road to healthy living, weight loss, and stress relief.  Check out Class FitSugar, our do-it-along-with-us real-time workout show hosted by Anna Renderer who will inspire you to sweat alongside fitness experts and Hollywood’s hottest celebrity trainers. Class FitSugar regularly covers the most buzzed-about workout classes and trends, including the Victoria's Secret workout, Tabata, P90X, Bar Method, and more. If you love this workout, you can find more from Rebecca on her Glow shop: https://glow.popsugar.com/@rebeccalouise
+
+Subscribe to POPSUGAR Fitness!
+http://www.youtube.com/subscription_center?add_user=popsugartvfit
+
+Like us on Facebook!
+https://www.facebook.com/PopSugarFitness/
+
+Check us out on Instagram!
+https://www.instagram.com/popsugarfitness/
+
+Eat Clean with POPSUGAR
+Get a full 2-week clean-eating plan with our brand-new app! 70 recipes for breakfast, lunch, dinner, snacks, and treats, simple shopping lists, and more!  Get the app here: https://itunes.apple.com/us/app/clean-eating-plan-and-recipes/id1262482098?mt=8</div><div><span class="ve-kh-gf-yp">12 min - 13 Feb 2017</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":3e" role="option" aria-checked="false" tabindex="-1" id=":3d" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(2).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":3e">Quick Burn Calves! Best Workout for Sexy, Slim Calves!</div><div class="ve-kh-gf-eb ">If you want to know how to get lean, sexy, slim calves - this workout will do it for you! No equipment, plus you can do it anywhere, especially at home. I did this calf workout and was SORE FOR DAYS. Loved it so much.
+
+Big thank you to Zespri for making this possible!
+
+The moves are:
+
+1. Calf Raises
+2. Calf Raises - Out
+3. Calf Raises - In
+4. High Heel Pliés
+5. Plié Calf Raises
+
+♥ Get all my workout calendars and read my blog: http://www.blogilates.com
+
+♥ Get the Blogilates App FREE in the App Store or Google Play Store!
+
+♥ MY WATERBOTTLES &amp; CUTE ACTIVEWEAR: http://www.blogilatesdesigns.com
+
+♥ INSTAGRAM: @Blogilates 
+
+♥ SNAPCHAT: @Blogilates 
+
+♥ FACEBOOK: http://www.facebook.com/blogilates 
+
+♥ TWITTER: http://www.twitter.com/blogilates
+
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. She is the creator of Blogilates, the #1 female fitness channel on Youtube. In a revolutionary partnership, Cassey's unique format, POP Pilates© which launched on Youtube in 2009, has become a live class that can be taken at every 24 Hr Fitness gym in the US. She's the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line.
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">10 min - 16 May 2016</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":3g" role="option" aria-checked="false" tabindex="-1" id=":3f" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(40).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":3g">10 Minute Inner Thigh Slimmer | Total Body Transformation Workout</div><div class="ve-kh-gf-eb ">If you guys thought last week's Total Body Transformation workout was hard... you are gonna DIE this week!!! Today's video is all about the inner thighs (shorts season. It's coming!!!).
+
+You have 8 inner thigh slimming moves today, and we'll do each for 1 minute with a 15 second break in between. They are:
+
+1. Side Squat (R)
+2. Side Squat (L)
+3. Plie Squat with Right Heel Up
+4. Plie Squat with Left Heel Up
+5. Inner Thigh Lift Pointed (R)
+6. Inner Thigh Flexed (R)
+7. Inner Thigh Lift Pointed (L)
+8. Inner Thigh Flexed (L)
+
+Workout starts at 1:33!
+
+March workout calendar: https://www.blogilates.com/march-2020-workout-calendar/
+
+Here is where I get all of my music! Epidemic Sound: http://share.epidemicsound.com/sgFTn
+
+My yoga mat is from: http://www.popflexactive.com
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 3,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">12 min - 8 Mar 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":3i" role="option" aria-checked="false" tabindex="-1" id=":3h" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(88).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":3i">Stretches You Need After a Stressful Day</div><div class="ve-kh-gf-eb ">People deal with stress in different ways. Yoga and stretching is one of the healthier ways you can wash away the stress and worries of the day! I want you to do this routine after work, in a quiet place that's free of distractions. Don't just do it to do it. You need to consciously let go of the things that are stressing you out and focus your energy on your body movement! 
+
+Here are the 10 stretches in this routine:
+
+1. Neck Rolls
+2. Seated Twists
+3. Butterfly
+4. Wide Straddle
+5. Figure Four Fold
+6. Hamstring Stretch
+7. X-Butt
+8. Pike
+9. Puppy Pose
+10. Child's Pose
+
+Workout starts at 0:33.
+
+Here is where I get all of my music! Epidemic Sound: https://goo.gl/Nj4ZMg
+
+My outfit &amp; yoga mat are from: http://www.popflexactive.com
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 3,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.
+
+#stretchrevolution
+#yoga
+#stretch</div><div><span class="ve-kh-gf-yp">14 min - 21 Oct 2018</span></div></div></td></tr></tbody></table></div></div></tbody></table></div></div><div role="status" aria-live="polite"><div class="ve-cj" aria-label="Loading data" style="display: none;"><div class="d-e"><div></div><div class="d-e-f" style="opacity: 0;"></div></div></div></div></div><div class="ve-Ci-ic ve-Di-ie" style="height: 69px;"><div class="ve-Di-Ji-pe"><div><div role="button" class="a-b-c d-u d-u-F d-u-D" id="picker:ap:2" guidedhelpid="ghid-psc" aria-disabled="true" style="user-select: none;">Select</div><div role="button" class="a-b-c d-u d-u-Q" tabindex="0" id="picker:ap:3" style="user-select: none;">Cancel</div></div></div><div class="ve-Di-Xi-Nb" role="status" aria-live="polite" style="display: none;"></div></div></div></div></div></div></div></div></div></div>
+<script type="text/javascript" src="./2575735839-picker_modularized_i18n_opc__en_gb.js.download" nonce="">
+          
+        </script>
+<script type="text/javascript" nonce="">
+        var pickerApp;
+
+        
+        var moduleDeps = {opc:[],opd:['opc'],opdr:['opc'],opl:['opc'],opm:['opc'],opmd:['opc'],opp:['opc'],oppe:['opc'],opr:['opc'],opu:['opc'],opv:['opc'],oppu:['opp','opu']};
+        var moduleUris = {opr:['https://docs.google.com/picker/static/resources/client/js/625639703-picker_modularized_i18n_opr__en_gb.js'],opd:['https://docs.google.com/picker/static/resources/client/js/4020439717-picker_modularized_i18n_opd__en_gb.js'],oppe:['https://docs.google.com/picker/static/resources/client/js/3608382653-picker_modularized_i18n_oppe__en_gb.js'],oppu:['https://docs.google.com/picker/static/resources/client/js/1118765236-picker_modularized_i18n_oppu__en_gb.js'],opc:['https://docs.google.com/picker/static/resources/client/js/2575735839-picker_modularized_i18n_opc__en_gb.js'],opv:['https://docs.google.com/picker/static/resources/client/js/718066328-picker_modularized_i18n_opv__en_gb.js'],opu:['https://docs.google.com/picker/static/resources/client/js/948269637-picker_modularized_i18n_opu__en_gb.js'],opl:['https://docs.google.com/picker/static/resources/client/js/1564493705-picker_modularized_i18n_opl__en_gb.js'],opdr:['https://docs.google.com/picker/static/resources/client/js/2455726967-picker_modularized_i18n_opdr__en_gb.js'],opmd:['https://docs.google.com/picker/static/resources/client/js/347834514-picker_modularized_i18n_opmd__en_gb.js'],opm:['https://docs.google.com/picker/static/resources/client/js/2100776354-picker_modularized_i18n_opm__en_gb.js'],opp:['https://docs.google.com/picker/static/resources/client/js/1104118477-picker_modularized_i18n_opp__en_gb.js']};
+        
+        initModules(
+            moduleDeps,
+            moduleUris,
+            false,
+            "opc");
+        
+        if (true
+            && window.jstiming
+            && window.jstiming.load
+            && window.jstiming.load.tick) {
+          window.jstiming.load.tick('opc');
+          window.jstiming.sn = "apps_picker";
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+          
+          rawConfig['element'] = document.getElementById('doclist');
+          rawConfig['loadingStatusElement'] = document.body;
+          pickerApp = _createPicker(rawConfig);
+
+          
+          pickerApp.initializeFromServer(rawConfig);
+        });
+
+        document.addEventListener('unload', function () {
+          if (pickerApp) {
+            pickerApp.dispose();
+            pickerApp = null;
+          }
+        });
+      </script><script src="./rpc.js.download" nonce="" type="text/javascript"></script><div aria-live="assertive" aria-atomic="true" style="position: absolute; top: -1000px; height: 1px; overflow: hidden;">Select a file</div></body></html>

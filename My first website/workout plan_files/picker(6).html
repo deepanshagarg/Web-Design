@@ -1,0 +1,1709 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0425)https://docs.google.com/picker?protocol=gadgets&origin=https%3A%2F%2Fsites.google.com&hl=en-GB&authuser=0&hostId=atariDrive&st=000770F20395949C0E3ED30AC227A5F37C30E64E0A517C261B%3A%3A1600140540959&relayUrl=https%3A%2F%2Fsites.google.com%2Ffavicon.ico&nav=((%22video-search%22%2Cnull%2C%7B%22site%22%3A%22youtube.com%22%7D)%2C(%22youtube%22%2C%22Uploaded%22))&rpcService=9q228mkf6k2&rpctoken=1kreyfe9631j#rpctoken=1kreyfe9631j -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" nonce="">
+        (function(){/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+var a=a||{};a.global=this||self;a.H=function(b,c,d,e){b=b.split(".");e=e||a.global;b[0]in e||"undefined"==typeof e.execScript||e.execScript("var "+b[0]);for(var f;b.length&&(f=b.shift());)if(b.length||void 0===c)e=e[f]&&e[f]!==Object.prototype[f]?e[f]:e[f]={};else if(!d&&a.u(c)&&a.u(e[f]))for(var g in c)c.hasOwnProperty(g)&&(e[f][g]=c[g]);else e[f]=c};a.define=function(b,c){return b=c};a.qa=2012;a.h=!0;a.sa="en";a.va=!0;a.P=!a.h;a.oa=!1;
+a.Xa=function(b){if(a.K())throw Error("goog.provide cannot be used within a module.");a.F(b)};a.F=function(b,c,d){a.H(b,c,d)};a.Ka=function(b){if(b&&b!=a.global)return a.I(b.document);null===a.j&&(a.j=a.I(a.global.document));return a.j};a.R=/^[\w+/_-]+[=]{0,2}$/;a.j=null;a.I=function(b){return(b=b.querySelector&&b.querySelector("script[nonce]"))&&(b=b.nonce||b.getAttribute("nonce"))&&a.R.test(b)?b:""};a.V=/^[a-zA-Z_$][a-zA-Z0-9._$]*$/;
+a.module=function(b){if("string"!==typeof b||!b||-1==b.search(a.V))throw Error("Invalid module identifier");if(!a.J())throw Error("Module "+b+" has been loaded incorrectly. Note, modules cannot be loaded as normal scripts. They require some kind of pre-processing step. You're likely trying to load a module via a script tag or as a part of a concatenated bundle without rewriting the module. For more info see: https://github.com/google/closure-library/wiki/goog.module:-an-ES6-module-like-alternative-to-goog.provide.");
+if(a.a.g)throw Error("goog.module may only be called once per module.");a.a.g=b};a.module.get=function(){return null};a.module.Ga=function(){return null};a.f={B:"es6",i:"goog"};a.a=null;a.K=function(){return a.J()||a.da()};a.J=function(){return!!a.a&&a.a.type==a.f.i};a.da=function(){var b=!!a.a&&a.a.type==a.f.B;return b?!0:(b=a.global.$jscomp)?"function"!=typeof b.m?!1:!!b.m():!1};a.module.l=function(){a.a.l=!0};
+a.Ba=function(b){if(a.a)a.a.g=b;else{var c=a.global.$jscomp;if(!c||"function"!=typeof c.m)throw Error('Module with namespace "'+b+'" has been loaded incorrectly.');c=c.ha(c.m());a.L[b]={exports:c,type:a.f.B,ga:b}}};a.ab=function(b){if(a.P)throw b=b||"",Error("Importing test-only code into non-debug environment"+(b?": "+b:"."));};a.Ea=function(){};a.Ja=function(b,c){b=b.split(".");c=c||a.global;for(var d=0;d<b.length;d++)if(c=c[b[d]],null==c)return null;return c};a.ya=function(){};a.cb=!1;a.pa=!0;
+a.M=function(b){a.global.console&&a.global.console.error(b)};a.ha=function(){};a.Za=function(){return{}};a.W="";a.Va=function(){};a.xa=function(){throw Error("unimplemented abstract method");};a.za=function(){};a.Pa=[];a.ra=!0;a.T=a.h;a.L={};a.na=!1;a.ta="detect";a.ma=!1;a.ua="";a.U="transpile.js";a.o=null;a.ka=function(){if(null==a.o){try{var b=!eval('"use strict";let x = 1; function f() { return typeof x; };f() == "number";')}catch(c){b=!1}a.o=b}return a.o};
+a.la=function(b){return"(function(){"+b+"\n;})();\n"};
+a.Sa=function(b){var c=a.a;try{a.a={g:"",l:!1,type:a.f.i};var d={},e=d;if(a.ca(b))e=b.call(void 0,e);else if("string"===typeof b)a.ka()&&(b=a.la(b)),e=a.fa.call(void 0,e,b);else throw Error("Invalid module definition");var f=a.a.g;if("string"===typeof f&&f){a.a.l?(b=d!==e,a.F(f,e,b)):a.T&&Object.seal&&"object"==typeof e&&null!=e&&Object.seal(e);var g={exports:e,type:a.f.i,ga:a.a.g};a.L[f]=g}else throw Error('Invalid module name "'+f+'"');}finally{a.a=c}};a.fa=function(b,c){eval(c);return b};
+a.Ua=function(b){b=b.split("/");for(var c=0;c<b.length;)"."==b[c]?b.splice(c,1):c&&".."==b[c]&&b[c-1]&&".."!=b[c-1]?b.splice(--c,2):c++;return b.join("/")};a.ea=function(b){if(a.global.O)return a.global.O(b);try{var c=new a.global.XMLHttpRequest;c.open("get",b,!1);c.send();return 0==c.status||200==c.status?c.responseText:null}catch(d){return null}};
+a.bb=function(b,c,d){var e=a.global.$jscomp;e||(a.global.$jscomp=e={});var f=e.v;if(!f){var g=a.W+a.U,h=a.ea(g);if(h){(function(){(0,eval)(h+"\n//# sourceURL="+g)}).call(a.global);if(a.global.$gwtExport&&a.global.$gwtExport.$jscomp&&!a.global.$gwtExport.$jscomp.transpile)throw Error('The transpiler did not properly export the "transpile" method. $gwtExport: '+JSON.stringify(a.global.$gwtExport));a.global.$jscomp.v=a.global.$gwtExport.$jscomp.transpile;e=a.global.$jscomp;f=e.v}}if(!f){var k=" requires transpilation but no transpiler was found.";
+k+=' Please add "//javascript/closure:transpiler" as a data dependency to ensure it is included.';f=e.v=function(l,m){a.M(m+k);return l}}return f(b,c,d)};a.A=function(b){var c=typeof b;return"object"!=c?c:b?Array.isArray(b)?"array":c:"null"};a.Qa=function(b){var c=a.A(b);return"array"==c||"object"==c&&"number"==typeof b.length};a.Ra=function(b){return a.u(b)&&"function"==typeof b.getFullYear};a.ca=function(b){return"function"==a.A(b)};
+a.u=function(b){var c=typeof b;return"object"==c&&null!=b||"function"==c};a.La=function(b){return Object.prototype.hasOwnProperty.call(b,a.c)&&b[a.c]||(b[a.c]=++a.ja)};a.Na=function(b){return!!b[a.c]};a.Ya=function(b){null!==b&&"removeAttribute"in b&&b.removeAttribute(a.c);try{delete b[a.c]}catch(c){}};a.c="closure_uid_"+(1E9*Math.random()>>>0);a.ja=0;
+a.Z=function(b){var c=a.A(b);if("object"==c||"array"==c){if("function"===typeof b.clone)return b.clone();c="array"==c?[]:{};for(var d in b)c[d]=a.Z(b[d]);return c}return b};a.Y=function(b,c,d){return b.call.apply(b.bind,arguments)};a.X=function(b,c,d){if(!b)throw Error();if(2<arguments.length){var e=Array.prototype.slice.call(arguments,2);return function(){var f=Array.prototype.slice.call(arguments);Array.prototype.unshift.apply(f,e);return b.apply(c,f)}}return function(){return b.apply(c,arguments)}};
+a.bind=function(b,c,d){a.bind=Function.prototype.bind&&-1!=Function.prototype.bind.toString().indexOf("native code")?a.Y:a.X;return a.bind.apply(null,arguments)};a.Wa=function(b,c){var d=Array.prototype.slice.call(arguments,1);return function(){var e=d.slice();e.push.apply(e,arguments);return b.apply(this,e)}};a.Ta=function(b,c){for(var d in c)b[d]=c[d]};a.now=Date.now;a.Ma=function(b){(0,eval)(b)};
+a.Fa=function(b,c){if("."==String(b).charAt(0))throw Error('className passed in goog.getCssName must not start with ".". You passed: '+b);var d=function(f){return a.G[f]||f},e=function(f){f=f.split("-");for(var g=[],h=0;h<f.length;h++)g.push(d(f[h]));return g.join("-")};e=a.G?"BY_WHOLE"==a.aa?d:e:function(f){return f};b=c?b+"-"+e(c):e(b);return a.global.N?a.global.N(b):b};a.$a=function(b,c){a.G=b;a.aa=c};
+a.Ha=function(b,c,d){d&&d.Oa&&(b=b.replace(/</g,"&lt;"));c&&(b=b.replace(/\{\$([^}]+)}/g,function(e,f){return null!=c&&f in c?c[f]:e}));return b};a.Ia=function(b){return b};a.Da=function(b,c,d){a.H(b,c,!0,d)};a.Ca=function(b,c,d){b[c]=d};a.ba=function(b,c){function d(){}d.prototype=c.prototype;b.prototype=new d;b.prototype.constructor=b};a.scope=function(b){if(a.K())throw Error("goog.scope is not supported within a module.");b.call(a.global)};
+a.b=function(b,c){var d=c.constructor,e=c.ia;d&&d!=Object.prototype.constructor||(d=function(){throw Error("cannot instantiate an interface (no constructor defined).");});d=a.b.$(d,b);b&&a.ba(d,b);delete c.constructor;delete c.ia;a.b.D(d.prototype,c);null!=e&&(e instanceof Function?e(d):a.b.D(d,e));return d};a.b.S=a.h;a.b.$=function(b){if(!a.b.S)return b;var c=function(){var d=b.apply(this,arguments)||this;d[a.c]=d[a.c];return d};return c};a.b.C="constructor hasOwnProperty isPrototypeOf propertyIsEnumerable toLocaleString toString valueOf".split(" ");
+a.b.D=function(b,c){for(var d in c)Object.prototype.hasOwnProperty.call(c,d)&&(b[d]=c[d]);for(var e=0;e<a.b.C.length;e++)d=a.b.C[e],Object.prototype.hasOwnProperty.call(c,d)&&(b[d]=c[d])};a.wa="goog";a.s=function(b){return b};a.Aa=function(b){var c=null,d=a.global.trustedTypes;if(!d||!d.createPolicy)return c;try{c=d.createPolicy(b,{createHTML:a.s,createScript:a.s,createScriptURL:a.s})}catch(e){a.M(e.message)}return c};(function(){function b(l){this.t={};this.tick=function(m,p,n){var q=void 0!=n?n:(new Date).getTime();this.t[m]=[q,p];if(void 0==n)try{window.console.timeStamp("CSI/"+m)}catch(r){}};this.getStartTickTime=function(){return this.t.start[0]};this.tick("start",null,l)}var c;if(window.performance)var d=(c=window.performance.timing)&&c.responseStart;var e=0<d?new b(d):new b;window.jstiming={Timer:b,load:e};if(c){var f=c.navigationStart;0<f&&d>=f&&(window.jstiming.srt=d-f)}if(c){var g=window.jstiming.load;
+0<f&&d>=f&&(g.tick("_wtsrt",void 0,f),g.tick("wtsrt_","_wtsrt",d),g.tick("tbsd_","wtsrt_"))}try{var h=window.top!=window.self,k=window.location.href;c=null;window.chrome&&window.chrome.csi&&(c=Math.floor(window.chrome.csi().pageT),g&&0<f&&(g.tick("_tbnd",void 0,window.chrome.csi().startE),g.tick("tbnd_","_tbnd",f)));null==c&&window.gtbExternal&&(c=h?window.gtbExternal.frameT(k):window.gtbExternal.pageT());null==c&&window.external&&(h?c=window.external.frameT(k):(c=window.external.pageT,g&&0<f&&(g.tick("_tbnd",
+void 0,window.external.startE),g.tick("tbnd_","_tbnd",f))));c&&(window.jstiming.pt=c)}catch(l){}})();}).call(this);
+
+      </script>
+
+<title>Select a file</title>
+<noscript><p><br><br>Your browser must support javascript.</p></noscript>
+<script type="text/javascript" nonce="">
+        var rawConfig = {hl:'en_GB',ecc:false,cac:false,origin:'https://sites.google.com',js:'PROD',uploadConfigs:'{}',title:'Select a file',tdeemi:true,sid:'398a26cd-bd87-46a4-b31c-033d82b4e134',du:true,tdefmo:true,ppms:true,protocol:'gadgets',esdr:true,endv:true,erd:false,rpcToken:'1kreyfe9631j',ftd:false,uriParams:{app:'2',clientUser:'16075428466717139578',subapp:'5',authuser:'0'},ecsi:true,xtoken:'AL7Jy1wNNI1ROl_yK4-r-7duX6Ptp3SxHA:1600148770030',authuser:0,email:'deepanshagarg0@gmail.com',dpm:'Goodbye attachments. Hello Google Drive.',nav:'[[\x22video-search\x22,null,{\x22site\x22:\x22youtube.com\x22}],[\x22youtube\x22,\x22Uploaded\x22]]',burl:'https://docs.google.com/picker/v2/',rupioUrl:'',rpcService:'9q228mkf6k2',wcs:'picker/resources/1778802049-web_camera.swf',dppm:'With Google Drive, you never have to send another email attachment again. Just share the link to any file that you\x27re storing in Google Drive. That way everyone has access to the same file and the same version automatically.',hostId:'atariDrive',relayUrl:'https://sites.google.com/favicon.ico',gpu:false,pimm:false,userId:'112101696114128997720',ianu:false,token:'7xBZtHQBAAA.m_MeLnNlrNAzI0wAWn4v-w.KCG8VkNRPKMoVClPlGB79A',gdn:'Mail',vg:'female',upp:'https://lh4.googleusercontent.com/-L8bQHAglnHs/AAAAAAAAAAI/AAAAAAAAAAA/1Aq_xHDVZHg/photo.jpg',efmif:true,prefetchEnabled:true};
+        
+      </script>
+<link type="text/css" rel="stylesheet" href="./3678220588-picker_v2.css">
+<style type="text/css" nonce="">
+          /* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xFIzIFKw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xMIzIFKw.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xEIzIFKw.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xLIzIFKw.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xHIzIFKw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xGIzIFKw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xIIzI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TzBic3CsTKlA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TzBic-CsTKlA.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TzBic2CsTKlA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TzBic5CsTKlA.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TzBic1CsTKlA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TzBic0CsTKlA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TzBic6CsQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+        </style><style type="text/css">@-webkit-keyframes undefined {0% {background-position: 0 0;} 100% {background-position: -20px 0;}} .ve-bo-Xb .Xb-Yb-O, .ve-bo-Di .Xb-Yb-O, .ve-Ff-Ye-gf-Xb .Xb-Yb-O, .ve-Di-ie .Xb-Yb-O, .Ve-Ye-qb .Xb-Yb-O {-webkit-animation-name: undefined; -moz-animation-name: undefined;}</style></head>
+<body><div class="picker-loadingstatusbox picker-loadingstatusbox-body"></div>
+<div id="doclist"><div class="ve-Zd-Kc ve-zi-Ve Td-Ud-td" guidedhelpid="ghid-pmc"><div class="ve-Zd-Xg" style="opacity: 0.5; display: none;"><div class="ve-Zd-Xg ve-Si"></div></div><div id="docs-aria-speakable" class="ve-uj" aria-live="assertive" role="region" aria-atomic="true"></div><div class="ve-Ci-Hf ve-Cf-Hf"><div class="ve-Ci-hc ve-Cf-ie" style="height: 20px;"><div id="picker:ht" class="ve-Cf-tc" role="heading" aria-level="1">Select a file</div><div class="ve-Cf-db"><div role="button" class="a-b-c d-u d-u-R" tabindex="0" data-tooltip="Close" aria-label="Close" style="user-select: none;"><div class="ve-ek-db-Bi"></div></div></div></div><div class="ve-Ci-eb ve-Cf-eb" style="top: 54px;"><div class="ve-Ci-Hf ve-Ai-Zb-Hf"><div class="ve-Ci-hc ve-Ai-Zb-ie" style="height: 50px;"><div class="ve-Ai-Zb-Bi-Yb-ih" id=":3"><div class="a-Bi-Yb a-Bi-Yb-Zb a-Bi-Yb-hc" role="tablist" tabindex="0" style="user-select: none;"><div class="a-Bi a-Bi-w" role="tab" aria-selected="true" id=":5" style="user-select: none;"><div class="ve-Ai-Zb-Nj" style="user-select: none;">Video search</div></div><div class="a-Bi" role="tab" aria-selected="false" id=":6" style="user-select: none;"><div class="ve-Ai-Zb-Nj" style="user-select: none;">Uploaded</div></div><div class="a-b-c a-kb-u" role="tab" aria-hidden="true" aria-expanded="false" aria-haspopup="true" id=":7" style="user-select: none; display: none;"><div class="a-b-c a-kb-u-pb-qb" style="user-select: none;"><div class="a-b-c a-kb-u-rb-qb" style="user-select: none;"><div class="a-b-c a-kb-u-mb" style="user-select: none;"><div style="user-select: none;">More<div class="ve-qj-n-Pj-Qj-Sf" style="user-select: none;"></div></div></div><div class="a-b-c a-kb-u-nb" style="user-select: none;">&nbsp;</div></div></div></div></div></div></div><div class="ve-Ci-eb ve-Ai-Zb-eb" style="top: 51px;"><div><div class="ve-Ci-Hf ve-Di-Hf" style="top: -10000px; left: -10000px; right: 9500px; display: none;"><div class="ve-Ci-eb ve-Di-eb" style="bottom: 70px;"><div class="ve-eb ve-vj ve-wj" style="top: -10000px; left: -10000px; right: 9500px;"><div class="ve-ob"><div class="ve-Bj ve-Bj-fk"><div class="ve-Bj-Qc-fk"><span class="ve-qj-pl a-b-c ve-Bj-Qc-pe"></span><input type="text" class="ve-Bj-Qc-qb d-Rb" aria-label="Search terms" style="width: 325px;" dir="ltr"><div role="button" class="a-b-c d-u d-u-Q" tabindex="0" data-tooltip="Search" aria-label="Search" style="user-select: none;"><img src="./search-black.png" class="d-u-x" style="width: 21px; height: 21px;"></div></div></div></div><div class="ve-eb-Kc"><div class="ve-vj-eb" role="listbox" style="user-select: none;"><span style="user-select: none;"><tr style="user-select: none;"><td style="user-select: none;"><div class="ve-vj-xi" role="status" aria-live="assertive" style="user-select: none;">Type your search in the box above to find videos.</div></td></tr></span></div></div></div><div role="status" aria-live="polite"><div class="ve-cj" aria-label="Loading data" style="display: none;"><div class="d-e"><div></div><div class="d-e-f"></div></div></div></div></div><div class="ve-Ci-ic ve-Di-ie" style="height: 69px;"><div class="ve-Di-Ji-pe"><div><div role="button" class="a-b-c d-u d-u-F d-u-D" id="picker:ap:0" guidedhelpid="ghid-psc" aria-disabled="true" style="user-select: none;">Select</div><div role="button" class="a-b-c d-u d-u-Q" tabindex="0" id="picker:ap:1" style="user-select: none;">Cancel</div></div></div><div class="ve-Di-Xi-Nb" role="status" aria-live="polite" style="display: none;"></div></div></div><div class="ve-Ci-Hf ve-Di-Hf"><div class="ve-Ci-eb ve-Di-eb" style="bottom: 70px;"><div class="ve-eb ve-vj ve-Il-Jl" style=""><div class="ve-ob"><div class="ve-Bj ve-Bj-fk"><div class="ve-Bj-Qc-fk"><span class="ve-qj-pl a-b-c ve-Bj-Qc-pe"></span><input type="text" class="ve-Bj-Qc-qb d-Rb" aria-label="Search terms" dir="ltr" style="width: 325px;"><div role="button" class="a-b-c d-u d-u-Q" tabindex="0" data-tooltip="Search" aria-label="Search" style="user-select: none;"><img src="./search-black.png" class="d-u-x" style="width: 21px; height: 21px;"></div></div></div></div><div class="ve-eb-Kc"><table class="ve-vj-eb ve-Dj-ag" role="listbox" style="user-select: none;"><tbody style="user-select: none;"><div class="ve-kh-gf" aria-labelledby=":s" role="option" aria-checked="false" tabindex="0" id=":r" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video" tabindex="0"><img src="./default(53).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":s">12 Minutes to Toned Arms Workout</div><div class="ve-kh-gf-eb ">Welcome to the "12 Minutes to Toned" series!! I'll be releasing a brand new workout for you every week for the next 6 weeks focused on a different area of your body! Today, we are focusing on your upper body and arms, specifically your shoulders, triceps, biceps, chest, back, and traps! I hope this workout helps you find the joy in your movement. I know you will be feeling a sore but so strong once you finish!
+
+Your moves for this workout include: prayer pulses, tricep dips, robot arms, half cobra pushups, walnut crushers, up up down downs and milk jugs. Oh and don't forget to leave a comment if you like the new set!! I'm in love! 
+
+Here is where I get all of my music! Epidemic Sound: http://share.epidemicsound.com/sgFTn
+
+My yoga mat is from my shop: http://www.popflexactive.com
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 3,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">16 min - 20 Jan 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":u" role="option" aria-checked="false" tabindex="-1" id=":t" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(114).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":u">10 MIN TONED ARMS - quick &amp; intense at home / with water bottles I Pamela Reif</div><div class="ve-kh-gf-eb ">TIP: fill up your bottles as FULL AS POSSIBLE. If there’s air in the bottle, the water will move from side to side - which is a little annoying. / Werbung
+
+I know, training Booty &amp; Abs is our favorite. But don’t neglect your arms! Toned arms, that fit to the rest of your beautiful body. Strong arms, that have enough strength to hold you during a Plank Workouts (haha!). 
+No huge, masculine biceps - but also no flabby bingo wings. This workout will NOT make your arm muscles grow big + bulky. It will just make them more defined :) This is a super fun routine, which seems easy at first .. but it will make your arms BURN, I promise.
+
+Aaaand I also love the music in this video. Feeling the burn is definitely easier when we can sing along! 
+
+_
+
+▸ you can find FREE WORKOUT PLANS on my Instagram Channel. 30min, 45min and Beginner Friendly combinations. Check out the Highlight Bubble "Workout Plans" for that.  
+
+➞ Instagram http://www.instagram.com/pamela_rf/
+
+__
+ 
+▸ I update my workout playlist weekly &amp; it's available on Spotify, Apple Music, etc. ♥︎
+http://wmg.click/GetActive
+
+1. Shed a Light - Robin Schulz feat. David Guetta, Cheat Codes 0:00-03:05
+2. Sugar - Robin Schulz feat. Francesco Yates 03:06-06:33
+3. Sun Goes Down - Robin Schulz feat. Jasmine Thompson 06:34-08:12
+4. All This Love - Robin Schulz feat. Harloe 08:13-11:12
+
+__
+
+➞ Instagram http://www.instagram.com/pamela_rf/
+➞ Food Account http://www.instagram.com/pamgoesnuts/
+
+__
+
+Business Contact:
+pamela_reif@icloud.com
+
+__
+unterstützt durch Warner Music Germany
+
+Disclaimer:
+When joining me for this workout video, you need to take some precautions as your health and safety is the most important.&nbsp;To avoid any injury or harm, you need to check your health with your doctor before exercising.&nbsp;By performing any fitness exercises without supervision like with this video, you are performing them at your own risk. See a fitness professional to give you advice on your exercise form. Pamela Reif will not be responsible or liable for any injury or harm you sustain as a result of this video.</div><div><span class="ve-kh-gf-yp">11 min - 17 Apr 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":w" role="option" aria-checked="false" tabindex="-1" id=":v" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(90).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":w">12 Minutes to Toned Total Body Workout</div><div class="ve-kh-gf-eb ">Are you one of those types of people who only has a few minutes a day to work out and STILL can't choose between arms, butt or legs?! It's ok, me too sometimes. That's why today's 12 Minutes to Toned workout is gonna target the whole body. We're gonna get a lot done in a short amount of time!!!
+
+The moves are narrow squats, back behind leg lifts (right), back behind leg lifts (left), straight leg heel lift (right), straight leg heel lift (left), push up dogs &amp; star abs!
+
+Here is where I get all of my music! Epidemic Sound: http://share.epidemicsound.com/sgFTn
+
+My outfit &amp; yoga mat are from: http://www.popflexactive.com
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 3,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">15 min - 9 Feb 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":y" role="option" aria-checked="false" tabindex="-1" id=":x" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(95).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":y">12 Minutes to Toned Thighs Workout</div><div class="ve-kh-gf-eb ">Today, we're focusing on our thighs, so get ready for some intense inner thigh, outer thigh &amp; quad action!! Your moves are leg swings (right), passé &amp; drag (right), passé up and down (right), leg swings (left), passé &amp; drag (left), passé up and down (left), plié in relevé, sideways scissors &amp; froggers!
+
+Here is where I get all of my music! Epidemic Sound: http://share.epidemicsound.com/sgFTn
+
+My yoga mat is from: http://www.popflexactive.com
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 4,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">15 min - 26 Jan 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":10" role="option" aria-checked="false" tabindex="-1" id=":z" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(56).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":10">10 Minute Arm Toner | Total Body Transformation Workout</div><div class="ve-kh-gf-eb ">You guys, today's Total Body Transformation arm workout is gonna be your BIGGEST CHALLENGE YET!!! That's because we're doing this with weights. YUP. If you don't have weights, you can also do this workout without them, but I want you to push yourself a little harder today and find 2 equally weighted water bottles, books, or anything you can grab!!!
+
+You have 8 arm moves today, starting with a shoulder burn, then  moving to triceps, with a little bit of biceps at the end. We'll do each for 1 minute with a 15 second break in between. They are:
+
+1. Front Raise
+2. Side Raise
+3. Elevated Bicep Curl
+4. Tricep Kickbacks
+5. Overhead triceps
+6. Upright Row
+7. Bicep Curl to Shoulder Press
+8. Shoulder Press Pulses
+
+Workout starts at 2:42!
+
+Here is where I get all of my music! Epidemic Sound: http://share.epidemicsound.com/sgFTn
+
+Yoga mat is from: http://www.popflexactive.com
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 3,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">14 min - 15 Mar 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":12" role="option" aria-checked="false" tabindex="-1" id=":11" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(97).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":12">12 MIN STRONG TONED ARMS &amp; ABS - Home Workout - no equipment</div><div class="ve-kh-gf-eb ">Let’s focus on strong, toned arms and abs today - the main focus is on our shoulders, chest, tricep and core muscles. You don’t need equipment for the workout - just some energy, yourself and little bit of space.
+
+We have 12 different exercises:
+
+45 SEC WORK
+15 SEC OFF
+
+Here are the exercises:
+
+DOWN DOG TAPS
+SHOULDER KNEE TOE TAPS
+PLANK HOLD
+PLANK WALKS
+COBRA PUSH UPS
+SIDE PLANK LEG RAISES RIGHT
+SIDE PLANK LEG RAISES LEFT
+SIDE PLANK CRUNCHES RIGHT
+SIDE PLANK CRUNCHES LEFT
+DIAMOND PUSH UPS
+TRICEP DIPS
+DIP AND TUCK UP
+
+Beginners: Do the workout 1x
+Advanced: Do the workout 2x
+
+👚 My Outfit : https://gym.sh/Shop-Anna-E
+🥛 Post Workout Shake: https://www.foodspring.de/whey-protein (USE ANNAFSG for 15% OFF)
+
+📷 GEAR I USE: 
+Camera: https://amzn.to/3aticKD
+Lens: https://amzn.to/3cCiujR
+Tripod: https://amzn.to/2zontX9
+Microphone: https://amzn.to/34VaKXH
+
+💪🏼 MY HOME TRAINING GUIDE: http://growingannanas.com
+
+» Subscribe to my Channel for weekly workouts: http://bit.ly/2QLvpXn
+» Instagram: http://bit.ly/2ZSdHFR
+» Facebook: http://bit.ly/2SVkgpE
+✉ Contact (business inquiries):  growingannanas@gmail.com</div><div><span class="ve-kh-gf-yp">13 min - 10 Aug 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":14" role="option" aria-checked="false" tabindex="-1" id=":13" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(89).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":14">12 Minutes to Toned Abs Workout</div><div class="ve-kh-gf-eb ">You guys, I wasn't lying when I said the 12 Minutes of Toned series would be INTENSE! We're just about to be halfway through and I know you're gonna love this one...
+
+Today's all about the abs &amp; obliques!!! Your moves are criss crosses, double leg lifts, table top crunches, eagle crunches, scissors, rollovers &amp; a plank! Let's do this!!
+
+Here is where I get all of my music! Epidemic Sound: http://share.epidemicsound.com/sgFTn
+
+My yoga mat is from: http://www.popflexactive.com
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 3,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">15 min - 2 Feb 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":16" role="option" aria-checked="false" tabindex="-1" id=":15" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(24).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":16">7 Minutes to Fabulous Arms! At Home No Equipment Workout</div><div class="ve-kh-gf-eb ">You guys have been asking for a 7 minute arm workout, so here it is!! It's got my first EVER weightless bicep exercise! You ready to feel the burn in your biceps, triceps &amp; shoulders for the next seven minutes?! Best upper body workout ever.
+
+Each of the seven moves will be done for one minute with NO rest in between:
+
+1. United biceps
+2. Fist circles forward
+3. Fist circles backward
+4. Chest press aways
+5. Angel arms
+6. Prayer pulse
+7. Palm press triceps
+
+#armworkout #pilates #poppilates #blogilates #noequipmentworkout
+
+Workout starts at 1:26!
+
+Here is where I get all of my music! Epidemic Sound: https://goo.gl/Nj4ZMg
+
+My outfit &amp; yoga mat are from: http://www.popflexactive.com
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 3,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">11 min - 9 Dec 2018</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":18" role="option" aria-checked="false" tabindex="-1" id=":17" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(80).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":18">Toned Arms at Home Workout! Apartment Friendly ☺️</div><div class="ve-kh-gf-eb ">I asked you guys what workouts you wanna do at home and a lot of you asked for weights. And because not everyone has dumbbells, I decided to get creative.
+
+Why not wine bottles (or water bottles or soup cans etc)?! I tested this on TikTok and you guys LOVED it, so here it is: my first full length wine bottle arm workout!
+
+Your biceps, triceps &amp; shoulders are gonna be SHAKING once you're done with this! You've got 10 moves, one minute on, 10 seconds off (don't worry, there's a timer).
+
+1. Bicep Curls
+2. Tricep Pulse
+3. Prayer Pulse
+4. Shoulder Press
+5. Double Tray Opens
+6. Front Raises
+7. Reverse Flys
+8. Press &amp; Close
+9. L Raises
+10. Upright Row
+
+Workout starts at 1:41!
+
+Follow me on TiKTok: https://www.tiktok.com/@blogilates
+
+Here is where I get all of my music! Epidemic Sound: http://share.epidemicsound.com/sgFTn
+
+My outfit &amp; yoga mat are from: http://www.popflexactive.com
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 3,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">15 min - 12 Apr 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":1a" role="option" aria-checked="false" tabindex="-1" id=":19" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(51).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":1a">5 Minute Toned Arms</div><div class="ve-kh-gf-eb ">1 minute x 5 arm sculpting moves. Your best 5 min arm slimming workout. Can you keep up with the timer? YES YOU CAN! The fastest most effective arm toning workout ever!
+
+♥ I HAVE A NEW DVD: http://www.poppilatesdvd.com
+♥ INSPIRATIONAL SHIRTS: http://www.shopblogilates.com
+♥ SUBSCRIBE: http://bit.ly/blogilatesyt
+♥ BLOG: http://www.blogilates.com 
+♥ FB: http://www.facebook.com/blogilates 
+♥ TWEET: http://www.twitter.com/blogilates
+♥ TUMBLR: http://www.blogilates.tumblr.com
+♥ PINTEREST: http://pinterest.com/blogilates
+♥ INSTAGRAM: http://www.instagram.com/blogilates
+
+******
+Cassey Ho is a certified Pilates and fitness instructor, named Greatist's Top 25 Health &amp; Fitness Influencers in the World alongside Michelle Obama. She is the winner of the "Social Fitness" Shorty Award and FITNESS Magazine named her their "Best Healthy Living Blogger". She's been featured on Dr. Oz, EXTRA TV, The Steve Harvey Show, COSMPOLITAN Magazine, SHAPE Magazine, Ladies Home Journal, SELF Magazine, NY Times, LA Times, and many more.
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">7 min - 23 Mar 2015</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":1c" role="option" aria-checked="false" tabindex="-1" id=":1b" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(217).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":1c">10 Mins Toned Arms Workout | No Equipment</div><div class="ve-kh-gf-eb ">This is the final episode of the Lean Arms Challenge! This workout 
+will really work those arms of yours and it's all standing exercises and low impact so it's great for those who don't want a high intensity workout but still want to feel that burn. 
+
+Enjoy the workout guys!
+
+☆3 Weeks Lean Arms Challenge☆
+Full Schedule: https://www.chloeting.com/program
+Episode 1 - Lean Arms - https://youtu.be/5qCjyzbKmAE
+Episode 2 - Sexy Back and Abs - https://youtu.be/ITdlvmHpFc0
+Episode 3 - Full Body Burn - https://youtu.be/CD6BCdFHogg
+Episode 4 - Slim &amp; Toned Arms - This Video
+
+☆Help subtitle this video☆
+http://www.youtube.com/timedtext_video?ref=share&amp;v=j64BBgBGNIU
+
+☆Sponsor this channel☆
+https://www.youtube.com/chloeting/join
+☆Sub to my 2nd channel☆
+https://www.youtube.com/channel/UCBrcDabYtwbR1VIhwH5efZA?sub_confirmation=1
+
+☆My Instagram links☆
+https://www.instagram.com/chloe_t/
+https://www.instagram.com/itschloeting/
+
+☆Music by☆
+Music provided by Monstercat: 
+Aero Chord feat. Bianca - Burning
+https://youtube.com/monstercat 
+https://youtube.com/monstercatinstinct
+
+Track: ROY KNOX - Shining [NCS Release]
+Music provided by NoCopyrightSounds.
+Watch: https://youtu.be/gKFyuuXwxBU
+Free Download / Stream: http://ncs.io/Shining
+
+Track: Ascence - About You [NCS Release]
+Music provided by NoCopyrightSounds.
+Watch: https://youtu.be/bXHfrdi_fsU
+Free Download / Stream: http://ncs.io/AboutYou
+#workouts #fitness #chloeting
+
+#homeworkout #armsworkout #chloeting
+
+IMPORTANT DISCLAIMER: Please note that all of my videos are titled according to SEO best practices for content discoverability. Unfortunately this may mean that video titles are subjective and shouldn't be seen as absolute truth. As an example, targeting fat reduction is not scientifically proven but a video title might suggest otherwise. When following any of my videos, please take precaution to exercise in a safe environment, and I highly suggest seeing a health and fitness professional to give you advice on your exercise form and dietary needs. Every person is unique and there is no one size fits all solution to health or fitness. I am not a medical professional and your health and safety is the utmost importance.</div><div><span class="ve-kh-gf-yp">11 min - 2 Oct 2019</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":1e" role="option" aria-checked="false" tabindex="-1" id=":1d" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(126).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":1e">10 Minute Tone Your Arm Workout For Women Over 50 | Beginner Friendly</div><div class="ve-kh-gf-eb ">10 minute toned Toned arms workout for women over 50, no equipment and suitable for beginners and seniors. Tone your arms and get rid of Flabby arms and Bat Wings forever! This 10 minute at home toned arm workouts for mature women over 50 requires no equipment and can be done at home… Try these easy to follow Best Toning Arm Workouts For Women Over 50 and you will be on your way to creating strong, toned arms that are strong and fabulous!
+ 
+Welcome to fabulous50s! Here you will find content that relates to how to look younger, mature skincare, anti aging, wrinkles, how to dress over 50, style, fitness, health and beauty over 50. All the videos here have you, a mature Woman in mind and if you have any questions or video suggestions for mature Women, please feel free to leave your comment below.
+
+🟪🟦🟩🟩🟨🟧🟥
+ 
+⬇️⬇️CLICK HERE TO DOWNLOAD MY FREE “STAY YOUNGER LONGER” EBOOK - (Learn to F E E L G O O D &amp; L O O K G O O D over 50!)
+ http://eepurl.com/dxHX01 
+
+💪WORKOUTS TO PAIR WITH THIS ONE
+30 MINUTE GET FIT INDOOR WORKOUT: https://youtu.be/kp67VFhbpsQ
+5 MINUTE DAILY STRETCH:   https://youtu.be/ferw4VhbN54
+5 Minute Indoor Workout LEG BUTT and KNEE Strength For Women: https://www.youtube.com/watch?v=hS47UiLjrn4
+5 Minute Toned ABS Workout For Women Over 50!: https://www.youtube.com/watch?v=AlPgjSWibWM
+5 Minute Toned Arm Workout With Dumbbell Weights!: https://www.youtube.com/watch?v=rBWF0TVMmw4
+
+Disclaimer: Information provided in this video is of a general nature only and is for entertainment/educational purposes. We strongly recommend that you consult with your physician before beginning any exercise program. Performing any of these exercises is done so at your own risk. 
+
+🟪To find out more: LETS CONNECT👋
+ 
+✅ fabulous50s INSTAGRAM: https://www.instagram.com/fabulous.50s/
+✅fabulous50s PRIVATE FACEBOOK GROUP: https://www.facebook.com/groups/290247628386380/?source_id=375470519523026
+✅fabulous50s FACEBOOK: https://www.facebook.com/fabulous50ss/ 
+✅fabulous50s WEBSITE: https://fabulous50s.co 🙏THANK YOU so much for watching and if you know someone who may enjoy this video...Please share 🙏 
+✅Please tune in for new videos each Friday at 9.15pm (Australia NSW time) (7.15am EDT) 
+
+🟦FOLLOW MY YOUTUBE JOURNEY INTERVIEW HERE ⬇️
+https://youtu.be/rgJeKYVlecs
+ 
+🟥SUBSCRIBE HERE: https://www.youtube.com/channel/UCiWP... 
+ 
+🟨EMAIL ALL ENQUIRIES TO: info@fabulous50s.co 
+ 
+🟪MAIL: Po Box 6092 Park Beach Plaza Coffs Harbour Australia 2450 
+
+🟦MUSIC SOURCED FROM EPIDEMIC SOUND:
+ https://www.youtube.com/watch?v=r65ASraC7nM&amp;feature=share
+
+🟧This content is not sponsored and all opinions are 100% honest and what I truly believe. If I LOVE a product first, and there is an affiliate link available...I will use it...I WILL NOT look for a product that pays a commission first, and then do a review...EVER! Some links are affiliate links. If you click a link and buy something, I may receive a small commission for the sale. It doesn't cost you anything extra and you are free to use the link or not...Its totally up to you... If you do use my links...Thank you so much xx #fabulous50s #indoorworkout #tonedarms</div><div><span class="ve-kh-gf-yp">12 min - 17 Apr 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":1g" role="option" aria-checked="false" tabindex="-1" id=":1f" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(218).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":1g">10 MIN TONED ARMS WORKOUT (At Home Minimal Equipment)</div><div class="ve-kh-gf-eb ">A 10 minute arms workout to tone that upper body! All you need is a pair of dumbbells!
+⭐️SHOP MY COOKBOOKS! 100+ RECIPES: https://goo.gl/XHwUJg ⭐️
+
+
+SUBSCRIBE TO MY MAIN CHANNEL (what i eat, recipes, vlogs): https://goo.gl/WTpDQk
+OTHER VIDEOS:
+➤ PREVIOUS VIDEO (Fat Burning HIIT): http://bit.ly/2HSFyy4
+➤ AT HOME WORKOUTS: http://bit.ly/2HSFyy4
+
+📷 GEAR I USE: 
+CAMERA: https://goo.gl/rVQzXd
+42.5mm LENS: https://goo.gl/oLRc2u
+TRIPOD: https://goo.gl/ihp5br
+MICROPHONE: https://goo.gl/fPzkRN
+GOPRO: https://goo.gl/D6eMwL
+
+✘ I N S T A G R A M: @madfit.ig
+✘ T W I T T E R: @maddielymburner
+✘ F A C E B O O K: facebook.com/madfit.ig
+✉ C O N T A C T (business inquiries): madfit95@gmail.com</div><div><span class="ve-kh-gf-yp">13 min - 4 Jun 2019</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":1i" role="option" aria-checked="false" tabindex="-1" id=":1h" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(219).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":1i">HOW TO LOSE ARM FAT FOR TONED ARMS (in 12 minutes)</div><div class="ve-kh-gf-eb ">This workout will help you lose arm fat for toned arms in 12 minutes. Do this workout every other day for 20 days for best repeat and then 1x a week to maintain. These exercises will tone your arms and upper body. Lose that arm fat QUICK with this killer workout!🔥Did you know NUTRITION is the most important when it comes to results which is why you need my meal plan to go alomg with the workouts! It's free here - https://rebecca-louise.com
+
+★ The #1 Daily Fitness &amp; Nutrition App - BURN by Rebecca Louise. Get your 7-day FREE trial TODAY! Not sure what workout to do when or what to eat to get the fastest results? No problem, this will solve your questions and get you toned in no time! 
+Desktop - https://icanfeeltheburn.com
+iOS - https://apple.co/2Kj3NYG
+Android - http://bit.ly/burnbyrebecca
+
+🔥AND to put the icing check out my my first BOOK! 
+You can now order yours here - https://rebecca-louise.com/pages/book
+
+
+TEXT ME  +1 310 421 0772
+https://my.community.com/RebeccaLouise
+💪🏻 for LIVE WORKOUT updates 
+💛 for podcast updates 
+or hi to chat!
+
+Join our community!
+Instagram: https://www.instagram.com/rebeccalouisefitnessFacebook: https://www.facebook.com/rebeccalouisefitnessWebsite: http://rebecca-louise.com/Podcast Channel: http://bit.ly/2uyjy5h
+
+Have a question..? Drop it below!
+
+Subscribe to the channel and always stay on track! - http://bit.ly/2voMxWO</div><div><span class="ve-kh-gf-yp">14 min - 20 Jan 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":1k" role="option" aria-checked="false" tabindex="-1" id=":1j" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(220).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":1k">I tried Blogilates 12 Minutes To Toned Arms Workout for One Week</div><div class="ve-kh-gf-eb ">Hey my name is Faith! This is my iphone fitness series. I recently did Blogilates 12 minutes to toned arms workout for seven days and here is what happened! Just getting into YouTube so sorry about the bad editing...</div><div><span class="ve-kh-gf-yp">3 min - 27 Jan 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":1m" role="option" aria-checked="false" tabindex="-1" id=":1l" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(221).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":1m">TONED ARMS // Home Workout</div><div class="ve-kh-gf-eb ">Today’s arm toning workout uses light weight for added resistance to tone up and strengthen the shoulders, biceps and triceps. 10 different moves, 2 rounds and no rest in between oww oww!! 
+
+Weights I'm using: 5lbs each
+
+Free Monthly Workout Calendar: https://bit.ly/2y6as3O
+Free 12 Week Workout Plan: https://bit.ly/2vQRvBu
+
+Workout Breakdown:
+Equipment Needed: dumbbells, stability ball + exercise mat or other soft surface.
+
+Where I get my Music *Try it FREE for 30 days*
+http://share.epidemicsound.com/zj9WV
+
+My Go-To Gear, Beauty Products + More: https://www.amazon.com/shop/heatherrobertson
+
+L I N K S
+
+Website: http://www.heatherrobertson.com
+Instagram: http://www.instagram.com/heatherrobertsoncom
+Facebook: http://www.facebook.com/heatherrobertsoncom
+Pinterest: https://www.pinterest.com/heatherrobertsoncom
+______________________________ 
+
+D I S C L A I M E R
+
+This is my own personal workout and may not be suited for you. It is strongly recommend that you consult with your physician before beginning any exercise program. By engaging in this exercise or exercise program, you agree that you do so at your own risk.
+
+______________________________ 
+
+Thanks for watching! 
+
+❤ Heather</div><div><span class="ve-kh-gf-yp">13 min - 26 Apr 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":1o" role="option" aria-checked="false" tabindex="-1" id=":1n" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(222).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":1o">10 min TONED ARMS Workout (At Home Quick Burn)</div><div class="ve-kh-gf-eb ">Do this 10 minute arms workout #WithMe to tone and sculpt your upper body! Use a light pair of dumbbells or any household objects that could work as dumbbells like water bottles, canned food, shampoo bottles, etc.
+#homeworkout #tonedarms
+⭐️SHOP MY COOKBOOKS!: https://goo.gl/XHwUJg 
+
+⭐️DO THIS WARM UP FIRST: http://bit.ly/2riv8T6
+⭐️DO THIS COOL DOWN AFTER: http://bit.ly/2YO55PP
+
+⭐️WORKOUTS TO PAIR WITH THIS ONE:
+10 min Intense Back Workout: http://bit.ly/2sgY9Pi
+15 min Abs &amp; Arms Workout: http://bit.ly/2RJx8Pc
+Dumbbell Upper Body: http://bit.ly/34ecgC0
+20 min Full Body Strength: http://bit.ly/2PCtZ0L
+
+👉🏼SUBSCRIBE TO MY MAIN CHANNEL (what i eat, recipes, vlogs): https://goo.gl/WTpDQk
+
+📷 GEAR I USE: 
+👉🏼THE MAT I USE (Exercise 6X4): http://gorillamats.com?aff=19  (MADFIT10 for 10% off)
+CAMERA: https://goo.gl/rVQzXd
+42.5mm LENS: https://goo.gl/oLRc2u
+TRIPOD: https://goo.gl/ihp5br
+MICROPHONE: https://goo.gl/fPzkRN
+GOPRO: https://goo.gl/D6eMwL
+
+✘ I N S T A G R A M: @madfit.ig
+✘ T W I T T E R: @maddielymburner
+✘ F A C E B O O K: facebook.com/madfit.ig
+✉ C O N T A C T (business inquiries): madfit95@gmail.com</div><div><span class="ve-kh-gf-yp">13 min - 29 Apr 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":1q" role="option" aria-checked="false" tabindex="-1" id=":1p" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(223).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":1q">10 MIN TONED ARMS WORKOUT (At Home No Equipment)</div><div class="ve-kh-gf-eb ">A 10 minute arms workout to tone that upper body! There is no equipment needed, and you can do this workout anywhere!
+⭐️SHOP MY COOKBOOKS! 100+ RECIPES: https://goo.gl/XHwUJg ⭐️
+🌱VEGAN PROTEIN: https://goo.gl/uuStky Use: MADDIE10 FOR 10% OFF
+
+SUBSCRIBE TO MY MAIN CHANNEL (what i eat, recipes, vlogs): https://goo.gl/WTpDQk
+OTHER VIDEOS:
+➤ PREVIOUS VIDEO (12 min quick fat burn): 
+➤ AT HOME WORKOUTS:
+➤ GYM WORKOUTS:
+
+📷 GEAR I USE: 
+CAMERA: https://goo.gl/rVQzXd
+42.5mm LENS: https://goo.gl/oLRc2u
+TRIPOD: https://goo.gl/ihp5br
+MICROPHONE: https://goo.gl/fPzkRN
+GOPRO: https://goo.gl/D6eMwL
+
+✘ I N S T A G R A M: @madfit.ig
+✘ T W I T T E R: @maddielymburner
+✘ F A C E B O O K: facebook.com/madfit.ig
+✉ C O N T A C T (business inquiries): madfit95@gmail.com</div><div><span class="ve-kh-gf-yp">12 min - 14 Dec 2018</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":1s" role="option" aria-checked="false" tabindex="-1" id=":1r" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(224).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":1s">TONED ARMS // Tabata with Weights</div><div class="ve-kh-gf-eb ">Visit: https://www.heatherrobertson.com 
+
+Shop my favorite protein, supplements + more: https://www.amazon.com/shop/heatherrobertson
+
+Get toned arms with some of my favorite bicep, tricep and shoulder exercises. We are doing a tabata style workout with weights today. Try to keep your reps high during the work period and get through 3 rounds total! 
+
+L I N K S
+
+Website: http://www.heatherrobertson.com
+Instagram: http://www.instagram.com/heatherrobertsoncom
+Twitter: http://www.twitter.com/followheatherr
+Facebook: http://www.facebook.com/heatherrobertsoncom
+
+______________________________ 
+
+D I S C L A I M E R
+
+This is my own personal workout and may not be suited for you. It is strongly recommend that you consult with your physician before beginning any exercise program. By engaging in this exercise or exercise program, you agree that you do so at your own risk.
+
+______________________________ 
+
+Thanks for watching! 
+
+❤ Heather</div><div><span class="ve-kh-gf-yp">10 min - 23 Oct 2018</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":1u" role="option" aria-checked="false" tabindex="-1" id=":1t" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(225).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":1u">Get Madonna's Arms With This 10-Minute Workout</div><div class="ve-kh-gf-eb ">Toned arms never go out of style. If your shoulders have been hidden under a thick, cozy sweater for the last couple of months, it's time to start prepping them for tank top season. Take 10 minutes to work your biceps and triceps with Andrea Orbeck. She's trained many Victoria's Secret models and now she'll train you in the comfort of your living room. Grab a some dumbbells and get ready to tone your guns. Press play and follow along as Andrea leads you through this short, but intense workout.</div><div><span class="ve-kh-gf-yp">11 min - 6 Feb 2012</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":1w" role="option" aria-checked="false" tabindex="-1" id=":1v" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(150).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":1w">At Home ARM TONING Workout // With Weights</div><div class="ve-kh-gf-eb ">At Home ARM TONING Workout // With Weights
+Visit: https://www.heatherrobertson.com 
+
+Grab a set of dumbbells and follow along to today's at home arm toning workout! We are going to create tone and definition while building strength in the shoulders, biceps + triceps! 
+
+Where I get my Music *Try it FREE for 30 days*
+http://share.epidemicsound.com/zj9WV
+
+My Go-To Supplements, Beauty Products + More: https://www.amazon.com/shop/heatherrobertson
+
+L I N K S
+
+Website: http://www.heatherrobertson.com
+Instagram: http://www.instagram.com/heatherrobertsoncom
+Twitter: http://www.twitter.com/followheatherr
+Facebook: http://www.facebook.com/heatherrobertsoncom
+
+______________________________ 
+
+D I S C L A I M E R
+
+This is my own personal workout and may not be suited for you. It is strongly recommend that you consult with your physician before beginning any exercise program. By engaging in this exercise or exercise program, you agree that you do so at your own risk.
+
+______________________________ 
+
+Thanks for watching! 
+
+❤ Heather</div><div><span class="ve-kh-gf-yp">13 min - 24 Jan 2019</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":1y" role="option" aria-checked="false" tabindex="-1" id=":1x" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(226).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":1y">5 minute arm workout- get long, lean, toned arms</div><div class="ve-kh-gf-eb ">If you are looking for a quick arm workout that gives you long, lean, toned arm muscles, this is it! All you need is 2 pound weights and a great 4-5 minute song. If you do this 5 minute arm workout 4 times a week you can see results in less than a month. This workout gets those small muscles that other weight lifting can't.</div><div><span class="ve-kh-gf-yp">7 min - 1 Jul 2016</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":20" role="option" aria-checked="false" tabindex="-1" id=":1z" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(9).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":20">12 Minutes to Burn Fat - Low Impact Cardio Workout</div><div class="ve-kh-gf-eb ">You're not gonna need a yoga mat for today's 12 Minutes to Toned workout, but you WILL need your sneakers cuz we're about to get our heart rates WAYYYY up. The whole cardio workout is apartment friendly, too!!
+
+The moves are squats, alternating tip toe lunges, POP burpee, alternating curtsy lunge, inchworm kick &amp; punch, sweeping side lunge  &amp; alternating low back lunge!
+
+Here is where I get all of my music! Epidemic Sound: http://share.epidemicsound.com/sgFTn
+
+My outfit &amp; yoga mat are from: http://www.popflexactive.com
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 3,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">15 min - 16 Feb 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":22" role="option" aria-checked="false" tabindex="-1" id=":21" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(227).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":22">10 MINUTES TO TONED ARMS | BANISH BAT WINGS | HOW TO FIRM ARMS | EASY ARM WORKOUT | ARM BLASTER</div><div class="ve-kh-gf-eb ">TONED ARMS | GET RID OF BATWINGS | HOW TO FIRM ARMS | EASY ARM WORKOUT | ARM BLASTER
+
+I have had several people ask for me to share details of my arm toning workout. My arm workout takes just ten minutes and I do it  three times a week.  It's just four simple exercises that really tone up the biceps and triceps.
+
+If you have exercises you use to banish your bat wings and tone your arms, please share the details below!  
+
+OTHER VIDEOS MENTIONED:
+Beth's Pilates Challenge Video:
+https://youtu.be/JYUCCJRL2EU
+
+JEWELRY WORN IN MOST VIDEOS:
+I wear a variety of jewelry in my videos and the following is a list of my most worn pieces:
+
+Following are some of the pieces I wear regularly in my videos:
+
+David Yurman Diamond Wheaton Ring 
+https://rstyle.me/n/dfae47cfhjx
+
+David Yurman Wheaton Ring in Black Onyx and Diamonds
+https://rstyle.me/n/dfae5ycfhjx
+
+David Yurman Cable Classics Bracelet with Diamonds and 18K Gold
+https://rstyle.me/n/dfae8ncfhjx
+
+David Yurman Cable Classics Bracelet in Diamonds and 14K gold (single station bracelet)
+https://rstyle.me/n/dfgcjncfhjx
+David Yurman Cable Classics Bracelet with 14K Gold, 7mm
+https://rstyle.me/n/dfgcracfhjx 
+
+Davie Yurman Cable Classis Hoop Earrings with Gold
+https://rstyle.me/n/dfgctjcfhjx
+MAKEUP WORN IN TONED ARMS ARM BLASTER BYE BYE BAT WINGS HOW TO FIRM ARMS VIDEO:
+Smashbox Pore Minimizing Primer 
+https://rstyle.me/n/c5wu46cfhjx
+Too Faced Sweet Peach Comfort Matt Foundation in Nude
+https://rstyle.me/n/c5wu54cfhjx
+Laura Mercier Secret Brightening Powder for Under Eyes
+https://rstyle.me/n/c5wu62cfhjx
+Laura Mercier Loose Setting Powder in Translucent
+https://rstyle.me/n/c7beyxcfhjx
+Tarte Shape Tape Concealer in Light Medium Honey 
+https://rstyle.me/n/c5wu7gcfhjx
+Dermablend Concealer in Medium
+https://rstyle.me/n/c56dubcfhjx
+Tarte Clay Play Volume II Eyeshadow
+https://rstyle.me/n/c6pfprcfhjx
+Kevin Aucoin The Contour Book Volume II
+https://rstyle.me/n/c7beu8cfhjx
+Stilla Huge Extreme Lash Mascara 
+http://go.magik.ly/ml/ajom/
+Chanel Joues Contraste Blush in 370 Elegance
+https://rstyle.me/n/c56dwgcfhjx
+Tweezerman Metal Eyelash Comb    
+Tweezerman Eyelash Curler  
+http://go.magik.ly/ml/4xmj/
+Ulta New Hue Shadow Switching Pan  http://go.magik.ly/ml/4xma/
+Charlotte Tilbury Pillow Talk Lipstick and Lip Liner
+https://rstyle.me/n/c7ie3vcfhjx
+https://rstyle.me/n/c7ie4mcfhjx
+
+SKINCARE VIDEOS:
+RETIN-A FOR HOODED LIDS - VIEW 10 MONTH RESULTS: https://youtu.be/zWiOZ1VV2wk
+RETIN-A REDUCES HOODED LIDS (6 months results): http://bit.ly/2xpRCQN
+$8 CREAM TO ERASE NECK WRINKLES: http://bit.ly/2smHwjP
+RETIN-A ROUTINE AT 59: http://bit.ly/2hq8cbH
+LARGER LIPS IN 30 DAYS VIDEO:  http://bit.ly/2hSvM1f
+P.M. SKINCARE + RETIN-A VIDEO: http://bit.ly/2u5q6oX
+3 WAYS TO STOP RETIN-A PEELING, REDNESS &amp; IRRITATION: http://bit.ly/2scgtmM
+
+JOIN EBATES!  GET 2%-10% CASH BACK ON YOUR ONLINE PURCHASES!  GET $10 JUST FOR SIGNING UP!
+https://www.ebates.com/r/BSNYDE174?eeid=28187
+
+How Does Ebates Work?  When you want to go shopping online, go to Ebates first.  Search for the store you want to visit (i.e. Macy's Amazon, Old Navy, etc), then click on the offer you want to use!  Each quarter you will receive a check from Ebates for your Online Rebates (it's just like the old rebates, except you don't have to send anything in to get money back, except go through Ebates).
+
+Purchasing items through the above links (if applicable) helps support this channel as I receive a commission from the sale, however, using the links does not cost you any more. You may choose to use or not use the links. Either way, I appreciate your viewing my videos.
+
+FOLLOW ME ON SOCIAL MEDIA:
+Face Book:   https://www.facebook.com/PowerfulSecondHalf
+Instagram:   https://www.instagram.com/fiftyplusbeauty
+Twitter:  https://twitter.com/FiftyPlusBeauty
+
+Disclaimer: The information  in this video is for informational purposes only. Always consult a healthcare professional before taking any actions discussed or implied in the video or purchasing and/or using any products discussed. 
+
+Note: I have purchased the majority of products in my videos.  II I ever receive a product free, I will mention it in the video or the description.  I always give my subscribers my honest opinion. 
+
+BUSINESS INQUIRIES: For business inquiries, I can be reached through email at EmpowerBeth@gmail.com, or you may send  correspondence to:
+Fifty Plus Beauty  
+PO Box 781321                
+Wichita, KS  67207-9998 
+
+Other YouTubers You May Enjoy:
+Angie (HotandFlashy) 
+http://bit.ly/1U7oWmw
+
+Marnie Goldberg
+https://bit.ly/2wfpu1P
+
+Stephanie Marie
+https://bit.ly/2onWPTJ
+
+Risa Does Makeup
+https://bit.ly/2fG5VY7
+
+Emily Noel83
+http://bit.ly/XB48JS
+
+Shea Whitney
+https://bit.ly/2ltT2Gj
+
+Busbee Style
+https://bit.ly/2lHcay8
+
+Tati
+http://bit.ly/WcPbgs
+
+Carli Bybel
+http://bit.ly/1XGXQ6N</div><div><span class="ve-kh-gf-yp">8 min - 16 Aug 2018</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":24" role="option" aria-checked="false" tabindex="-1" id=":23" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(228).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":24">Toned Arms Workout</div><div class="ve-kh-gf-eb ">When you feel that burn in your arms you know you are getting a good workout. Today on XHIT, fitness trainer Rebecca-Louise shows you that you don't need to "do over a thousand" reps like Ron Burgundy to get a "deep burn." Grab your dumbbells and get ready to get an upper body pump! You stay classy, YouTubers!
+
+Sign up for our newsletter: http://goo.gl/ZCKdn
+
+Stay tuned to our channel for more episodes: http://goo.gl/c6p4j
+
+Check out our other fun workouts:
+1. Intense Ab Workout: http://goo.gl/cRtbu
+2.How to Burn 150 Calories in 8 Minutes: http://goo.gl/vtSYy
+3. Intermediate Pilates Workout http://goo.gl/88x8V
+4. McDonalds Calorie Burner http://goo.gl/XJ2dy
+5. Suit &amp; Tie Challenge http://goo.gl/DQIwq
+
+Check us out online: http://goo.gl/qVuTM
+Facebook: http://goo.gl/HzUSX
+Twitter: http://goo.gl/6esYW
+Tumblr: http://goo.gl/Tmzhb
+Pinterest: http://goo.gl/6tUk9
+Instagram: http://goo.gl/mEIzd</div><div><span class="ve-kh-gf-yp">9 min - 28 Dec 2012</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":26" role="option" aria-checked="false" tabindex="-1" id=":25" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(229).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":26">Train Like a Victoria's Secret Model With This 10-Minute Sculpted Arm Workout</div><div class="ve-kh-gf-eb ">Toned arms never go out of style. Take 10 minutes to work your biceps and triceps with Andrea Orbeck. She's trained many Victoria's Secret models, and now she'll train you in the comfort of your living room. Grab a set of dumbbells and get ready to sculpt sexy arms. Press play and follow along as Andrea leads you through this short but intense workout.
+
+POPSUGAR Fitness offers fresh fitness tutorials, workouts, and exercises that will help you on your road to healthy living, weight loss, and stress relief.  Check out Class FitSugar, our do-it-along-with-us real-time workout show hosted by Anna Renderer who will inspire you to sweat alongside fitness experts and Hollywood’s hottest celebrity trainers. Class FitSugar regularly covers the most buzzed-about workout classes and trends, including the Victoria's Secret workout, Tabata, P90X, Bar Method, and more.
+
+Subscribe to POPSUGAR Fitness!
+http://www.youtube.com/subscription_center?add_user=popsugartvfit
+
+Like us on Facebook!
+https://www.facebook.com/PopSugarFitness/
+
+Check us out on Instagram!
+https://www.instagram.com/popsugarfitness/
+
+Eat Clean with POPSUGAR
+Get a full 2-week clean-eating plan with our brand-new app! 70 recipes for breakfast, lunch, dinner, snacks, and treats, simple shopping lists, and more!  Get the app here: https://itunes.apple.com/us/app/clean-eating-plan-and-recipes/id1262482098?mt=8</div><div><span class="ve-kh-gf-yp">11 min - 6 Feb 2012</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":28" role="option" aria-checked="false" tabindex="-1" id=":27" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(230).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":28">20-Minute Flat-Belly and Toned-Arms Workout</div><div class="ve-kh-gf-eb ">We like to think of this workout as a two-for-one! We're going to work your abs and arms with a bunch of multitasking moves that target both areas and more. If you're new to working out, don't worry. We offer beginner modifications for all the exercises throughout the video. Grab a set of dumbbells between five and 10 pounds, and get ready to feel the burn.
+
+On Anna: BodyLanguage
+On Brittany: Puma, Koral, and Athletic Propulsion (APL) Shoes
+Manduka mats
+Corckicle bottles
+
+POPSUGAR Fitness offers fresh fitness tutorials, workouts, and exercises that will help you on your road to healthy living, weight loss, and stress relief.  Check out Class FitSugar, our do-it-along-with-us real-time workout show hosted by Anna Renderer who will inspire you to sweat alongside fitness experts and Hollywood’s hottest celebrity trainers. Class FitSugar regularly covers the most buzzed-about workout classes and trends, including the Victoria's Secret workout, Tabata, P90X, Bar Method, and more.
+
+Subscribe to POPSUGAR Fitness!
+http://www.youtube.com/subscription_center?add_user=popsugartvfit
+
+Like us on Facebook!
+https://www.facebook.com/PopSugarFitness/
+
+Check us out on Instagram!
+https://www.instagram.com/popsugarfitness/
+
+Eat Clean with POPSUGAR
+Get a full 2-week clean-eating plan with our brand-new app! 70 recipes for breakfast, lunch, dinner, snacks, and treats, simple shopping lists, and more!  Get the app here: https://itunes.apple.com/us/app/clean-eating-plan-and-recipes/id1262482098?mt=8</div><div><span class="ve-kh-gf-yp">23 min - 22 Jan 2017</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":2a" role="option" aria-checked="false" tabindex="-1" id=":29" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(231).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":2a">5 MINUTES TONED ARMS WORKOUT | no equipment | Caro Daur #DAURPOWER</div><div class="ve-kh-gf-eb ">Are you ready for a quick 5 minutes arm &amp; shoulder workout? 
+
+1. 60 sec - Hold
+2. 30 sec - Circles forward
+3. 30 sec - Circles reverse
+4. 60 sec - Plates in and out
+5. 30 sec - Flight attendant one arm
+6. 30 sec - Flight attendant both arms
+7. 30 sec - 4 x plates flight attendant combination
+8. 30  sec - All together
+
+I hope you liked the workout!  I would be super happy to hear your feedback! What did you like? Any preferences for my next videos? 
+
+TAGG me (@carodaur) + use the hashtag #DAURPOWER if you do the workout! :) Happy to see you working out! Lets do this together!
+
+INSTAGRAM: https://www.instagram.com/carodaur/
+LOCATION: Kaifu Lodge
+PRODUCTION: https://www.instagram.com/mala_yogamat/
+MUSIC MIX: André Hommen</div><div><span class="ve-kh-gf-yp">6 min - 25 Jun 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":2c" role="option" aria-checked="false" tabindex="-1" id=":2b" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(232).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":2c">8 MINUTE ARM Workout for Toned Arms (FAST!)</div><div class="ve-kh-gf-eb ">Arm workout for women at home to get toned arms FAST. Quick and effective arm workout to tone your arms in just 8 minutes!
+
+GlowBodyPT 21 Day 8 Minute Workout Challenge (FREE): https://www.glowbodypt.com/8minuteworkoutchallenge
+
+♥ 6 Week Lean Fast Strong Capable Plan: https://www.glowbodypt.com/lfsc-plan 
+
+♥ GlowBodyPT 12 POST PREGNANCY PLAN: https://glowbodypt.com/12-week-post-pregnancy-plan-2/
+
+♥ Website: http://www.glowbodypt.com
+
+♥ INSTAGRAM: @Glowbodypt
+
+♥ FACEBOOK: http://www.facebook.com/glowbodypt
+
+
+******
+
+Ashley Keller is a former World Champion 70.3 Triathlete, Army Veteran, mom of 2, fitness expert, entrepreneur and online personality. She is the creator of Glow Body PT, known for her challenging, hard core workouts, even throughout pregnancy &amp; postpartum! 
+
+***
+DISCLAIMER:
+
+GlowbodyPT, LLC strongly recommends that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge GlowBodyPT, LLC from any and all claims or causes of action, known or unknown, arising out of GlowBodyPT, LLC's negligence.</div><div><span class="ve-kh-gf-yp">9 min - 1 Apr 2018</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":2e" role="option" aria-checked="false" tabindex="-1" id=":2d" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(233).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":2e">10 Minute Toned Arms Workout! The ELEV8 Challenge | Day 11</div><div class="ve-kh-gf-eb ">I am so happy you are here today! PART 1 OF THIS WORKOUT IS HERE: *Will be uploaded at 5:00 am EST* 60 Minute Toned Arms, Abs, and Back! https://youtu.be/zRP2A8gWZAA
+Comment below to check in when you crush the workout and lock it in with a SUBSCRIBE!! THANK YOU SO MUCH for taking the time to do this for us! 
+
+GRAB YOUR FEBRUARY WORKOUT CALENDAR HERE! https://www.royalchange.fit/store/p75/The_Part_1_ELEV8_8_Week_Challenge_YouTube_Workout_Schedule_-_February_2020.html
+
+Join the Sydney Squad NOW for our 8-Week ELEV8 Challenge!
+Get access to your monthly workout calendar, nutrition, help with tracking and analyzing your nutrition and workout progress, access to me going live frequently doing educational sessions and Q&amp;A's, and join a group of over 800 like-minded people from across the entire world here!
+https://www.royalchange.fit/sydneysquad
+
+Let's really CRUSH this upper body tone up workout! I use my 8, 10, and 15 pound dumbbells but grab weights that work for you! LET'S ELEV8 TOGETHER!
+
+Pink sweat Towel: https://www.royalchange.fit/store/p42/Pink_Sydney_Squad_Sweat_Towel.html
+
+Black Sweat Towel: https://www.royalchange.fit/store/p47/Black_Royal_Change_Sweat_Towel.html
+
+COMMENT CRUSHED IT IN THE COMMENTS IF YOU CRUSHED IT WITH ME! 
+
+30 Day Transformation Program! https://www.royalchange.fit/30-day-transformation.html 
+
+Connect with me!!!
+Instagram: https://www.instagram.com/sydneycummings_
+Facebook: https://www.facebook.com/sydneycummingsfitness
+Twitter: https://twitter.com/sydneycummings_
+Website: https://www.royalchange.fit
+
+Shop at my Amazon store!
+https://www.amazon.com/shop/sydneycummings
+
+Equipment I use on my channel:
+SPRI Dumbbells https://amzn.to/2HBCM1D
+Tough Foam Roller https://amzn.to/2HBCM1D
+Softer Foam Roller https://amzn.to/2HBCM1D
+*Activity Tracker: https://www.apple.com/apple-watch-series-4/
+
+*Please take note that calories burned vary for every individual depending on multiple factors (e.g. age, body weight, heart rate, height, effort intensity, etc). Any slight variation in any of these factors can dramatically alter the amount of calories you burn. I calculate all of my calories using an Apple Watch 4 with the High Intensity Interval Training Workout application and I am 29 years old, 5’8”, and weigh 140 lbs so you can use my few factors as well as my intensity level to gauge yourself.
+
+In this workout you are training with me, Sydney Cummings, owner of Royal Change and NASM Certified Personal Trainer and Fitness Nutrition Specialist. I am a fitness trainer is Charlotte, North Carolina and was a Division 1 athlete at West Virginia University where I was a national qualifying high jumper. I use my knowledge from my NASM certifications, bachelor’s degree, nursing school experience, and my elite athletic background to lead you through workouts designed to make you a stronger, more balanced athlete. My goal is to get you closer to your goals with each workout!
+
+LEGAL DISCLAIMER:
+ 
+All information provided by Royal Change and/or Sydney Cummings is furnished strictly for educational and entertainment purposes only. Royal Change and/or Sydney Cummings is not engaged in rendering medical or professional services. No information is to be taken as medical or other health advice pertaining to any individual's specific health or medical condition. Please consult your healthcare professional before participating in or acting on any recommendation found in content provided by Royal Change and/or Sydney Cummings.
+ 
+You agree that use of the information contained in any content provided by Royal Change and/or Sydney Cummings is at your own risk. Royal Change and/or Sydney Cummings is not responsible or liable for any injury sustained as a result of using the content in this video or any other video provided by Royal Change and/or Sydney Cummings.</div><div><span class="ve-kh-gf-yp">13 min - 11 Feb 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":2g" role="option" aria-checked="false" tabindex="-1" id=":2f" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(234).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":2g">Toned Arms Workout // INTENSE 15 MIN // Lean Arms | Mr and Mrs Muscle</div><div class="ve-kh-gf-eb ">#tonedarms #tonedarmsworkout #leanarms #leanarmsworkoutchallenge #mrandmrsmuscle
+
+Tone your biceps, triceps, shoulders and back muscles in this fun but intense and SUPER EFFECTIVE Toned Arms Workout. If you don't have dumbbells at home you can fill up two water bottles (preferably 1L each) and use these for additional resistance to still help you achieve lean arms.
+-
+The primary goal of this workout is to help you build lean muscle and burn excess fat. To lose fat fast and in turn lose arm fat pay close attention to the type of food you consume, your protein levels, water intake, your rest/sleep and do more cardio focused workouts. 
+All of the Mr and Mrs Muscle Workouts are high intensity cardio based and designed for faster fat loss.
+-
+MY OUTFIT: https://gym.sh/muscle-home
+Black/Lime Illuminations Sports Bra and Leggings from Gymshark! Check here to find out more: https://gym.sh/muscle-home
+---
+NEED TO LOSE WEIGHT QUICKLY &amp; EFFECTIVELY?
+Download our FREE &amp; PREMIUM Workout Calendars and Weight Loss Meal Plans
+Go to - https://MrandMrsMuscle.com
+-
+FOR NO EQUIPMENT HOME WORKOUTS
+https://www.youtube.com/playlist?list=PLfj4lZyPiNalBzIOOmtB59SjwxNWXpN9_
+-
+FOR WARM UP EXERCISES CLICK HERE:
+https://www.youtube.com/playlist?list=PLfj4lZyPiNakOeBmzvK06kBJSrKbihzii
+---------------------------------------------------------------------
+Toned Arms Workout // INTENSE 15 MIN // LEAN ARMS | Mr and Mrs Muscle
+--
+Main Workout: 30s Active / 10s Rest / 4 Rounds
+Dumbbells: 5kg each
+1) Upright Row + Step
+2) W Curls
+3) Triceps Press to Skull Crusher
+4) Seated Shoulder Press
+5) Kickstand Supinated DB Row
+6) Tabletop Triceps Kickback
+--
+VIDEO KEY:
+MUSCLES WORKED
+🔴 RED = Primary Muscles
+🔵 BLUE = Secondary Muscles
+---
+Website - https://www.mrandmrsmuscle.com
+750+ Workouts on Instagram - https://www.instagram.com/mrandmrsmuscle
+Like our Facebook Page - https://www.facebook.com/mrandmrsmuscle
+Subscribe - https://www.youtube.com/channel/UCi_J6WNj99ro-9cPZOUrf8Q?sub_confirmation=1
+Get My Fitness Supplements - https://womens.best/mrandmrsmuscle
+Our Gymshark Outfits - https://gym.sh/muscle-home
+---
+PLEASE SHARE OUR HIIT WORKOUTS WITH SOMEONE WHO NEEDS MOTIVATION AND HELP 
+---
+toned arms // upper body dumbbell workout // pilates // arms workout // lean arms // workout challenge // lose arm fat // arm fat workout
+----
+#bestarmexercises #losearmfat #weightloss #pilates #athomeworkout #stayathome #withme</div><div><span class="ve-kh-gf-yp">16 min - 19 Apr 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":2i" role="option" aria-checked="false" tabindex="-1" id=":2h" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(235).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":2i">10 MIN AGELESS ARMS WORKOUT - Get TONED!  | Rebecca Louise</div><div class="ve-kh-gf-eb ">Do you want to achieve arms that are ageless? This 10 MIN AGELESS ARMS WORKOUT has got all the moves to create that effect 💪🏻 Kickstart your healthy lifestyle, enter your email to receive your FREE workout &amp; meal plan - https://rebecca-louise.com 
+
+Oh check this out, did you know I have a BOOK?! say whattt?! Yup, when you get it now get access to all the pre order goodies including the 101 recipe book! https://rebecca-louise.com/book
+
+★ The #1 Daily Fitness &amp; Nutrition App - BURN by Rebecca Louise. Get your 7-day FREE trial TODAY! Not sure what workout to do when or what to eat to get the fastest results? No problem, this will solve your questions and get you toned in no time! 
+Desktop - https://icanfeeltheburn.com 
+iOS - https://apple.co/2Kj3NYG 
+Android - http://bit.ly/burnbyrebecca 
+
+Join our community!
+Instagram: https://www.instagram.com/rebeccalouisefitness
+Facebook: https://www.facebook.com/rebeccalouisefitness
+Website: http://rebecca-louise.com/
+Podcast Channel: http://bit.ly/2uyjy5h
+
+Have a question..? Drop it below!
+
+Subscribe to the channel and always stay on track! - http://bit.ly/2voMxWO</div><div><span class="ve-kh-gf-yp">13 min - 18 Feb 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":2k" role="option" aria-checked="false" tabindex="-1" id=":2j" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(236).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":2k">30 Minute Toned Arms &amp; Abs Workout 🔥Burn 300 Calories! 🔥</div><div class="ve-kh-gf-eb ">Great job today and thank you to everyone who has subscribed! All 17,700 of you! I am SO thankful I get to be a part of your life!
+
+Use code “YOUTUBE” on my website for 30% off everything!
+
+New apparel is in!!!! https://goo.gl/jEHrhm 
+
+Check out my 30 Day Transformation program PACKED full of content! https://goo.gl/1m16pq
+
+Grab my Healthy Breakfast Recipes (Macro Friendly!) here:&nbsp;&nbsp;https://goo.gl/CNt3JK
+
+Subscribe to my channel NOW so you don’t miss any of my daily workouts!
+
+Let me know what you thought of this workout in the comments below and “LIKE” this video if you enjoyed it!
+ 
+Connect with me!!!
+Instagram: https://www.instagram.com/sydneycummi...
+Facebook: https://www.facebook.com/royalchangef...
+Twitter: https://twitter.com/sydneycummings_
+Website: https://www.royalchange.fit
+
+I am so excited to really work your arms and abs today! I am using 5lb, 8lb, and 10lb dumbbells today and we are isolating your triceps, biceps, and shoulder muscles! We are working for 40 seconds and resting for 20 seconds. In between arm muscle isolation groups we will work our abs isolating the abs in a rotational circuit, an upper abs circuit, and a lower abs circuit! Make sure you challenge yourself but keep technique the most important part of this workout to really feel the burn so we can tone our arms and flatten our tummy!
+Lets burn 300 calories together but most importantly, lets challenge our muscles today!
+
+Share this workout with a friend on Facebook and help me help more people just like you!
+
+Equipment I use: 
+Sliders (use code ROYAL20 for 20% off!) https://www.wodfitters.com/products
+Wood Plyo Box: https://amzn.to/2Md9l3T (I couldn’t find the link to my exact box so here is another one of the same kind!)
+Manduka eKo Lite Yoga Mat: http://amzn.to/2GlquGy
+SPRI Dumbbells http://amzn.to/2DONM5X
+WODfitters Mini Bands https://amzn.to/2s0nE4l
+WODfitters Resistance Bands https://amzn.to/2IXMLyq
+Sling Shot wider band https://amzn.to/2J38vZJ
+Nalgene 32 oz Water Bottle: http://amzn.to/2DQAsyb
+CAP Kettlebell: https://amzn.to/2FEnVOo
+TriggerPoint Grid 2.0 Foam Roller https://amzn.to/2J2uH6f
+SPRI Foam Roller https://amzn.to/2khUVUo
+Apple Watch Series 3: https://www.apple.com/apple-watch-ser...
+
+*Please take note that calories burned vary for every individual depending on multiple factors (e.g. age, body weight, heart rate, height, effort intensity, etc). Any slight variation in any of these factors can dramatically alter the amount of calories you burn. I calculate all of my calories using an Apple Watch 3 with the High Intensity Interval Training Workout application and I am 27 years old, 5’8”, and weigh 145lbs so you can use my few factors as well as my intensity level to gauge yourself.
+
+In this workout you are training with me, Sydney Cummings, owner of Royal Change and NASM Certified Personal Trainer and Fitness Nutrition Specialist. I am a fitness trainer is Charlotte, North Carolina and was a Division 1 athlete at West Virginia University where I was a national qualifying high jumper. I use my knowledge from my NASM certifications, bachelor’s degree, nursing school experience, and my elite athletic background to lead you through workouts designed to make you a stronger, more balanced athlete. My goal is to get you closer to your goals with each workout!
+
+LEGAL DISCLAIMER:
+ 
+All information provided by Royal Change and/or Sydney Cummings is furnished strictly for educational and entertainment purposes only. Royal Change and/or Sydney Cummings is not engaged in rendering medical or professional services. No information is to be taken as medical or other health advice pertaining to any individual's specific health or medical condition. Please consult your healthcare professional before participating in or acting on any recommendation found in content provided by Royal Change and/or Sydney Cummings.
+ 
+You agree that use of the information contained in any content provided by Royal Change and/or Sydney Cummings is at your own risk. Royal Change and/or Sydney Cummings is not responsible or liable for any injury sustained as a result of using the content in this video or any other video provided by Royal Change and/or Sydney Cummings.</div><div><span class="ve-kh-gf-yp">33 min - 2 Aug 2018</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":2m" role="option" aria-checked="false" tabindex="-1" id=":2l" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(237).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":2m">40 Minute Toned Arms Workout 🔥Burn 405 Calories! 🔥</div><div class="ve-kh-gf-eb ">Only good through the rest of the week, I’m giving 30% off EVERYTHING on my website! Use promo code “WEDIDIT” at checkout at http://www.royalchange.fit !
+
+New apparel is in!!!! https://goo.gl/jEHrhm 
+
+Check out my 30 Day Transformation program PACKED full of content! https://goo.gl/1m16pq
+
+Grab my Healthy Breakfast Recipes (Macro Friendly!) for 30% off using promo code 'WEDIDIT' here:  https://goo.gl/CNt3JK
+
+For all of you who have asked for a PayPal or Venmo link to support my channel here they are (trust me, I do not expect this so please don’t feel obligated to. I just wanted to provide these after several requests from all of you who asked)! Thank you!!! 
+
+PayPal: https://www.paypal.me/SydneyCummings
+Venmo: https://venmo.com/sydneycummings
+
+Subscribe to my channel NOW so you don’t miss any of my daily workouts!
+
+Let me know what you thought of this workout in the comments below and “LIKE” this video if you enjoyed it!
+ 
+Connect with me!!!
+Instagram: https://www.instagram.com/sydneycummi...
+Facebook: https://www.facebook.com/royalchangef...
+Twitter: https://twitter.com/sydneycummings_
+Website: https://www.royalchange.fit
+
+In this 40 Minute Toned Arms Workout I take you through multiple arm exercises using a set of light weight and medium weight dumbbells (I used 5lbs and 8lbs and have linked the dumbbells I use below)! I burned 405 calories*! What can you burn?
+
+Share this workout with a friend and if you're ready to get started, let’s do it!
+
+Equipment I use: 
+Manduka eKo Lite Yoga Mat: http://amzn.to/2GlquGy
+SPRI Dumbbells http://amzn.to/2DONM5X
+WODfitters Mini Bands https://amzn.to/2s0nE4l
+WODfitters Resistance Bands https://amzn.to/2IXMLyq
+Sling Shot wider band https://amzn.to/2J38vZJ
+Nalgene 32 oz Water Bottle: http://amzn.to/2DQAsyb
+CAP Kettlebell: https://amzn.to/2FEnVOo
+TriggerPoint Grid 2.0 Foam Roller https://amzn.to/2J2uH6f
+SPRI Foam Roller https://amzn.to/2khUVUo
+Apple Watch Series 3: https://www.apple.com/apple-watch-ser...
+
+*Please take note that calories burned vary for every individual depending on multiple factors (e.g. age, body weight, heart rate, height, effort intensity, etc). Any slight variation in any of these factors can dramatically alter the amount of calories you burn. I calculate all of my calories using an Apple Watch 3 with the High Intensity Interval Training Workout application and I am 27 years old, 5’8”, and weigh 145lbs so you can use my few factors as well as my intensity level to gauge yourself.
+
+In this workout you are training with me, Sydney Cummings, owner of Royal Change and NASM Certified Personal Trainer and Fitness Nutrition Specialist. I am a fitness trainer is Charlotte, North Carolina and was a Division 1 athlete at West Virginia University where I was a national qualifying high jumper. I use my knowledge from my NASM certifications, bachelor’s degree, nursing school experience, and my elite athletic background to lead you through workouts designed to make you a stronger, more balanced athlete. My goal is to get you closer to your goals with each workout!
+
+LEGAL DISCLAIMER:
+ 
+All information provided by Royal Change and/or Sydney Cummings is furnished strictly for educational and entertainment purposes only. Royal Change and/or Sydney Cummings is not engaged in rendering medical or professional services. No information is to be taken as medical or other health advice pertaining to any individual's specific health or medical condition. Please consult your healthcare professional before participating in or acting on any recommendation found in content provided by Royal Change and/or Sydney Cummings.
+ 
+You agree that use of the information contained in any content provided by Royal Change and/or Sydney Cummings is at your own risk. Royal Change and/or Sydney Cummings is not responsible or liable for any injury sustained as a result of using the content in this video or any other video provided by Royal Change and/or Sydney Cummings.</div><div><span class="ve-kh-gf-yp">42 min - 31 May 2018</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":2o" role="option" aria-checked="false" tabindex="-1" id=":2n" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(238).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":2o">20-Minute Toned Arms &amp; Abs Workout</div><div class="ve-kh-gf-eb ">Barry's Bootcamp trainer Astrid Swan brings you the ultimate combination of multitasking arms and abs exercises. This workout will target both areas for an effective and efficient workout in just 20 minutes! Grab a pair of light free weights and let's do it!
+
+
+POPSUGAR Fitness offers fresh fitness tutorials, workouts, and exercises that will help you on the road to healthy living, weight loss, and stress relief. Check out Class FitSugar, our do-it-along-with-us real-time workout show hosted by Anna Renderer, who will inspire you to sweat alongside fitness experts and Hollywood’s hottest celebrity trainers. Class FitSugar regularly covers the most buzzed-about workout classes and trends, including the Victoria's Secret workout, Tabata, P90X, Bar Method, and more.
+
+Subscribe to POPSUGAR Fitness!
+https://www.youtube.com/subscription_center?add_user=popsugartvfit
+
+Like us on Facebook!
+https://www.facebook.com/PopSugarFitness/
+
+Check us out on Instagram!
+https://www.instagram.com/popsugarfitness/
+
+Eat Clean with POPSUGAR
+Get a full 2-week clean-eating plan with our brand-new app! 70 recipes for breakfast, lunch, dinner, snacks, and treats, simple shopping lists, and more!  Get the app here: https://itunes.apple.com/us/app/clean-eating-plan-and-recipes/id1262482098?mt=8
+
+Visit POPSUGAR!
+https://www.popsugar.com/fitness/20-minute-arms-abs-toning-workout-with-astrid-swan-46867720</div><div><span class="ve-kh-gf-yp">21 min - 2 Feb 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":2q" role="option" aria-checked="false" tabindex="-1" id=":2p" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(239).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":2q">BEST 10 Minute Arm Workout - Get Long, Lean, Toned Arms | Rebecca Louise</div><div class="ve-kh-gf-eb ">Do you want LONG, LEAN, TONED ARMS?! 💪🏽 This is the workout for you! 💥 Not sure where to start? Kickstart your healthy lifestyle, enter your email to receive your FREE workout &amp; meal plan - https://rebecca-louise.com
+
+
+★ The #1 Daily Fitness &amp; Nutrition App - BURN by Rebecca Louise. Get your 7-day FREE trial TODAY!
+Not sure what workout to do when or what to eat to get the fastest results? No problem, this will solve your questions and get you toned in no time!
+Desktop - https://icanfeeltheburn.com
+iOS - https://apple.co/2Kj3NYG
+Android - http://bit.ly/burnbyrebecca
+
+Join our community!
+Instagram: https://www.instagram.com/rebeccalouisefitness
+Facebook: https://www.facebook.com/rebeccalouisefitness
+Website: http://rebecca-louise.com/
+Podcast Channel: http://bit.ly/2uyjy5h
+
+Have a question..? Drop it below!
+
+Subscribe to the channel and always stay on track! - http://bit.ly/2voMxWO</div><div><span class="ve-kh-gf-yp">11 min - 11 Dec 2019</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":2s" role="option" aria-checked="false" tabindex="-1" id=":2r" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(240).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":2s">40 Minute TONED ARMS AND SHOULDERS WORKOUT 🔥BURN 400 CALORIES!* 🔥with Sydney Cummings</div><div class="ve-kh-gf-eb ">Are you ready to get amazing definition in your arms? Try THIS workout! My upper body feels AMAZING after this workout! LET ME KNOW IF YOURS DOES TOO! 
+
+HEAD TO PART 2 OF YOUR WORKOUT HERE! : https://www.youtube.com/watch?v=41rfHeyw4K8&amp;t=652s
+
+Make 2019 your best year YET! www.royalchange.fit/sydneysquad
+
+Share this workout with your friends to see how much they love it too!
+
+This arms workout has me feeling pumped! I love strong beautiful arms, I think everyone should be building strength in their upper body at all times to maintain proper posture and an overall athletic frame!  We will execute each strength movements that focus on the shoulders, biceps, and triceps and we will be working for 3 minute circuits unilaterally! We are going to be counting reps today so make sure you are ready to push yourself to get as high as possible in our 3 minute circuit! Quality over quantity in this workout so make sure your reps are challenging and executed with proper form! Let's get pumped today!
+
+Use code "newyear" to take 20% off my 30 Day Transformation Program! https://www.royalchange.fit/30-day-transformation.html
+
+Let me know what you thought of this workout in the comments below and “LIKE” this video if you enjoyed it!
+
+Thank you for your prayers as I fight to recover from being shot in the foot after the senseless shooting my fiance and I survived. For more info on what happened to me, check out the video we made right after the shooting to explain everything. https://www.youtube.com/watch?v=-0sLUtTYSu4
+
+Connect with me!!!
+Instagram: https://www.instagram.com/sydneycummings_
+Facebook: https://www.facebook.com/sydneycummingsfitness
+Twitter: https://twitter.com/sydneycummings_
+Website: https://www.royalchange.fit
+
+A lot of you have asked me for links to things I use or suggest so I made an easy one-stop-shop storefront for you here on Amazon! Check it out and recommend to a friend too!
+https://www.amazon.com/shop/sydneycummings
+
+Equipment I use in THIS workout:
+SPRI Dumbbells http://amzn.to/2DONM5X
+Manduka eKo Lite Yoga Mat: http://amzn.to/2GlquGy
+
+Equipment I use on my channel:
+Sliders (use code ROYAL20 for 20% off!) https://www.wodfitters.com/products
+SPRI Dumbbells http://amzn.to/2DONM5X
+Manduka eKo Lite Yoga Mat: http://amzn.to/2GlquGy
+Wood Plyo Box: https://amzn.to/2Md9l3T (I couldn’t find the link to my exact box so here is another one of the same kind!)
+WODfitters Mini Bands https://amzn.to/2s0nE4l
+WODfitters Resistance Bands https://amzn.to/2IXMLyq
+Sling Shot wider band https://amzn.to/2J38vZJ
+Nalgene 32 oz Water Bottle: http://amzn.to/2DQAsyb
+CAP Kettlebell: https://amzn.to/2FEnVOo
+TriggerPoint Grid 2.0 Foam Roller https://amzn.to/2J2uH6f
+SPRI Foam Roller https://amzn.to/2khUVUo
+Apple Watch Series 3: https://www.apple.com/apple-watch-series-3/
+
+*Please take note that calories burned vary for every individual depending on multiple factors (e.g. age, body weight, heart rate, height, effort intensity, etc). Any slight variation in any of these factors can dramatically alter the amount of calories you burn. I calculate all of my calories using an Apple Watch 3 with the High Intensity Interval Training Workout application and I am 28 years old, 5’8”, and weigh 145lbs so you can use my few factors as well as my intensity level to gauge yourself.
+
+In this workout you are training with me, Sydney Cummings, owner of Royal Change and NASM Certified Personal Trainer and Fitness Nutrition Specialist. I am a fitness trainer is Charlotte, North Carolina and was a Division 1 athlete at West Virginia University where I was a national qualifying high jumper. I use my knowledge from my NASM certifications, bachelor’s degree, nursing school experience, and my elite athletic background to lead you through workouts designed to make you a stronger, more balanced athlete. My goal is to get you closer to your goals with each workout!
+
+LEGAL DISCLAIMER:
+ 
+All information provided by Royal Change and/or Sydney Cummings is furnished strictly for educational and entertainment purposes only. Royal Change and/or Sydney Cummings is not engaged in rendering medical or professional services. No information is to be taken as medical or other health advice pertaining to any individual's specific health or medical condition. Please consult your healthcare professional before participating in or acting on any recommendation found in content provided by Royal Change and/or Sydney Cummings.
+ 
+You agree that use of the information contained in any content provided by Royal Change and/or Sydney Cummings is at your own risk. Royal Change and/or Sydney Cummings is not responsible or liable for any injury sustained as a result of using the content in this video or any other video provided by Royal Change and/or Sydney Cummings.</div><div><span class="ve-kh-gf-yp">43 min - 17 Jan 2019</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":2u" role="option" aria-checked="false" tabindex="-1" id=":2t" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(241).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":2u">Arm TONING + STRENGTH Workout // For Strong, Toned Arms!</div><div class="ve-kh-gf-eb ">Visit: https://www.heatherrobertson.com 
+
+Get ready to feel the burn! This arm toning and strength workout is a killer with 4 sets of each upper body exercise. We are targeting the shoulders, triceps and biceps with these arm toning exercises today plus we will wrap up with a much needed stretch so stick around until the end. 
+
+Weights I'm Using:
+small set = 5lbs each
+medium set = 10lbs each
+
+Supplements, Gear + More: https://www.amazon.com/shop/heatherro...
+
+L I N K S
+
+Website: http://www.heatherrobertson.com
+Instagram: http://www.instagram.com/heatherrober...
+Twitter: http://www.twitter.com/followheatherr
+Facebook: http://www.facebook.com/heatherrobert...
+______________________________ 
+
+D I S C L A I M E R
+
+This is my own personal workout and may not be suited for you. It is strongly recommend that you consult with your physician before beginning any exercise program. By engaging in this exercise or exercise program, you agree that you do so at your own risk.
+
+______________________________ 
+
+Thanks for watching! 
+
+❤ Heather</div><div><span class="ve-kh-gf-yp">30 min - 20 Jul 2019</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":2w" role="option" aria-checked="false" tabindex="-1" id=":2v" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(91).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":2w">12 Minutes to Toned Booty Workout</div><div class="ve-kh-gf-eb ">You guys made it to your LAST 12 Minutes to Toned video!!! Have you guys been liking these extreme workouts?! I hope so cause today you guys are gonna experience a GOOD. BOOTY. DEATH. Yup, our last workout is all about the glutes!!!
+
+The moves are kneeling leg lift (right), elbow tap extension (right), laying mermaid lift (right), kneeling leg lift (left), elbow tap extension (left), laying mermaid lift (left)  &amp; butterfly bridges!
+
+Here is where I get all of my music! Epidemic Sound: http://share.epidemicsound.com/sgFTn
+
+My yoga mat is from: http://www.popflexactive.com
+
+******
+
+Cassey Ho is an award-winning fitness instructor, entrepreneur and online personality. As the creator behind Blogilates, the #1 female fitness channel on YouTube, she’s transformed millions of lives through helping them achieve their strength and weight-loss goals. She focuses on making fitness fun and the results are evident. Cassey's unique format, POP Pilates©, which launched as a workout video on YouTube in 2009, has become a live fitness class that can be taken at gyms all over the world with over 3,000 POP Pilates classes being taught monthly. Her authenticity continues to shine through, making her one of the most relatable fitness icons online and beyond. She's also the author of the best-selling book, Hot Body Year Round and is the designer of her own activewear line, POPFLEX.
+
+With a wide range of free workout videos available, Cassey's channel focuses on ab exercises, butt &amp; thigh exercises, arm exercises, pilates, cardio routines, fat burning workouts, high intensity interval training workouts (HIIT), stretching and flexibility routines and so much more!
+
+
+***
+DISCLAIMER:
+
+Blogilates and oGorgeous Inc. strongly recommend that you consult with your physician before beginning any exercise program.
+
+You should be in good physical condition and be able to participate in the exercise.
+
+You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in this exercise or exercise program, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Blogilates and oGorgeous Inc. from any and all claims or causes of action, known or unknown, arising out of Blogilates' and oGorgeous Inc.'s negligence.</div><div><span class="ve-kh-gf-yp">17 min - 23 Feb 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":2y" role="option" aria-checked="false" tabindex="-1" id=":2x" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(242).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":2y">Fit &amp; Toned Arms for Ageless (Mature) Women</div><div class="ve-kh-gf-eb ">At (NOW 68), I keep my arms toned with these simple at home exercises. I recommend that you do 10-12 reps of each exercise and 2-3 sets until the muscle is quite fatigued. 
+
+GET OUR TOP TEN HEALTHY RECIPES &amp; NEW WORKOUT VIDEO:
+Click here for instant access: http://eepurl.com/ghAewr
+
+DISCOVER OUR EAT LIVE THRIVE DIET to rev up your mid-life metabolism! 
+https://eatlivethrivediet.com/
+
+WEIGHT LOSS COACHING, ACCOUNTABILITY &amp; SUPPORT:
+https://eatlivethriveacademy.com/
+
+FOLLOW US ON FACEBOOK:
+https://www.facebook.com/leanhealthyageless
+
+FOLLOW US ON INSTAGRAM: 
+https://www.instagram.com/leanhealthyageless
+
+
+NOTE:  These routines are for women who have good mobility and should be modified to accommodate for any physical limitations you may have. Don't begin a new exercise program without consulting with your personal healthcare practitioners.
+
+FTC: This video is not sponsored. All opinions are always 100% honest and our own. Links are either to our web store or affiliate links. If you click an affiliate link and buy something, we receive a commission for the sale. It doesn't cost you anything extra and you are free to use the link or not as you choose. If you do use our links, we appreciate your support!</div><div><span class="ve-kh-gf-yp">9 min - 13 Jan 2016</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":30" role="option" aria-checked="false" tabindex="-1" id=":2z" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(243).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":30">10 Min TONED Arms Workout | 10 Easy Arm Exercises For Quick Results (No Equipment)</div><div class="ve-kh-gf-eb ">This quick &amp; effective 10 minute arm workout is the best way to tone your arms and bring definition, and weight loss to your upper body and shoulders. Through very effective 10 sculpting arm exercises, this class will help you achieve lean and beautiful muscle definition without any bulkiness and with all the lean and beautiful summer ready shoulders and arms. 
+
+Get ready to feel the burn! 
+
+Class Instructor: Juliana Spicoluk
+Video Production: Mark Spicoluk
+
+'PAY WHAT YOU CAN' Exclusive Member Videos:
+https://www.patreon.com/bohobeautiful
+
+Boho Beautiful TRANSFORM- Your At Home Fitness Program
+https://bohobeautiful.life/transform
+
+Help Translate Our Videos To Your Language Here:
+https://www.youtube.com/timedtext_cs_panel?c=UCWN2FPlvg9r-LnUyepH9IaQ&amp;tab=2
+
+MORE FREE YOGA VIDEOS:
+
+Total Body Yoga Workout in Greece:
+https://youtu.be/B98Gi20riog
+
+Best Yoga Workout For Arms &amp; Booty
+https://youtu.be/erOGuFpK8RA
+
+Yoga Workout Flow | 20 Minute Full Body Workout
+https://youtu.be/j77wT96jHCI
+
+#BohoBeautiful #Arms #Workout
+Boho Beautiful is Juliana Spicoluk and Mark Spicoluk. 
+
+----------------------------------------------------------------------------------------------------------
+Boho Beautiful is a yoga fitness lifestyle channel created by Juliana Spicoluk and Mark Spicoluk that is creating positive content for your body, mind, and the earth. Yoga, Wanderlust, Fitness, Vegan food, Conscious Living, and Meditation!
+
+Thank you so much for watching and subscribing to our channel! 
+Connect With Us!
+
+Patreon: https://www.patreon.com/bohobeautiful
+Facebook: http://facebook.com/bohobeautifullife
+Instagram- http://instagram.com/bohobeautifullife
+
+https://www.bohobeautiful.life
+
+———————————————————————————————————————
+
+DISCLAIMER:
+Please consult your doctor before starting any diet or exercise program. By using our videos, you understand and agree that neither Boho Beautiful Ltd. nor any persons associated with it have any liability to you for any injury or loss you may suffer in connection with any content we may post.</div><div><span class="ve-kh-gf-yp">11 min - 16 Jun 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":32" role="option" aria-checked="false" tabindex="-1" id=":31" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(244).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":32">Toned, Lean Arms Workout -- Rhomboids, Shoulders, Bicep, Tricep, and Chest Workout</div><div class="ve-kh-gf-eb ">Calorie burn info &amp; printable routine @ http://bit.ly/RckyBc
+Lose 16-24 lbs in 8 weeks with our 8 Week Fat Loss Programs - find out how @ http://bit.ly/13EdZgX
+Support Fitness Blender on Facebook @ http://on.fb.me/zDxh3R
+
+We read every single comment &amp; like to hear from you :) 
+
+Note: All information provided by Fitness Blender is of a general nature and is furnished only for educational/entertainment purposes only. No information is to be taken as medical or other health advice pertaining to any individual specific health or medical condition. You agree that use of this information is at your own risk and hold Fitness Blender harmless from any and all losses, liabilities, injuries or damages resulting from any and all claims.</div><div><span class="ve-kh-gf-yp">21 min - 24 Sep 2012</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":34" role="option" aria-checked="false" tabindex="-1" id=":33" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(245).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":34">10 Minute Workout for Toned Arms &amp; Back, How to Lose Arm Fat! At Home, Beginners | Eliz Fitness</div><div class="ve-kh-gf-eb ">Eliz shows you how to target the arms, lats &amp; back with No Equipment or Weights!  This is great for beginners!
+♥ More Eliz Fitness Workouts FREE with Prime: https://www.amazon.com/10-Minute-Arms-Back-Shoulders/dp/B07YXLH8P9/
+♥ Our FREE Yoga App for Apple: https://apple.co/2MhqR8n
+♥ Our FREE Yoga App for Android: https://bit.ly/2MidhBO
+
+See all the "Eliz Fitness" workout programs in the "Plus" section of our app:
+♥ FREE Yoga App for Apple: https://apple.co/2MhqR8n
+♥ FREE Yoga App for Android: https://bit.ly/2MidhBO
+
+♥ Follow Eliz for more workouts &amp; inspiration: https://www.instagram.com/therealeliz_fitness/
+
+♥ Unlock ALL our Premium Health &amp; Wellness Content (Yoga, Fitness, Massage Therapy, Nutrition &amp; More):
+https://wellnessplus.tv
+
+♥ Follow our Social Media
+https://www.instagram.com/psychetruth
+http://www.facebook.com/psychetruthvideos
+http://www.twitter.com/psychetruth
+
+Related Videos:
+How to Target Glute Max, 10 Minute Butt Lift &amp; Tone Workout, At Home Beginners | Eliz Fitness
+https://youtu.be/QYwc28b8E4c
+
+10 Minute Lower Belly Blast with Eliz | How to Target Low Abs, No Equipment Workout, At Home Fitness
+https://youtu.be/dK_WZD2qo9Y
+
+Toned, Tank Top Arms in 12 Minutes! How to Lose Arm Fat Workout for Beginners, Home Fitness
+https://youtu.be/DPWciUzPOJM
+
+20 Minute Butt Lift Workout for Beginners: Tone &amp; Shape Glutes Exercise Routine at Home
+https://youtu.be/09UN3UCv3ds
+
+Best Butt Lift &amp; Slim Inner Thigh Workout - Dance &amp; Pilates Based Beginners Exercises
+https://youtu.be/o-2CkMVRjs0
+
+Total Body Cardio Burn ♥ Yoga for Weight Loss &amp; Metabolism, 30 Minute Workout, Power Class At Home
+https://youtu.be/9mkIus0Jlo8
+
+Music By iChill Music Factory
+Songs: Mandalay Bay 
+Album: Bar Beats 
+http://www.ichillmusic.com 
+
+© Copyright 2019 Target Public Media, LLC. All Rights Reserved. #Psychetruth #WellnessPlus #10minuteworkout #armworkout #ElizFitness #Fitmoms</div><div><span class="ve-kh-gf-yp">11 min - 27 Nov 2019</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":36" role="option" aria-checked="false" tabindex="-1" id=":35" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(246).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":36">30 MIN STRONG TONED ARMS  | with weights (dumbbells or water bottles) | growingannanas</div><div class="ve-kh-gf-eb ">First episode of this week's workout series SWEAT AND GROW! This week we focus on building strength and losing fat with intense HIIT Workouts.
+
+DAY 1: STRONG AND TONES ARMS
+WORKOUT DETAILS
+
+6 Minutes: Warm Up
+24 Minutes: Workout (focus Shoulders, Biceps, Triceps)
+
+☆ Last Minute: Challenge Time - keep pushing and share your result in the comments ☆
+
+We really work those arms today - low impact - with a pair of dumbbells or water bottles.
+
+D I S C L A I M E R
+
+If you are new to exercise, you should consult your physician. This information is not meant as an alternative to seeking professional medical advice or suggested treatment. Please know that performing any exercise or programme is solely at your own risk.
+__ 
+
+👚 My Outfit : https://gym.sh/Shop-Anna-E
+🥛 My Supplements: https://www.foodspring.de/whey-protein (USE ANNAFSG for 15% OFF)
+
+📷 GEAR I USE: 
+Camera: https://amzn.to/3aticKD
+Lens: https://amzn.to/3cCiujR
+Tripod: https://amzn.to/2zontX9
+Microphone: https://amzn.to/34VaKXH
+
+💪🏼 MY HOME TRAINING GUIDE: http://growingannanas.com
+
+» Subscribe to my Channel for weekly workouts: http://bit.ly/2QLvpXn
+
+» Instagram: http://bit.ly/2ZSdHFR
+» Facebook: http://bit.ly/2SVkgpE
+✉ Contact (business inquiries):  growingannanas@gmail.com</div><div><span class="ve-kh-gf-yp">32 min - 31 Aug 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":38" role="option" aria-checked="false" tabindex="-1" id=":37" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(247).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":38">4-Minute No-Weight, Arm Toning Workout | Class FitSugar</div><div class="ve-kh-gf-eb ">No equipment needed to tone up your arms in 4 minutes — from ModelFIT.
+
+On Anna: Sweaty Betty and Athletic Propulsion Labs (APL) shoes
+On Sarah: Sweaty Betty tights, Fabletics top, and Nike shoes 
+On Triana: Lululemon tights, Varley top, and Nike shoes 
+
+POPSUGAR Fitness offers fresh fitness tutorials, workouts, and exercises that will help you on your road to healthy living, weight loss, and stress relief.  Check out Class FitSugar, our do-it-along-with-us real-time workout show hosted by Anna Renderer who will inspire you to sweat alongside fitness experts and Hollywood’s hottest celebrity trainers. Class FitSugar regularly covers the most buzzed-about workout classes and trends, including the Victoria's Secret workout, Tabata, P90X, Bar Method, and more.
+
+Subscribe to POPSUGAR Fitness!
+http://www.youtube.com/subscription_center?add_user=popsugartvfit
+
+Check out the rest of our channel:
+https://www.youtube.com/user/popsugartvfit</div><div><span class="ve-kh-gf-yp">4 min - 2 Aug 2017</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":3a" role="option" aria-checked="false" tabindex="-1" id=":39" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(248).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":3a">Tank Top Arms Workout - Best Upper Body Workout for Toned Arms, Shoulders &amp; Upper Back</div><div class="ve-kh-gf-eb ">Tank Top Arms Workout to tone arms, shoulders, and upper back! Find all info for this routine @ http://bit.ly/1jRcC2u
+8 Week Fat Loss Programs &amp; Meal Plans: @ http://bit.ly/13EdZgX
+Find PowerBlock's adjustable dumbbells @: http://bit.ly/yDWK7V
+Never miss a new workout video @ http://on.fb.me/zDxh3R
+
+Note: All information provided by Fitness Blender is of a general nature and is furnished only for educational/entertainment purposes only. No information is to be taken as medical or other health advice pertaining to any individual specific health or medical condition. You agree that use of this information is at your own risk and hold Fitness Blender harmless from any and all losses, liabilities, injuries or damages resulting from any and all claims.</div><div><span class="ve-kh-gf-yp">26 min - 20 May 2014</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":3c" role="option" aria-checked="false" tabindex="-1" id=":3b" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(249).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":3c">LONG LEAN TONED ARMS in 9 minutes</div><div class="ve-kh-gf-eb ">Subscribe to AnitaGoaTV: http://www.youtube.com/user/AnitaGoaTV?feature=mhee
+Facebook: http://www.facebook.com/anitagoatv
+Twitter: https://twitter.com/AnitaGoa
+Anita's Website: http://www.anitagoa.com
+Tumblr: http://anitagoa.tumblr.com/</div><div><span class="ve-kh-gf-yp">11 min - 31 Jan 2013</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":3e" role="option" aria-checked="false" tabindex="-1" id=":3d" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(250).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":3e">TONED ARMS  - 30 minute at home workout</div><div class="ve-kh-gf-eb ">Join me on the 7 day LIVE Total Body Tone! Feel connected and part of the community by doing this workout all together and feeling the BUNR! 🔥 Comment what yoru fav body part is to workout 👇🏻 p.s ready to make history?! join us for the event of the year - https://ivegotgrit.com
+
+Get my free 30 day workout challenge and what in a day here - https://rebecca-louise.com
+
+WORKOUT APP 💪🏻
+If you love this 30 Day program you will love my fitness app! We have daily 28 minute workouts that are new each week, meal plans and a whole load of motivation to keep you on track! 
+
+Plus you can earn points my doing daily activity and spend in our store!
+🌟 Get your 7 day FREE trial here 
+Desktop - https://icanfeeltheburn.com 
+iOS - https://apple.co/2Kj3NYG 
+Android - http://bit.ly/burnbyrebecca 
+
+🔥AND to put the icing on the cake we have this special 30 day program to celebrate my first BOOK! 
+You can now order yours here - https://rebecca-louise.com/pages/book
+
+HAVE FUN! Let me know how you get on by using the hash tags below!
+
+#icanfeeltheburnrebecca #itgsummerseries
+
+TEXT ME  +1 310 421 0772
+https://my.community.com/RebeccaLouise
+💪🏻 for LIVE WORKOUT updates 
+💛 for podcast updates 
+or hi to chat!
+
+Join our community!
+Instagram: https://www.instagram.com/rebeccalouisefitness
+Facebook: https://www.facebook.com/rebeccalouisefitness
+Website: http://rebecca-louise.com/
+Podcast Channel: http://bit.ly/2uyjy5h
+
+Have a question..? Drop it below!
+
+Subscribe to the channel and always stay on track! - http://bit.ly/2voMxWO</div><div><span class="ve-kh-gf-yp">36 min - 14 Aug 2020</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":3g" role="option" aria-checked="false" tabindex="-1" id=":3f" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(251).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":3g">Toned Arm Workout For Women Over 50!</div><div class="ve-kh-gf-eb ">Arm Workout For Women! 5 Minutes to tone your upper arms and shoulders plus get rid of those Flabby Bat Wings forever!  With an easy to follow 5 minute Best Toning Arm Workout For mature Women Over 50.
+ 
+Just 4 exercises, 3 times a week and you will be on your way to creating strong, toned arms that look great in sleeveless tops and dresses for summer!
+ 
+In this at home workout we isolate the shoulders, triceps and biceps for an overall arm toning formula that is perfect and easy to follow...
+ 
+Welcome to fabulous50s! Here you will find content that relates to how to look younger, mature skincare, anti aging, wrinkles, how to dress over 50, style, fitness, health and beauty over 50. All the videos here have you, a mature Woman in mind and if you have any questions or video suggestions for mature Women, please feel free to leave your comment below.
+
+Information provided in this video is of a general nature only and is for entertainment/educational purposes. We strongly recommend that you consult with your physician before beginning any exercise program. Performing any of these exercises is done so at your own risk.
+ 
+Yoga Blocks available at Amazon.
+https://amzn.to/2MDr721
+
+I'm Wearing (and love) Spanx Active Knee Length Leggings
+Amazon https://amzn.to/2H3OVe4 
+Nordstrom https://go.magik.ly/ml/mvps/ 
+UK Amazon https://amzn.to/2J2OByg 
+
+To find out more: LETS CONNECT👋
+ 
+✅ fabulous50s INSAGRAM:
+https://www.instagram.com/fabulous.50s/?hl=en
+ 
+✅fabulous50s PRIVATE FACEBOOK GROUP:
+https://www.facebook.com/groups/290247628386380/
+ 
+✅fabulous50s FACEBOOK:
+https://www.facebook.com/fabulous50ss/
+ 
+✅fabulous50s WEBSITE:
+https://fabulous50s.co
+ 
+🙏THANK YOU so much for watching and if you know someone who may enjoy this video...Please share 🙏
+ 
+✅Please tune in for new videos each Friday at 9.15pm  (Australia NSW time) (7.15am EDT)
+ 
+CONTINUE WATCHING MORE VIDEOS 🙏
+ 
+👠MOST POPULAR VIDEOS PLAYLIST:
+https://www.youtube.com/playlist?list=PL32YrxpjeHf41jXnk7Q78aZoMY-VYZ0Ip
+ 
+💄BEAUTY OVER 50 PLAYLIST:
+https://www.youtube.com/playlist?list=PL32YrxpjeHf41jXnk7Q78aZoMY-VYZ0Ip
+ 
+👗FASHION &amp; STYLE OVER 50 PLAYLIST:
+https://www.youtube.com/playlist?list=PL32YrxpjeHf41jXnk7Q78aZoMY-VYZ0Ip
+ 
+🏋️‍♀️FITNESS OVER 50 PLAYLIST:
+https://www.youtube.com/playlist?list=PL32YrxpjeHf4L4T8LX3jlto-xMJt0kuyU
+ 
+💕MATURE LADIES OF YOUTUBE COMMUNITY LINK:
+https://maturewomenofyoutube.blogspot.com
+ 
+SUBSCRIBE HERE:
+https://www.youtube.com/channel/UCiWPU83VmOXjQ6xY0gIrhIQ
+ 
+💌EMAIL ALL ENQUIRIES TO:
+info@fabulous50s.co
+ 
+💌MAIL:
+Po Box 6092 Park Beach Plaza
+Coffs Harbour
+Australia 2450
+ 
+✅PLEASE SUBSCRIBE - To Get More Tips:
+https://www.youtube.com/channel/UCiWPU83VmOXjQ6xY0gIrhIQ
+ 
+☯️This content is not sponsored and all opinions are 100% honest and what I truly believe. If I LOVE a product first, and there is an affiliate link available...I will use it...I WILL NOT look for a product that pays a commission first, and then do a review...EVER!
+Some links are affiliate links. If you click a link and buy something, I may receive a small commission for the sale. It doesn't cost you anything extra and you are free to use the link or not...Its totally up to you... If you do use my links...Thank you so much xx
+#fabulous50s #over50 #fitnessover50</div><div><span class="ve-kh-gf-yp">7 min - 25 Jan 2019</span></div></div></td></tr></tbody></table></div></div><div class="ve-kh-gf" aria-labelledby=":3i" role="option" aria-checked="false" tabindex="-1" id=":3h" style="user-select: none;"><div class="ve-kh-gf-rb"><table cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><div class="ve-kh-gf-nj"><div class="ve-kh-gf-O" aria-label="Press enter or click to play this video"><img src="./default(252).jpg" class="ve-kh-gf-O-x"><div class="ve-qj-kh-Bl-Xg a-b-c"></div></div></div></td><td width="100%" valign="top"><div class="ve-kh-gf-nn"><div class="ve-kh-gf-cb" id=":3i">8-Minute Toned Arms Workout</div><div class="ve-kh-gf-eb ">Download Runtastic Results app: http://bit.ly/2tSY0y5
+Let's do this at home arms workout together. It's super quick, so the burn will be over before you know it. You don't need any equipment, this workout consists of only bodyweight exercises. So change into your workout clothes and let's rock this arm workout TOGETHER.
+
+*****
+ ▶︎ Runtastic Blog: http://bit.ly/2kRPaM3
+*****
+
+
+♥ LIKE this video ♥
+
+
+▶︎ Watch the last episode: https://www.youtube.com/watch?v=ngb-vKFq69U&amp;t=0s
+
+*****
+Subscribe NOW: http://bit.ly/rtFitness 
+(to get more FREE &amp; great workout and fitness tips)
+
+Runtastic Blog: http://bit.ly/2kRPaM3
+Runtastic Instagram: https://instagram.com/Runtastic
+Runtastic Facebook: https://facebook.com/Runtastic
+Runtastic Twitter: https://twitter.com/Runtastic
+
+*****
+Reach your fitness, nutrition, health, wellness &amp; happiness goals:
+
+New Runtastic Fitness videos are posted weekly, providing you with helpful, high-quality information on how you can lead a healthy and active lifestyle.</div><div><span class="ve-kh-gf-yp">10 min - 12 Feb 2019</span></div></div></td></tr></tbody></table></div></div></tbody></table></div></div><div role="status" aria-live="polite"><div class="ve-cj" aria-label="Loading data" style="display: none;"><div class="d-e"><div></div><div class="d-e-f" style="opacity: 0;"></div></div></div></div></div><div class="ve-Ci-ic ve-Di-ie" style="height: 69px;"><div class="ve-Di-Ji-pe"><div><div role="button" class="a-b-c d-u d-u-F d-u-D" id="picker:ap:2" guidedhelpid="ghid-psc" aria-disabled="true" style="user-select: none;">Select</div><div role="button" class="a-b-c d-u d-u-Q" tabindex="0" id="picker:ap:3" style="user-select: none;">Cancel</div></div></div><div class="ve-Di-Xi-Nb" role="status" aria-live="polite" style="display: none;"></div></div></div></div></div></div></div></div></div></div>
+<script type="text/javascript" src="./2575735839-picker_modularized_i18n_opc__en_gb.js.download" nonce="">
+          
+        </script>
+<script type="text/javascript" nonce="">
+        var pickerApp;
+
+        
+        var moduleDeps = {opc:[],opd:['opc'],opdr:['opc'],opl:['opc'],opm:['opc'],opmd:['opc'],opp:['opc'],oppe:['opc'],opr:['opc'],opu:['opc'],opv:['opc'],oppu:['opp','opu']};
+        var moduleUris = {opr:['https://docs.google.com/picker/static/resources/client/js/625639703-picker_modularized_i18n_opr__en_gb.js'],opd:['https://docs.google.com/picker/static/resources/client/js/4020439717-picker_modularized_i18n_opd__en_gb.js'],oppe:['https://docs.google.com/picker/static/resources/client/js/3608382653-picker_modularized_i18n_oppe__en_gb.js'],oppu:['https://docs.google.com/picker/static/resources/client/js/1118765236-picker_modularized_i18n_oppu__en_gb.js'],opc:['https://docs.google.com/picker/static/resources/client/js/2575735839-picker_modularized_i18n_opc__en_gb.js'],opv:['https://docs.google.com/picker/static/resources/client/js/718066328-picker_modularized_i18n_opv__en_gb.js'],opu:['https://docs.google.com/picker/static/resources/client/js/948269637-picker_modularized_i18n_opu__en_gb.js'],opl:['https://docs.google.com/picker/static/resources/client/js/1564493705-picker_modularized_i18n_opl__en_gb.js'],opdr:['https://docs.google.com/picker/static/resources/client/js/2455726967-picker_modularized_i18n_opdr__en_gb.js'],opmd:['https://docs.google.com/picker/static/resources/client/js/347834514-picker_modularized_i18n_opmd__en_gb.js'],opm:['https://docs.google.com/picker/static/resources/client/js/2100776354-picker_modularized_i18n_opm__en_gb.js'],opp:['https://docs.google.com/picker/static/resources/client/js/1104118477-picker_modularized_i18n_opp__en_gb.js']};
+        
+        initModules(
+            moduleDeps,
+            moduleUris,
+            false,
+            "opc");
+        
+        if (true
+            && window.jstiming
+            && window.jstiming.load
+            && window.jstiming.load.tick) {
+          window.jstiming.load.tick('opc');
+          window.jstiming.sn = "apps_picker";
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+          
+          rawConfig['element'] = document.getElementById('doclist');
+          rawConfig['loadingStatusElement'] = document.body;
+          pickerApp = _createPicker(rawConfig);
+
+          
+          pickerApp.initializeFromServer(rawConfig);
+        });
+
+        document.addEventListener('unload', function () {
+          if (pickerApp) {
+            pickerApp.dispose();
+            pickerApp = null;
+          }
+        });
+      </script><script src="./rpc.js.download" nonce="" type="text/javascript"></script><div aria-live="assertive" aria-atomic="true" style="position: absolute; top: -1000px; height: 1px; overflow: hidden;">Select a file</div></body></html>

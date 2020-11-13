@@ -1,0 +1,32 @@
+.playbox
+{
+	background-color:lightgreen;
+	height:300px;
+	width:400px;
+	padding:20px 50px;
+	border:5px solid blue;
+
+}
+.centered
+{
+	margin:0 auto;
+	display:block;
+}
+.masterdiv
+{
+	background-color:black;
+	height:700px;
+	width:1500px;
+}
+.fallright
+{
+	float:right; 
+}
+.fallleft
+{
+	float:left;
+}
+.slightmargin
+{
+	margin-left:20px;
+}
